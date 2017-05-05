@@ -1,7 +1,9 @@
+#ifndef __RBTREE_H_INCLUDED__
+#define __RBTREE_H_INCLUDED__
+
 #include <iostream>
 //#include <random>
 //#include <limits.h>
-
 using namespace std;
 
 bool RED = 0;
@@ -329,8 +331,8 @@ public:
     }
   }
 
-  rbnode<T> * get_it(rbnode<T> *nil){
-    nil = this->nil;
+  rbnode<T> * get_it(rbnode<T> **nil){
+    *nil = this->nil;
     return this->root;
   }
 };
@@ -390,3 +392,5 @@ int main(){
   return 0;
 }
 */
+
+#endif

@@ -1,6 +1,8 @@
 #ifndef __QUEUE_H_INCLUDED__
 #define __QUEUE_H_INCLUDED__
 
+#include <iostream>
+
 template <typename E> class Queue{
     private:
         struct node{
@@ -11,16 +13,16 @@ template <typename E> class Queue{
         node *top;
         node *bot;
     public:
-        Queue(int arr_size);
+        Queue();
         ~Queue();
         bool is_empty();
         int get_size();
-        void enqueue();
+        void enqueue(E *e);
         E * dequeue();
 };
 
 template <typename E>
-Queue<E>::Queue(int arr_size){
+Queue<E>::Queue(){
     this->size = 0;
     this->bot = this->top = NULL;
 }
@@ -36,14 +38,14 @@ bool Queue<E>::is_empty(){
     return this->size == 0;
 }
 template <typename E>
-void Queue<E>::get_size(){
+int Queue<E>::get_size(){
     return this->size;
 }
 template <typename E>
 void Queue<E>::enqueue(E *value){
     node *n = new node;
-    node->next = NULL;
-    node->e = value;
+    n->next = NULL;
+    n->e = value;
     if(this->top != NULL)
         this->top->next = n;
     else
@@ -52,10 +54,10 @@ void Queue<E>::enqueue(E *value){
     ++this->size;
 }
 template <typename E>
-E * Queue<E>::dequeue(E *e){
+E * Queue<E>::dequeue(){
     if(this->is_empty()) return NULL;
     E *e = this->bot->e;
-    node to_del = this->bot;
+    node *to_del = this->bot;
     this->bot = this->bot->next;
     if(this->bot == NULL)
         this->top = NULL;
