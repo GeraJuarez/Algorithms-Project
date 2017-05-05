@@ -9,8 +9,10 @@ bool BLACK = 1;
 //char RED = 'r';
 //char BLACK = 'b';
 
+template <class T>
 struct rbnode{
   int key;
+  T *value;
   rbnode *p;
   rbnode *left;
   rbnode *right;
@@ -18,24 +20,33 @@ struct rbnode{
   //char color; //b is black, r is red
   rbnode(int k) {
     key = k;
+    value = NULL;
+    left = right = p = NULL;
+    color = RED;
+  }
+  rbnode(int k, T *value) {
+    key = k;
+    value = value;
     left = right = p = NULL;
     color = RED;
   }
   rbnode() {
     left = right = p = NULL;
+    value = NULL;
     color = BLACK;
   }
 };
 
+template <class T>
 class RedBlackTree{
 private:
   int size;
-  rbnode *root;
-  rbnode *nil;
+  rbnode<T> *root;
+  rbnode<T> *nil;
 public:
   RedBlackTree(){
     this->size = 0;
-    this->nil = new rbnode();
+    this->nil = new rbnode<T>();
     this->nil->color = BLACK;
     this->root = this->nil;
     this->nil->p = this->nil;
@@ -46,7 +57,7 @@ public:
   void print_inorder_inverse(){
     print_inorder_inverse(this->root, 1);
   }
-  void print_inorder_inverse(rbnode *node, int mult){
+  void print_inorder_inverse(rbnode<T> *node, int mult){
     if(node->right != NULL){
       print_inorder_inverse(node->right, mult+1);
     }
@@ -64,8 +75,8 @@ public:
     }
   }
 
-  rbnode *get(int key){
-    rbnode *temp = this->root;
+  rbnode<T> *get(int key){
+    rbnode<T> *temp = this->root;
     while(temp->key != key && temp != this->nil){
       if(temp->key > key){
         temp = temp->left;
@@ -77,10 +88,23 @@ public:
     return temp;
   }
 
+  T *get_value(int key){
+    rbnode<T> *temp = this->root;
+    while(temp->key != key && temp != this->nil){
+      if(temp->key > key){
+        temp = temp->left;
+      }
+      else{
+        temp = temp->right;
+      }
+    }
+    return temp->value;
+  }
+
   void insert(int key){
-    rbnode *z = new rbnode(key);
-    rbnode *y = this->nil;
-    rbnode *x = this->root;
+    rbnode<T> *z = new rbnode<T>(key);
+    rbnode<T> *y = this->nil;
+    rbnode<T> *x = this->root;
 
     while(x != this->nil){
       y = x;
@@ -106,8 +130,8 @@ public:
     rb_insert_fixup(z);
   }
 
-  void left_rotate(rbnode *x){
-    rbnode *y = x->right;
+  void left_rotate(rbnode<T> *x){
+    rbnode<T> *y = x->right;
     x->right = y->left;
     if(y->left != this->nil){
       y->left->p = x;
@@ -126,8 +150,8 @@ public:
     x->p = y;
   }
 
-  void right_rotate(rbnode *x){
-    rbnode *y = x->left;
+  void right_rotate(rbnode<T> *x){
+    rbnode<T> *y = x->left;
     x->left = y->right;
     if(y->right != this->nil){
       y->right->p = x;
@@ -146,8 +170,8 @@ public:
     x->p = y;
   }
 
-  void rb_insert_fixup(rbnode *z){
-    rbnode *y;
+  void rb_insert_fixup(rbnode<T> *z){
+    rbnode<T> *y;
     while(z->p->color == RED){
       if(z->p == z->p->p->left) {
         y = z->p->p->right;
@@ -189,7 +213,7 @@ public:
     this->root->color = BLACK;
   }
 
-  void rb_transplant(rbnode *u, rbnode *v){
+  void rb_transplant(rbnode<T> *u, rbnode<T> *v){
     if(u->p == this->nil){
       this->root = v;
     }
@@ -202,19 +226,16 @@ public:
     v->p = u->p;
   }
 
-  rbnode * tree_minimum(rbnode *node){
-    rbnode *min = node;
+  rbnode<T> * tree_minimum(rbnode<T> *node){
+    rbnode<T> *min = node;
     while(min->left != this->nil){
       min = min->left;
     }
     return min;
   }
 
-
-
-
-  void rb_delete_fixup(rbnode *x){
-    rbnode *w;
+  void rb_delete_fixup(rbnode<T> *x){
+    rbnode<T> *w;
     while(x != this->root && x->color == BLACK){
       if(x == x->p->left){
         w = x->p->right;
@@ -274,9 +295,9 @@ public:
     x->color = BLACK;
   }
 
-  void rb_delete(rbnode *z){
-    rbnode *x;
-    rbnode *y = z;
+  void rb_delete(rbnode<T> *z){
+    rbnode<T> *x;
+    rbnode<T> *y = z;
     bool y_original_color = y->color;
     if(z->left == this->nil){
       x = z->right;
@@ -327,7 +348,7 @@ void random_tree_perform() {
   for(int n = 10; n < 1000; n++){
     int values[n];
     generate_random_array(values, n, true);
-    RedBlackTree *tree = new RedBlackTree();
+    RedBlackTree<int> *tree = new RedBlackTree<int>();
 
     begin = clock();
     for(int i = 0; i < n; i++){
@@ -343,7 +364,7 @@ void random_tree_perform() {
 }
 
 int main(){
-  RedBlackTree *tree = new RedBlackTree();
+  RedBlackTree<int> *tree = new RedBlackTree<int>();
   tree->insert(30);
   tree->insert(20);
   tree->insert(40);
