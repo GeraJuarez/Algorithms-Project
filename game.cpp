@@ -1,13 +1,14 @@
 #include <iostream>
-
-#include <"queue.h">
+//#include "queue.h"
 
 using namespace std;
+
+class RedBlackTree;
 
 class Tags {
   public:
   static int get_size() {
-    return 0;
+    return 10;
   }
 
 };
@@ -19,7 +20,7 @@ class Game {
   int year;
   int *tags;
   int tags_size;
-  RedBlackTree adj;
+  RedBlackTree *adj;
   Game(string name, string developer, int year) {
     this->name = name;
     this->developer = developer;
@@ -30,8 +31,12 @@ class Game {
     Edge *e = new edge(end, 0/* Call method to get closeness */);
     this->adj.insert(e, e->weight);
   }
+  void set_tags( int *t, int s ) {
+    this->tags_size = s;
+    this->tags = t;
+  }
 
-  private:
+  //private:
 
   int calculate_similarity( int *b, int size_b ) {
 
@@ -67,3 +72,20 @@ class Game {
   }
 
 };
+
+int main() {
+
+  Game g1( "Light Souls", "Bamco Namdai", 2020 );
+  int LS_tags[3] = {1, 4, 6};
+  g1.set_tags(LS_tags, 3);
+
+  Game g2( "Waifu Souls", "Triangle Enix", 2018 );
+  int WS_tags[5] = {1, 5, 7};
+  g2.set_tags(WS_tags, 5);
+
+  cout << "Edge from Light Souls to waifu Souls: "<< g1.calculate_similarity(g2.tags, g2.tags_size) << endl;
+
+  cout << "Edge from Waifu Souls to Light Souls: "<< g2.calculate_similarity(g1.tags, g1.tags_size) << endl;
+
+  return 0;
+}

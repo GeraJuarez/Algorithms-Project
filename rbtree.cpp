@@ -1,6 +1,6 @@
 #include <iostream>
-#include <random>
-#include <limits.h>
+//#include <random>
+//#include <limits.h>
 
 using namespace std;
 
@@ -329,7 +329,7 @@ public:
     }
   }
 };
-
+/*
 void generate_random_array(int *a, int n, bool silence){
   random_device rd;
   mt19937 gen(rd());
@@ -384,3 +384,4 @@ int main(){
   tree->print_inorder_inverse();
   return 0;
 }
+*/

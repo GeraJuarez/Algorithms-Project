@@ -6,7 +6,7 @@ template <typename E> class Queue{
         struct node{
             E *e;
             node *next;
-        }
+        };
         int size;
         node *top;
         node *bot;
@@ -14,7 +14,7 @@ template <typename E> class Queue{
         Queue(int arr_size);
         ~Queue();
         bool is_empty();
-        int size();
+        int get_size();
         void enqueue();
         E * dequeue();
 };
@@ -36,7 +36,7 @@ bool Queue<E>::is_empty(){
     return this->size == 0;
 }
 template <typename E>
-void Queue<E>::size(){
+void Queue<E>::get_size(){
     return this->size;
 }
 template <typename E>
