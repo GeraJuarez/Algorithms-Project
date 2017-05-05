@@ -5,11 +5,6 @@
 #include "rbtree.h"
 #include "edge.h"
 
-class Tags {
-public:
-  static int get_size();
-};
-
 class Game {
 private:
   RedBlackTree<Edge> *adj;

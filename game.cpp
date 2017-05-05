@@ -3,11 +3,9 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+#include "tags.h"
 
-int Tags::get_size() {
-  return 10;
-}
+using namespace std;
 
 void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d){
   if(it == nil) return;
