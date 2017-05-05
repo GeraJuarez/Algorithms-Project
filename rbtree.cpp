@@ -13,9 +13,9 @@ template <class T>
 struct rbnode{
   int key;
   T *value;
-  rbnode *p;
-  rbnode *left;
-  rbnode *right;
+  rbnode<T> *p;
+  rbnode<T> *left;
+  rbnode<T> *right;
   bool color; //1 is black, 0 is red
   //char color; //b is black, r is red
   rbnode(int k) {
@@ -327,6 +327,11 @@ public:
     if(y_original_color == BLACK){
       rb_delete_fixup(x);
     }
+  }
+
+  rbnode<T> * get_it(rbnode<T> *nil){
+    nil = this->nil;
+    return this->root;
   }
 };
 
