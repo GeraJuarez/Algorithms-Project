@@ -3,24 +3,20 @@
 #include <iostream>
 #include <string>
 
-#include "queue.h"
-#include "rbtree.h"
-#include "edge.h"
-
 using namespace std;
 
 int Tags::get_size() {
   return 10;
 }
 
-void Game::add_adj(rbnode<Game> *it, Queue<Game> Q, rbnode<Game> *nil, int d){
+void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d){
   if(it == nil) return;
 }
 Game::Game(string name, string developer, int year) {
   this->name = name;
   this->developer = developer;
   this->year = year;
-  this->adj = new RedBlackTree<Game>();
+  this->adj = new RedBlackTree<Edge>();
   this->d = 0;
   this->pi = NULL;
 }
@@ -37,7 +33,7 @@ Queue<Game> * Game::recommend(int threshold){
   Q.enqueue(this);
   while(!Q.is_empty()){
     Game *g = Q.dequeue();
-    rbnode<Game> *it, *nil;
+    rbnode<Edge> *it, *nil;
     it = g->adj->get_it(&nil);
     g->add_adj(it, Q, nil, g->d);
   }

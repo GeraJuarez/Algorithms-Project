@@ -12,10 +12,10 @@ public:
 
 class Game {
 private:
-  RedBlackTree<Game> *adj;
+  RedBlackTree<Edge> *adj;
   int d;
   Game *pi;
-  void add_adj(rbnode<Game> *it, Queue<Game> Q, rbnode<Game> *nil, int d);
+  void add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d);
 public:
   string name;
   string developer;
