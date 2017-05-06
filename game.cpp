@@ -9,8 +9,12 @@ int Tags::get_size() {
   return 10;
 }
 
-void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d){
-  if(it == nil) return;
+void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d, int t){
+  // if(it == nil) return;
+  // add_adj(it->left, Q, nil, d, t);
+  // if(d + t->key < t)
+  //   Q.enqueue(NULL/*Game*/);
+  // add_adj(it->right, Q, nil, d, t);
 }
 Game::Game(string name, string developer, int year) {
   this->name = name;
@@ -20,10 +24,12 @@ Game::Game(string name, string developer, int year) {
   this->d = 0;
   this->pi = NULL;
 }
+
 void Game::add_edge(Game *end){
   Edge *e = new Edge(end, this->calculate_similarity(end->tags, end->tags_size));
   this->adj->insert(/*e0, */e->weight);
 }
+
 Queue<Game> * Game::recommend(int threshold){
   Queue<Game> *R = new Queue<Game>();
   Queue<Game> Q;
@@ -35,7 +41,7 @@ Queue<Game> * Game::recommend(int threshold){
     Game *g = Q.dequeue();
     rbnode<Edge> *it, *nil;
     it = g->adj->get_it(&nil);
-    g->add_adj(it, Q, nil, g->d);
+    //g->add_adj(it, Q, nil, g->d, 0);
   }
   return R;
 }
@@ -76,6 +82,8 @@ int Game::calculate_similarity( int *b, int size_b ) {
   return similarity;
 }
 
+/*
+
 int main() {
 
   Game g1( "Light Souls", "Bamco Namdai", 2020 );
@@ -92,3 +100,4 @@ int main() {
 
   return 0;
 }
+*/

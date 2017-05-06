@@ -2,12 +2,10 @@
 #define __RBTREE_H_INCLUDED__
 
 #include <iostream>
-//#include <random>
-//#include <limits.h>
 using namespace std;
 
-bool RED = 0;
-bool BLACK = 1;
+const bool RED = 0;
+const bool BLACK = 1;
 //char RED = 'r';
 //char BLACK = 'b';
 
@@ -336,61 +334,5 @@ public:
     return this->root;
   }
 };
-/*
-void generate_random_array(int *a, int n, bool silence){
-  random_device rd;
-  mt19937 gen(rd());
-  uniform_int_distribution<> dis(1,100);
-  for(int i = 0; i < n; i++){
-    a[i] = dis(gen);
-    if(!silence)
-      cout << a[i] << "  ";
-  }
-  if(!silence)
-    cout << endl;
-}
-
-void random_tree_perform() {
-  clock_t begin, end;
-  for(int n = 10; n < 1000; n++){
-    int values[n];
-    generate_random_array(values, n, true);
-    RedBlackTree<int> *tree = new RedBlackTree<int>();
-
-    begin = clock();
-    for(int i = 0; i < n; i++){
-      tree->insert(values[i]);
-    }
-    end = clock();
-    double ex_time = (end - begin);
-    cout << n << "," << ex_time << endl;
-    // cout << tree->get_size() << endl;
-    // tree->print_inorder_inverse();
-    delete(tree);
-  }
-}
-
-int main(){
-  RedBlackTree<int> *tree = new RedBlackTree<int>();
-  tree->insert(30);
-  tree->insert(20);
-  tree->insert(40);
-  tree->insert(35);
-  tree->print_inorder_inverse();
-  cout << "Delete 20" << endl;
-  tree->rb_delete(tree->get(20));
-  tree->print_inorder_inverse();
-  cout << "Delete 30" << endl;
-  tree->rb_delete(tree->get(30));
-  tree->print_inorder_inverse();
-  cout << "Delete 40" << endl;
-  tree->rb_delete(tree->get(40));
-  tree->print_inorder_inverse();
-  cout << "Delete 35" << endl;
-  tree->rb_delete(tree->get(35));
-  tree->print_inorder_inverse();
-  return 0;
-}
-*/
 
 #endif

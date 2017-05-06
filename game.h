@@ -13,15 +13,15 @@ public:
 class Game {
 private:
   RedBlackTree<Edge> *adj;
-  int d;
-  Game *pi;
-  void add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d);
+  void add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d, int t);
 public:
   string name;
   string developer;
   int year;
   int *tags;
   int tags_size;
+  int d;
+  Game *pi;
   Game(string name, string developer, int year);
   void add_edge(Game *end);
   Queue<Game> * recommend(int threshold);
