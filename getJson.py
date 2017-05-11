@@ -11,4 +11,5 @@ games_json = json.loads(data)
 games = games_json.keys()
 for i in games:
 	if(len(games_json[i]['tags']) > 0):
-		print("{} -- {}".format(games_json[i]['name'], list(games_json[i]['tags'].keys())) )
+		print("{} -- {} -- Publisher: {} -- Developer: {}".format(games_json[i]['name'], list(games_json[i]['tags'].keys()), games_json[i]['publisher'], games_json[i]['developer']))
+		#print(games_json[i].keys())

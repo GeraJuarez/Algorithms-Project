@@ -59,7 +59,7 @@ int Game::calculate_similarity( int *b, int size_b ) {
 
   for ( int i = 0; i < n; i++ ) {
     //Initialize the array to 0
-    c[i] = 0;                 
+    c[i] = 0;
   }
 
   for ( int i = 0; i < size_a; i++ ) {
