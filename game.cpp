@@ -49,6 +49,11 @@ void Game::set_tags( int *t, int s ) {
   this->tags_size = s;
   this->tags = t;
 }
+
+void Game::print_tags() {
+	cout << " " << endl;
+}
+
 int Game::calculate_similarity( int *b, int size_b ) {
 
   int *a;

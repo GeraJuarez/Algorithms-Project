@@ -50,7 +50,19 @@ void Graph::connect_games( string game_u, string game_v ) {
     v->add_edge(u);
 }
 
-void Graph::queryPublisher( bool OR, string publisher, string publisher_2 ){
+void printSelection(vector< Game * > &selection) {
+	Game * game;
+	for(unsigned i = 0; i < selection.size(); i++){
+		game = selection.at(i);
+		cout << game->name << endl;
+		cout << "\tDeveloper: " << game->developer << endl;
+		cout << "\tPublisher: " << game->publisher << endl;
+		cout << "\tTags: ";
+		game->print_tags();
+	}
+}
+
+void Graph::queryPublisher( bool OR, string publisher, string publisher_2 ) {
 
 	vector< Game * > selection;
 	unordered_map<string, Game * >::iterator it = this->games->begin();
@@ -69,6 +81,8 @@ void Graph::queryPublisher( bool OR, string publisher, string publisher_2 ){
 
         it++;
     }
+
+	printSelection(selection);
 }
 
 void Graph::queryDeveloper( bool OR, string developer, string developer_2 ){
@@ -89,9 +103,11 @@ void Graph::queryDeveloper( bool OR, string developer, string developer_2 ){
 
         it++;
     }
+
+	printSelection(selection);
 }
 
-void Graph::queryName( bool AND, bool OR, string name_a, string name_b ){
+void Graph::queryName( bool OR, string name_a, string name_b ){
 	vector< Game * > selection;
 	unordered_map<string, Game * >::iterator it = this->games->begin();
     while ( it != this->games->end() ) {
@@ -109,6 +125,8 @@ void Graph::queryName( bool AND, bool OR, string name_a, string name_b ){
 
         it++;
     }
+
+	printSelection(selection);
 }
 
 int main() {

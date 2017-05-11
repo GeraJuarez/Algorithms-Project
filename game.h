@@ -22,6 +22,7 @@ public:
   Queue<Game> * recommend(int threshold);
   void set_tags( int *t, int s );
   int calculate_similarity( int *b, int size_b );
+  void print_tags();
 };
 
 #endif
