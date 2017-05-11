@@ -12,12 +12,12 @@ private:
 public:
   string name;
   string developer;
-  int year;
+  string publisher;
   int *tags;
   int tags_size;
   int d;
   Game *pi;
-  Game(string name, string developer, int year);
+  Game(string name, string developer, string publisher);
   void add_edge(Game *end);
   Queue<Game> * recommend(int threshold);
   void set_tags( int *t, int s );

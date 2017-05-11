@@ -14,10 +14,10 @@ void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d, in
   //   Q.enqueue(NULL/*Game*/);
   // add_adj(it->right, Q, nil, d, t);
 }
-Game::Game(string name, string developer, int year) {
+Game::Game(string name, string developer, string publisher) {
   this->name = name;
   this->developer = developer;
-  this->year = year;
+  this->publisher = publisher;
   this->adj = new RedBlackTree<Edge>();
   this->d = 0;
   this->pi = NULL;
