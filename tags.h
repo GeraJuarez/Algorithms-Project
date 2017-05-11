@@ -9,13 +9,13 @@ using namespace std;
 class Tags {
 
 private:
-  vector<string> tags;
+  static vector< string > tags;
 
 public:
+  static void initialize();
   static int get_size();
-  void add_tag(string tg);
-  string get_tag(int i);
-
+  static void add_tag(string tg);
+  static string get_tag(int i);
 };
 
 #endif

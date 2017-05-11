@@ -6,12 +6,13 @@
 using namespace std;
 
 int Tags::get_size() {
-  return tags.size();
+  //return Tags::tags.size();
+  return 0;
 }
 void Tags::add_tag(string tf) {
-  tags.push_back(tf);
+  //Tags::tags.push_back(tf);
 }
-string Tags:get_tag(int i) {
-  return tags.at(i);
+string Tags::get_tag(int i) {
+  //return Tags::tags.at(i);
+  return "";
 }
-
