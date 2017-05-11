@@ -9,10 +9,12 @@ using namespace std;
 
 void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d, int t){
    if(it == nil) return;
-  // add_adj(it->left, Q, nil, d, t);
-  // if(d + t->key < t)
-  //   Q.enqueue(NULL/*Game*/);
-  // add_adj(it->right, Q, nil, d, t);
+  add_adj(it->left, Q, nil, d, t);
+  if(d + it->key < t){
+    // Q.enqueue(it->to);
+    // it->to->d = d + it->key;
+  }
+  add_adj(it->right, Q, nil, d, t);
 }
 Game::Game(string name, string developer, int year) {
   this->name = name;
