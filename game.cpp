@@ -16,10 +16,10 @@ void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d, in
   }
   add_adj(it->right, Q, nil, d, t);
 }
-Game::Game(string name, string developer, int year) {
+Game::Game(string name, string developer, string publisher) {
   this->name = name;
   this->developer = developer;
-  this->year = year;
+  this->publisher = publisher;
   this->adj = new RedBlackTree<Edge>();
   this->d = 0;
   this->pi = NULL;
@@ -61,7 +61,7 @@ int Game::calculate_similarity( int *b, int size_b ) {
 
   for ( int i = 0; i < n; i++ ) {
     //Initialize the array to 0
-    c[i] = 0;                 
+    c[i] = 0;
   }
 
   for ( int i = 0; i < size_a; i++ ) {
