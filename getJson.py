@@ -9,9 +9,20 @@ response = urllib.request.urlopen(request)
 data = response.read()
 games_json = json.loads(data)
 games = games_json.keys()
+print('#include <iostream>\n#include <string>\n#include "graph.h"\n#include "game.h"\n#include "queue.h"\n#include "tags.h"')
+
+print('using namespace std;')
+print("int main() {")
+
+using namespace std;)
 print("Graph g;")
+limit = 30
+at = 0
 for i in games:
+	if(at > limit):
+		break
 	if(len(games_json[i]['tags']) > 0):
+		at += 1
 		game = games_json[i]
 		print("//Inserting {}".format(game['name'] ) )
 		tags_size = len(game['tags']) - 1
@@ -21,8 +32,5 @@ for i in games:
 		array_name = "_".join(game['name'].split())
 		print("string {}_tags[{}] = {};".format( array_name, tags_size, tags_string) )
 		print( 'g.insert_game("{}", "{}", "{}", {}_tags, {});'.format(game['name'], game['developer'], game['publisher'], array_name, tags_size) )
-		#print(games_json[i].keys())
 
-
-		    #string waif_tag[2] = {"Nudity", "Anime"};
-		    #Game *waifu = g.insert_game( "Waifu Souls II", "Polygon Enix", "Balbe", waif_tag, 2 );
+print("}")
