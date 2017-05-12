@@ -14,8 +14,9 @@ private:
 public:
   static void initialize();
   static int get_size();
-  static void add_tag(string tg);
+  static int add_tag(string tg);
   static string get_tag(int i);
+  static int search(string);
 };
 
 #endif
