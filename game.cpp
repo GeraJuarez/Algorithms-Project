@@ -9,15 +9,15 @@ using namespace std;
 
 void Game::add_adj(rbnode<Game> *it, Queue<Game> *Q, rbnode<Game> *nil, int d, int t){
   if(it == nil || it == NULL) {
-    cout << "found nil" << endl;
+    // cout << "found nil" << endl;
     return;
   }
   // cout << "1" << endl;
   add_adj(it->left, Q, nil, d, t);
   // cout << "2" << endl;
-  cout << "Value: " << it->value->name << endl;
+  // cout << "Value: " << it->value->name << endl;
   if(it->value->d == -1 && d + it->key <= t){
-    cout << "if" << endl;
+    // cout << "if" << endl;
     Q->enqueue(it->value);
     // cout << "Queue Passed" << endl;
     it->value->d = d + it->key;
@@ -25,6 +25,27 @@ void Game::add_adj(rbnode<Game> *it, Queue<Game> *Q, rbnode<Game> *nil, int d, i
   // cout << "passed if" << endl;
   add_adj(it->right, Q, nil, d, t);
 }
+
+void Game::add_adj_min(rbnode<Game> *it, MinPQueue<Game> *Q, rbnode<Game> *nil, Game *g){
+  if(it == nil || it == NULL) {
+    // cout << "found nil" << endl;
+    return;
+  }
+  // cout << "1" << endl;
+  add_adj_min(it->left, Q, nil, g);
+  // cout << "2" << endl;
+  // cout << "Value: " << it->value->name << endl;
+  if(it->value->d == -1){
+    // cout << "if" << endl;
+    it->value->d = g->d + it->key;
+    it->value->pi = g;
+    Q->insert(it->value);
+    // cout << "Queue Passed" << endl;
+  }
+  // cout << "passed if" << endl;
+  add_adj_min(it->right, Q, nil, g);
+}
+
 Game::Game(string name, string developer, string publisher) {
   this->name = name;
   this->developer = developer;
@@ -54,12 +75,30 @@ Queue<Game> * Game::recommend(int threshold){
     R->enqueue(g);
     rbnode<Game> *it, *nil;
     it = g->adj->get_it(&nil);
-    nil = g->adj->get_nil();
     g->add_adj(it, &Q, nil, g->d, threshold);
     cout << Q.get_size() << endl;
   }
   return R;
 }
+
+void Game::dijkstra(Game *end, int n){
+  MinPQueue<Game> Q(n);
+  this->d = 0;
+  this->pi = NULL;
+  Q.insert(this);
+  while(!Q.is_empty()){
+    Game *g = Q.extract_min();
+    if(g == end){
+      return;
+    }
+    cout << "At: " << g->name << endl;
+    rbnode<Game> *it, *nil;
+    it = g->adj->get_it(&nil);
+    g->add_adj_min(it, &Q, nil, g);
+    // cout << Q.get_size() << endl;
+  }
+}
+
 void Game::set_tags( int *t, int s ) {
   this->tags_size = s;
   this->tags = t;
@@ -107,6 +146,13 @@ int Game::calculate_similarity( int *b, int size_b ) {
   int similarity = ( (double)hits / (double)size_a ) * 100; //Calculate porcentual similarity
 
   return 100 - similarity;
+}
+
+bool Game::operator>(const Game &b){
+  return this->d > b.d;
+}
+bool Game::operator<(const Game &b){
+  return this->d < b.d;
 }
 
 /*

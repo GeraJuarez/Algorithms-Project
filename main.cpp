@@ -72,5 +72,15 @@ int main() {
         cout << gg->name << endl;
     }
 
+    g.clean_games();
+
+    waifu->dijkstra(light, 2);
+    cout << "===== Dijkstra =====" << endl;
+    Game *ggg = light;
+    while(ggg != NULL){
+        cout << ggg->name << endl;
+        ggg = ggg->pi;
+    }
+
     return 0;
 }
