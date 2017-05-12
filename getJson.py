@@ -18,18 +18,21 @@ print("Graph g;")
 limit = 30
 at = 0
 for i in games:
+	if( "'" in games_json[i]['name'] or ":" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name']):
+		continue
 	if(at > limit):
 		break
 	if(len(games_json[i]['tags']) > 0):
 		at += 1
 		game = games_json[i]
 		print("//Inserting {}".format(game['name'] ) )
-		tags_size = len(game['tags']) - 1
+		tags_size = len(game['tags'])
 		tags_quotes = ['"{}"'.format(x) for x in list(game['tags'].keys())]
 		tags_list_as_string = ",".join(tags_quotes)
 		tags_string = "{" + tags_list_as_string + "}"
 		array_name = "_".join(game['name'].split())
 		print("string {}_tags[{}] = {};".format( array_name, tags_size, tags_string) )
 		print( 'g.insert_game("{}", "{}", "{}", {}_tags, {});'.format(game['name'], game['developer'], game['publisher'], array_name, tags_size) )
+		print( 'cout << "{} insert" << endl;'.format(at) )
 
 print("}")
