@@ -11,10 +11,9 @@ games_json = json.loads(data)
 games = games_json.keys()
 print('#include <iostream>\n#include <string>\n#include "graph.h"\n#include "game.h"\n#include "queue.h"\n#include "tags.h"')
 
-print('using namespace std;')
+print("using namespace std;")
 print("int main() {")
 
-using namespace std;)
 print("Graph g;")
 limit = 30
 at = 0
