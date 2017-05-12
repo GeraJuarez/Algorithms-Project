@@ -54,7 +54,7 @@ void Game::print_tags() {
 	for ( unsigned i = 0; i < this->tags_size - 1; i++ ) {
     cout << Tags::get_tag( this->tags[i] ) << ", ";
   }
-  cout << Tags::get_tag( this->tags[this->tags_size] ) << endl;
+  cout << Tags::get_tag( this->tags[this->tags_size - 1] ) << endl;
 }
 
 void Game::print_adj() {

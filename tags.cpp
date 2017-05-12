@@ -23,6 +23,10 @@ int Tags::add_tag(string tf) {
   return tags.size() - 1;
 }
 string Tags::get_tag(int i) {
+  if(i < 0 || i >= tags.size()){
+  //  cout << "ji" << endl;
+   return "";
+  }
   return tags.at(i);
 }
 int Tags::search(string s) {
