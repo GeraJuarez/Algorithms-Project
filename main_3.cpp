@@ -5,7 +5,7 @@
 #include "queue.h"
 #include "tags.h"
 using namespace std;
-int main() {
+int main_3() {
 Graph g;
 //Inserting Unturned
 string Unturned_tags[20] = {"Early Access","Free to Play","Survival","Zombies","Multiplayer","Open World","Adventure","Crafting","Action","First-Person","Co-op","Sandbox","Post-apocalyptic","Shooter","FPS","Singleplayer","Indie","Massively Multiplayer","Atmospheric","Casual"};
