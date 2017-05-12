@@ -411,4 +411,1244 @@ cout << "100 insert" << endl;
 string Aura_Kingdom_tags[20] = {"Anime","Free to Play","MMORPG","RPG","Massively Multiplayer","Adventure","Multiplayer","Fantasy","Open World","Casual","Action","JRPG","Cute","Nudity","PvE","Magic","Third Person","Online Co-Op","Co-op","Female Protagonist"};
 g.insert_game("Aura Kingdom", "X-Legend", "Aeria Games", Aura_Kingdom_tags, 20);
 cout << "101 insert" << endl;
+//Inserting Gear Up
+string Gear_Up_tags[20] = {"Free to Play","Multiplayer","Robots","Action","Shooter","Tanks","Building","PvP","Third Person","War","Massively Multiplayer","Sandbox","Indie","Strategy","Open World","Funny","Simulation","FPS","Adventure","Singleplayer"};
+g.insert_game("Gear Up", "Doctor Entertainment AB", "Doctor Entertainment AB", Gear_Up_tags, 20);
+cout << "102 insert" << endl;
+//Inserting The Lord of the Rings Online
+string The_Lord_of_the_Rings_Online_tags[20] = {"Free to Play","MMORPG","Massively Multiplayer","RPG","Fantasy","Open World","Adventure","Multiplayer","Based On A Novel","Action","Exploration","Character Customization","Story Rich","Co-op","Online Co-Op","Third Person","Survival","PvP","Singleplayer","Dark Fantasy"};
+g.insert_game("The Lord of the Rings Online", "Standing Stone Games, LLC", "Standing Stone Games, LLC", The_Lord_of_the_Rings_Online_tags, 20);
+cout << "103 insert" << endl;
+//Inserting Wallpaper Engine
+string Wallpaper_Engine_tags[11] = {"Early Access","Utilities","Design & Illustration","Software","Animation & Modeling","Anime","Memes","3D Vision","Illuminati","Zombies","Nudity"};
+g.insert_game("Wallpaper Engine", "Kristjan Skutta", "Kristjan Skutta", Wallpaper_Engine_tags, 11);
+cout << "104 insert" << endl;
+//Inserting Fishing Planet
+string Fishing_Planet_tags[20] = {"Early Access","Free to Play","Fishing","Simulation","Multiplayer","Sports","Massively Multiplayer","Relaxing","First-Person","Co-op","Realistic","Singleplayer","Open World","Online Co-Op","Family Friendly","Action","Adventure","Casual","MMORPG","FPS"};
+g.insert_game("Fishing Planet", "Fishing Planet LLC", "Fishing Planet LLC", Fishing_Planet_tags, 20);
+cout << "105 insert" << endl;
+//Inserting The Stanley Parable
+string The_Stanley_Parable_tags[20] = {"Comedy","Narration","Indie","First-Person","Walking Simulator","Satire","Funny","Psychological","Dynamic Narration","Adventure","Exploration","Singleplayer","Multiple Endings","Short","Choices Matter","Story Rich","Atmospheric","Surreal","Puzzle","Casual"};
+g.insert_game("The Stanley Parable", "Galactic Cafe", "Galactic Cafe", The_Stanley_Parable_tags, 20);
+cout << "106 insert" << endl;
+//Inserting Transformice
+string Transformice_tags[20] = {"Free to Play","Massively Multiplayer","Multiplayer","Funny","Platformer","2D","Casual","Adventure","Racing","Indie","Survival","Mouse only","Strategy","Cute","Online Co-Op","Family Friendly","Co-op","Puzzle","Comedy","Action"};
+g.insert_game("Transformice", "Atelier 801", "Atelier 801", Transformice_tags, 20);
+cout << "107 insert" << endl;
+//Inserting Space Engineers
+string Space_Engineers_tags[20] = {"Early Access","Space","Sandbox","Building","Multiplayer","Simulation","Survival","Physics","Open World","Crafting","Destruction","Indie","Futuristic","Co-op","Action","Singleplayer","Sci-fi","Strategy","Adventure","Atmospheric"};
+g.insert_game("Space Engineers", "Keen Software House", "Keen Software House", Space_Engineers_tags, 20);
+cout << "108 insert" << endl;
+//Inserting The Walking Dead
+string The_Walking_Dead_tags[20] = {"Zombies","Adventure","Story Rich","Point & Click","Episodic","Singleplayer","Horror","Mature","Choices Matter","Drama","Atmospheric","Comic Book","Choose Your Own Adventure","Post-apocalyptic","Survival","Quick-Time Events","Gore","Action","Third Person","Visual Novel"};
+g.insert_game("The Walking Dead", "Telltale Games", "Telltale Games", The_Walking_Dead_tags, 20);
+cout << "109 insert" << endl;
+//Inserting 7 Days to Die
+string 7_Days_to_Die_tags[20] = {"Early Access","Survival","Zombies","Open World","Crafting","Multiplayer","Sandbox","Building","Co-op","Action","Adventure","Horror","Survival Horror","FPS","Indie","Online Co-Op","RPG","Singleplayer","Gore","Voxel"};
+g.insert_game("7 Days to Die", "The Fun Pimps", "The Fun Pimps Entertainment LLC", 7_Days_to_Die_tags, 20);
+cout << "110 insert" << endl;
+//Inserting Fractured Space
+string Fractured_Space_tags[20] = {"Space","Multiplayer","Free to Play","PvP","MOBA","Action","Strategy","Sci-fi","Tactical","Shooter","Space Sim","Indie","Team-Based","Competitive","Co-op","Massively Multiplayer","Open World","Survival","Simulation","Sandbox"};
+g.insert_game("Fractured Space", "Edge Case Games Ltd.", "Edge Case Games Ltd.", Fractured_Space_tags, 20);
+cout << "111 insert" << endl;
+//Inserting Hotline Miami
+string Hotline_Miami_tags[20] = {"Great Soundtrack","Action","Indie","Violent","Top-Down","Fast-Paced","1980s","Gore","Pixel Graphics","Psychedelic","Retro","Surreal","Singleplayer","Difficult","Shooter","2D","Atmospheric","Music","Top-Down Shooter","Arcade"};
+g.insert_game("Hotline Miami", "Dennaton Games", "Devolver Digital", Hotline_Miami_tags, 20);
+cout << "112 insert" << endl;
+//Inserting Company of Heroes 2
+string Company_of_Heroes_2_tags[20] = {"Strategy","World War II","RTS","Multiplayer","Tactical","Historical","Singleplayer","Military","War","Co-op","Online Co-Op","Action","Tanks","Real-Time","Real-Time with Pause","Atmospheric","Base-Building","Great Soundtrack","Simulation","Adventure"};
+g.insert_game("Company of Heroes 2", "Relic Entertainment, Feral Interactive (Mac), Feral Interactive (Linux)", "SEGA, Feral Interactive (Mac), Feral Interactive (Linux)", Company_of_Heroes_2_tags, 20);
+cout << "113 insert" << endl;
+//Inserting Prison Architect
+string Prison_Architect_tags[20] = {"Simulation","Building","Strategy","Management","Sandbox","Singleplayer","Indie","2D","Resource Management","Economy","Base-Building","Top-Down","Moddable","City Builder","Replay Value","Casual","Comedy","Funny","Action","RTS"};
+g.insert_game("Prison Architect", "Introversion Software", "Introversion Software", Prison_Architect_tags, 20);
+cout << "114 insert" << endl;
+//Inserting WARMODE
+string WARMODE_tags[20] = {"Early Access","Free to Play","FPS","Multiplayer","Shooter","Action","First-Person","War","Massively Multiplayer","Co-op","Zombies","Singleplayer","Survival","Controller","Gore","Open World","Atmospheric","Online Co-Op","Adventure","RPG"};
+g.insert_game("WARMODE", "WARTEAM", "WARTEAM", WARMODE_tags, 20);
+cout << "115 insert" << endl;
+//Inserting ArcheBlade
+string ArcheBlade_tags[20] = {"Free to Play","Action","Anime","Fighting","Multiplayer","Indie","MOBA","Massively Multiplayer","Third Person","PvP","MMORPG","RPG","Team-Based","Hack and Slash","Adventure","Fantasy","Online Co-Op","Co-op","Female Protagonist","Third-Person Shooter"};
+g.insert_game("ArcheBlade", "CodeBrush Games", "Codebrush Games", ArcheBlade_tags, 20);
+cout << "116 insert" << endl;
+//Inserting Star Conflict
+string Star_Conflict_tags[20] = {"Free to Play","Space","Action","Multiplayer","Sci-fi","Massively Multiplayer","Simulation","Open World","Flight","Co-op","Space Sim","Third Person","Shooter","Competitive","PvP","Adventure","Atmospheric","Sandbox","MMORPG","VR"};
+g.insert_game("Star Conflict", "Star Gem Inc.", "Gaijin Entertainment", Star_Conflict_tags, 20);
+cout << "117 insert" << endl;
+//Inserting Fallen Earth Free2Play
+string Fallen_Earth_Free2Play_tags[20] = {"Free to Play","Survival","Multiplayer","Open World","Post-apocalyptic","Zombies","Massively Multiplayer","Crafting","RPG","Shooter","Adventure","FPS","Sandbox","Co-op","First-Person","Action","Singleplayer","MMORPG","Third-Person Shooter","Action RPG"};
+g.insert_game("Fallen Earth Free2Play", "Reloaded Productions", "Gamersfirst", Fallen_Earth_Free2Play_tags, 20);
+cout << "118 insert" << endl;
+//Inserting Dungeon Defenders
+string Dungeon_Defenders_tags[20] = {"Tower Defense","RPG","Strategy","Co-op","Action","Online Co-Op","Multiplayer","Fantasy","Indie","Third Person","Local Co-Op","Singleplayer","Local Multiplayer","4 Player Local","Split Screen","Action RPG","Loot","Hack and Slash","Third-Person Shooter","Survival"};
+g.insert_game("Dungeon Defenders", "Trendy Entertainment", "Trendy Entertainment", Dungeon_Defenders_tags, 20);
+cout << "119 insert" << endl;
+//Inserting Knight Online
+string Knight_Online_tags[20] = {"Free to Play","MMORPG","Massively Multiplayer","Action","Adventure","RPG","Action-Adventure","PvP","Open World","Multiplayer","War","Strategy","Survival","Action RPG","Casual","Character Customization","Fantasy","Anime","Horror","MOBA"};
+g.insert_game("Knight Online", "Noah System, Mgame", "NTTGame", Knight_Online_tags, 20);
+cout << "120 insert" << endl;
+//Inserting Besiege
+string Besiege_tags[20] = {"Early Access","Building","Sandbox","Physics","Destruction","Medieval","Singleplayer","Simulation","Strategy","Indie","Funny","Puzzle","Blood","Action","Casual","Open World","Third Person","Gore","Adventure","Difficult"};
+g.insert_game("Besiege", "Spiderling Studios", "Spiderling Studios", Besiege_tags, 20);
+cout << "121 insert" << endl;
+//Inserting Tree of Savior (English Ver.)
+string Tree_of_Savior_(English_Ver.)_tags[20] = {"Massively Multiplayer","MMORPG","RPG","Free to Play","Anime","Fantasy","Adventure","Cute","Great Soundtrack","Action","JRPG","Isometric","Nudity","Multiplayer","Open World","Memes","Action RPG","Hack and Slash","Co-op","Dating Sim"};
+g.insert_game("Tree of Savior (English Ver.)", "IMCGAMES Co.,Ltd.", "IMCGAMES Co.,Ltd.", Tree_of_Savior_(English_Ver.)_tags, 20);
+cout << "122 insert" << endl;
+//Inserting Sid Meiers Civilization VI
+string Sid_Meiers_Civilization_VI_tags[20] = {"Strategy","Turn-Based Strategy","Historical","Multiplayer","Singleplayer","Turn-Based","4X","Grand Strategy","Cartoony","War","Simulation","Tactical","Great Soundtrack","Moddable","Open World","Online Co-Op","Cartoon","Co-op","Casual","Memes"};
+g.insert_game("Sid Meiers Civilization VI", "Firaxis, Aspyr (Mac, Linux)", "2K, Aspyr (Mac, Linux)", Sid_Meiers_Civilization_VI_tags, 20);
+cout << "123 insert" << endl;
+//Inserting Titan Quest Anniversary Edition
+string Titan_Quest_Anniversary_Edition_tags[17] = {"RPG","Hack and Slash","Action","Multiplayer","Action RPG","Classic","Singleplayer","Loot","Atmospheric","Great Soundtrack","Mythology","Fantasy","Level Editor","Adventure","Co-op","Isometric","Open World"};
+g.insert_game("Titan Quest Anniversary Edition", "Iron Lore Entertainment, THQ Nordic", "THQ Nordic", Titan_Quest_Anniversary_Edition_tags, 17);
+cout << "124 insert" << endl;
+//Inserting F.E.A.R. 3
+string F.E.A.R._3_tags[19] = {"FPS","Horror","Action","Co-op","Multiplayer","Shooter","Singleplayer","Gore","First-Person","Online Co-Op","Bullet Time","Sci-fi","Adventure","Zombies","Mechs","Story Rich","Atmospheric","Short","Controller"};
+g.insert_game("F.E.A.R. 3", "Day 1 Studios", "Warner Bros. Interactive Entertainment", F.E.A.R._3_tags, 19);
+cout << "125 insert" << endl;
+//Inserting Dead by Daylight
+string Dead_by_Daylight_tags[20] = {"Horror","Survival Horror","Multiplayer","Co-op","Survival","Stealth","Atmospheric","Gore","Third Person","Action","Blood","First-Person","Online Co-Op","Team-Based","Psychological Horror","Violent","Strategy","Mature","Difficult","Comedy"};
+g.insert_game("Dead by Daylight", "Behaviour Digital Inc.", "Starbreeze Studios", Dead_by_Daylight_tags, 20);
+cout << "126 insert" << endl;
+//Inserting Line of Sight
+string Line_of_Sight_tags[20] = {"Free to Play","FPS","Action","Multiplayer","Shooter","Gun Customization","First-Person","Military","Open World","Singleplayer","Character Customization","Zombies","Survival","War","Controller","Strategy","Co-op","Adventure","Competitive","Horror"};
+g.insert_game("Line of Sight", "BlackSpot Entertainment", "BlackSpot Entertainment", Line_of_Sight_tags, 20);
+cout << "127 insert" << endl;
+//Inserting Awesomenauts
+string Awesomenauts_tags[20] = {"MOBA","Multiplayer","Platformer","2D","Indie","Action","Local Co-Op","Co-op","Great Soundtrack","Strategy","Controller","Sci-fi","Local Multiplayer","Space","Online Co-Op","Competitive","Cartoon","Side Scroller","Funny","Casual"};
+g.insert_game("Awesomenauts", "Ronimo Games", "Ronimo Games", Awesomenauts_tags, 20);
+cout << "128 insert" << endl;
+//Inserting Codename CURE
+string Codename_CURE_tags[20] = {"Early Access","Free to Play","Zombies","Multiplayer","Shooter","Survival","Co-op","FPS","Action","Online Co-Op","First-Person","Horror","Gore","Singleplayer","Open World","Mod","Massively Multiplayer","Adventure","Funny","Third Person"};
+g.insert_game("Codename CURE", "Hoobalugalar_X", "Hoobalugalar_X", Codename_CURE_tags, 20);
+cout << "129 insert" << endl;
+//Inserting Mass Effect 2
+string Mass_Effect_2_tags[20] = {"RPG","Sci-fi","Story Rich","Third-Person Shooter","Action","Space","Singleplayer","Great Soundtrack","Adventure","Cinematic","Choices Matter","Third Person","Female Protagonist","Shooter","Atmospheric","Character Customization","Romance","Real-Time with Pause","Action RPG","Classic"};
+g.insert_game("Mass Effect 2", "BioWare", "Electronic Arts", Mass_Effect_2_tags, 20);
+cout << "130 insert" << endl;
+//Inserting World of Tanks Blitz
+string World_of_Tanks_Blitz_tags[20] = {"Tanks","Free to Play","Action","Multiplayer","World War II","Massively Multiplayer","War","Strategy","Shooter","PvP","Simulation","Competitive","Online Co-Op","Military","Arcade","Open World","First-Person","FPS","Psychological Horror","Singleplayer"};
+g.insert_game("World of Tanks Blitz", "Wargaming Group Limited", "Wargaming Group Limited", World_of_Tanks_Blitz_tags, 20);
+cout << "131 insert" << endl;
+//Inserting Max Payne 3
+string Max_Payne_3_tags[20] = {"Action","Third-Person Shooter","Bullet Time","Multiplayer","Story Rich","Noir","Cinematic","Third Person","Shooter","Singleplayer","Great Soundtrack","Atmospheric","Violent","Adventure","Nudity","Linear","Dark","3D Vision","Open World","FPS"};
+g.insert_game("Max Payne 3", "Rockstar Studios", "Rockstar Games", Max_Payne_3_tags, 20);
+cout << "132 insert" << endl;
+//Inserting Kerbal Space Program
+string Kerbal_Space_Program_tags[20] = {"Space","Simulation","Sandbox","Physics","Science","Space Sim","Building","Indie","Moddable","Education","Singleplayer","Open World","Exploration","Funny","Sci-fi","Adventure","Strategy","Difficult","Replay Value","Comedy"};
+g.insert_game("Kerbal Space Program", "Squad", "Squad", Kerbal_Space_Program_tags, 20);
+cout << "133 insert" << endl;
+//Inserting DOOM
+string DOOM_tags[20] = {"FPS","Action","Gore","Demons","Shooter","First-Person","Multiplayer","Great Soundtrack","Singleplayer","Fast-Paced","Sci-fi","Classic","Horror","Atmospheric","Difficult","Remake","Zombies","Co-op","Blood","Memes"};
+g.insert_game("DOOM", "id Software", "Bethesda Softworks", DOOM_tags, 20);
+cout << "134 insert" << endl;
+//Inserting Papers, Please
+string Papers,_Please_tags[20] = {"Indie","Political","Simulation","Point & Click","Singleplayer","Dystopian ","Puzzle","Pixel Graphics","Retro","Multiple Endings","Atmospheric","Adventure","Strategy","Casual","Story Rich","2D","Great Soundtrack","Replay Value","Difficult","Surreal"};
+g.insert_game("Papers, Please", "3909", "3909", Papers,_Please_tags, 20);
+cout << "135 insert" << endl;
+//Inserting This War of Mine
+string This_War_of_Mine_tags[20] = {"Survival","War","Atmospheric","Singleplayer","Strategy","Simulation","Crafting","Choices Matter","Indie","Adventure","Stealth","2D","Post-apocalyptic","Side Scroller","Difficult","Point & Click","Open World","2.5D","Platformer","Rogue-like"};
+g.insert_game("This War of Mine", "11 bit studios", "11 bit studios", This_War_of_Mine_tags, 20);
+cout << "136 insert" << endl;
+//Inserting Surgeon Simulator 2013
+string Surgeon_Simulator_2013_tags[20] = {"Simulation","Comedy","Indie","Difficult","Intentionally Awkward Controls","Funny","Singleplayer","Gore","Physics","Blood","Action","First-Person","Casual","Dark Humor","Aliens","VR","Great Soundtrack","Puzzle","Realistic","Strategy"};
+g.insert_game("Surgeon Simulator 2013", "Bossa Studios", "Bossa Studios", Surgeon_Simulator_2013_tags, 20);
+cout << "137 insert" << endl;
+//Inserting SNOW
+string SNOW_tags[20] = {"Early Access","Sports","Free to Play","Multiplayer","Open World","Simulation","Indie","VR","Realistic","First-Person","Singleplayer","Adventure","Action","Controller","Exploration","Funny","Third Person","Massively Multiplayer","Memes","Casual"};
+g.insert_game("SNOW", "Poppermost Productions", "Poppermost Productions", SNOW_tags, 20);
+cout << "138 insert" << endl;
+//Inserting Alan Wake
+string Alan_Wake_tags[20] = {"Action","Horror","Adventure","Third Person","Story Rich","Atmospheric","Singleplayer","Psychological Horror","Thriller","Great Soundtrack","Episodic","Mystery","Third-Person Shooter","Dark","Survival Horror","Supernatural","Cinematic","Narration","Shooter","Survival"};
+g.insert_game("Alan Wake", "Remedy Entertainment", "Remedy Entertainment", Alan_Wake_tags, 20);
+cout << "139 insert" << endl;
+//Inserting Banished
+string Banished_tags[20] = {"City Builder","Strategy","Simulation","Survival","Indie","Singleplayer","Sandbox","Medieval","Relaxing","Resource Management","Economy","Difficult","Open World","Building","Procedural Generation","Management","Historical","Atmospheric","RTS","Casual"};
+g.insert_game("Banished", "Shining Rock Software LLC", "Shining Rock Software LLC", Banished_tags, 20);
+cout << "140 insert" << endl;
+//Inserting Medal of Honor
+string Medal_of_Honor_tags[16] = {"FPS","Action","Shooter","Military","First-Person","Multiplayer","Singleplayer","War","Modern","America","Realistic","Linear","Mature","Co-op","Stealth","Controller"};
+g.insert_game("Medal of Honor", "Electronic Arts", "Electronic Arts", Medal_of_Honor_tags, 16);
+cout << "141 insert" << endl;
+//Inserting Medal of Honor
+string Medal_of_Honor_tags[16] = {"FPS","Action","Shooter","Military","First-Person","Multiplayer","Singleplayer","War","Modern","America","Realistic","Linear","Mature","Co-op","Stealth","Controller"};
+g.insert_game("Medal of Honor", "Electronic Arts", "Electronic Arts", Medal_of_Honor_tags, 16);
+cout << "142 insert" << endl;
+//Inserting SPORE
+string SPORE_tags[20] = {"Simulation","Sandbox","Open World","Space","Exploration","Adventure","God Game","Singleplayer","Aliens","Strategy","Sci-fi","Funny","Science","Family Friendly","Action","RPG","Multiplayer","Casual","Comedy","RTS"};
+g.insert_game("SPORE", "Maxis™", "Electronic Arts", SPORE_tags, 20);
+cout << "143 insert" << endl;
+//Inserting Riders of Icarus
+string Riders_of_Icarus_tags[20] = {"Free to Play","MMORPG","RPG","Massively Multiplayer","Dragons","Adventure","Open World","Fantasy","Multiplayer","Action","Character Customization","Fighting","PvP","Action RPG","Co-op","FPS","First-Person","Anime","Singleplayer","Survival"};
+g.insert_game("Riders of Icarus", "WeMade", "Nexon America", Riders_of_Icarus_tags, 20);
+cout << "144 insert" << endl;
+//Inserting Mass Effect
+string Mass_Effect_tags[20] = {"RPG","Sci-fi","Story Rich","Action","Third-Person Shooter","Singleplayer","Space","Great Soundtrack","Third Person","Female Protagonist","Shooter","Choices Matter","Adventure","Open World","Real-Time with Pause","Atmospheric","Character Customization","Romance","Action RPG","Dark Fantasy"};
+g.insert_game("Mass Effect", "BioWare", "Electronic Arts", Mass_Effect_tags, 20);
+cout << "145 insert" << endl;
+//Inserting Mark of the Ninja
+string Mark_of_the_Ninja_tags[20] = {"Stealth","Platformer","Ninja","Indie","2D","Action","Singleplayer","Side Scroller","Adventure","Atmospheric","Assassin","Controller","Replay Value","Cartoon","Puzzle","Short","Dark","Strategy","Story Rich","Casual"};
+g.insert_game("Mark of the Ninja", "Klei Entertainment", "Microsoft Studios", Mark_of_the_Ninja_tags, 20);
+cout << "146 insert" << endl;
+//Inserting DCS World
+string DCS_World_tags[20] = {"Simulation","Free to Play","Flight","Military","Multiplayer","Realistic","War","Open World","TrackIR","Action","Shooter","Co-op","Singleplayer","Tanks","Sandbox","FPS","First-Person","Massively Multiplayer","Strategy","VR"};
+g.insert_game("DCS World", "Eagle Dynamics", "The Fighter Collection", DCS_World_tags, 20);
+cout << "147 insert" << endl;
+//Inserting Jet Set Radio
+string Jet_Set_Radio_tags[20] = {"Great Soundtrack","Classic","Action","Platformer","3D Platformer","Singleplayer","Colorful","Arcade","Stylized","Music","Third Person","Atmospheric","Sports","Controller","Parkour","Anime","Retro","Open World","Cult Classic","Female Protagonist"};
+g.insert_game("Jet Set Radio", "Blit Software", "Sega", Jet_Set_Radio_tags, 20);
+cout << "148 insert" << endl;
+//Inserting Trine Enchanted Edition
+string Trine_Enchanted_Edition_tags[20] = {"Platformer","Fantasy","Puzzle","Indie","Action","Local Co-Op","Co-op","Adventure","Puzzle-Platformer","Great Soundtrack","Singleplayer","Online Co-Op","Physics","Multiplayer","Female Protagonist","Casual","Atmospheric","3D Vision","2D","Local Multiplayer"};
+g.insert_game("Trine Enchanted Edition", "Frozenbyte", "Frozenbyte", Trine_Enchanted_Edition_tags, 20);
+cout << "149 insert" << endl;
+//Inserting Sanctum 2
+string Sanctum_2_tags[20] = {"Tower Defense","FPS","Co-op","Strategy","Action","Indie","Sci-fi","Online Co-Op","Multiplayer","First-Person","Shooter","Singleplayer","Survival","Female Protagonist","Great Soundtrack","Futuristic","Aliens","Funny","RPG","Adventure"};
+g.insert_game("Sanctum 2", "Coffee Stain Studios", "Coffee Stain Studios", Sanctum_2_tags, 20);
+cout << "150 insert" << endl;
+//Inserting Outlast
+string Outlast_tags[20] = {"Horror","Atmospheric","First-Person","Survival Horror","Survival","Gore","Adventure","Action","Singleplayer","Indie","Psychological Horror","Dark","Stealth","Nudity","Parkour","Difficult","3D Vision","Walking Simulator","Sci-fi","FPS"};
+g.insert_game("Outlast", "Red Barrels", "Red Barrels", Outlast_tags, 20);
+cout << "151 insert" << endl;
+//Inserting POSTAL 2
+string POSTAL_2_tags[20] = {"Dark Humor","Violent","Action","FPS","Open World","Gore","Classic","Sandbox","Singleplayer","Adventure","Comedy","Mature","First-Person","Funny","Multiplayer","Shooter","Indie","Satire","Moddable","Family Friendly"};
+g.insert_game("POSTAL 2", "Running With Scissors", "Running With Scissors", POSTAL_2_tags, 20);
+cout << "152 insert" << endl;
+//Inserting Last Man Standing
+string Last_Man_Standing_tags[20] = {"Free to Play","Survival","Multiplayer","Action","Open World","Shooter","Massively Multiplayer","First-Person","PvP","Adventure","Third-Person Shooter","FPS","Violent","Strategy","Co-op","Indie","Third Person","Singleplayer","Zombies","Funny"};
+g.insert_game("Last Man Standing", "Free Reign Entertainment, Free Reign Entertainment", "Free Reign Entertainment", Last_Man_Standing_tags, 20);
+cout << "153 insert" << endl;
+//Inserting DARK SOULS III
+string DARK_SOULS_III_tags[20] = {"Dark Fantasy","Difficult","Atmospheric","RPG","Lore-Rich","Third Person","Exploration","Story Rich","PvP","Co-op","Action RPG","Adventure","Open World","Action","Great Soundtrack","Multiplayer","Singleplayer","Character Customization","Horror","Replay Value"};
+g.insert_game("DARK SOULS III", "FromSoftware, Inc.", "FromSoftware, Inc., BANDAI NAMCO Entertainment", DARK_SOULS_III_tags, 20);
+cout << "154 insert" << endl;
+//Inserting Emily is Away
+string Emily_is_Away_tags[20] = {"Free to Play","Story Rich","Singleplayer","Indie","Simulation","Choices Matter","Interactive Fiction","Casual","Retro","Choose Your Own Adventure","Visual Novel","Dating Sim","Pixel Graphics","Adventure","Romance","Short","2D","Funny","Illuminati","Text-Based"};
+g.insert_game("Emily is Away", "Kyle Seeley", "Kyle Seeley", Emily_is_Away_tags, 20);
+cout << "155 insert" << endl;
+//Inserting L.A. Noire
+string L.A._Noire_tags[20] = {"Detective","Crime","Open World","Noir","Adventure","Third Person","Story Rich","Mystery","Action","Cinematic","Singleplayer","Atmospheric","Investigation","Mature","Strategy","Puzzle","Nudity","Third-Person Shooter","3D Vision","RPG"};
+g.insert_game("L.A. Noire", "Team Bondi, Rockstar Leeds", "Rockstar Games", L.A._Noire_tags, 20);
+cout << "156 insert" << endl;
+//Inserting Scribblenauts Unlimited
+string Scribblenauts_Unlimited_tags[20] = {"Puzzle","Casual","Adventure","Sandbox","Family Friendly","Singleplayer","2D","Funny","Comedy","Open World","Strategy","Education","Cute","Fantasy","Moddable","Platformer","Multiplayer","Action","Replay Value","Indie"};
+g.insert_game("Scribblenauts Unlimited", "5th Cell Media", "Warner Bros. Interactive Entertainment", Scribblenauts_Unlimited_tags, 20);
+cout << "157 insert" << endl;
+//Inserting Grand Theft Auto III
+string Grand_Theft_Auto_III_tags[20] = {"Open World","Action","Classic","Third Person","Singleplayer","Sandbox","Crime","Driving","Shooter","Adventure","Third-Person Shooter","Atmospheric","Great Soundtrack","Violent","Silent Protagonist","Story Rich","Mature","Multiplayer","Moddable","Satire"};
+g.insert_game("Grand Theft Auto III", "Rockstar Games", "Rockstar Games", Grand_Theft_Auto_III_tags, 20);
+cout << "158 insert" << endl;
+//Inserting Sleeping Dogs
+string Sleeping_Dogs_tags[20] = {"Open World","Action","Martial Arts","Third Person","Crime","Adventure","Fighting","Sandbox","Singleplayer","Story Rich","Great Soundtrack","Driving","RPG","Third-Person Shooter","Parkour","Violent","Shooter","Atmospheric","Multiplayer","Racing"};
+g.insert_game("Sleeping Dogs", "United Front Games", "Square Enix", Sleeping_Dogs_tags, 20);
+cout << "159 insert" << endl;
+//Inserting Guns of Icarus Online
+string Guns_of_Icarus_Online_tags[20] = {"Steampunk","Team-Based","Multiplayer","Co-op","Action","Tactical","Indie","Competitive","Simulation","Adventure","Flight","FPS","Strategy","Online Co-Op","PvP","First-Person","Shooter","Class-Based","Kickstarter","Massively Multiplayer"};
+g.insert_game("Guns of Icarus Online", "Muse Games", "Muse Games", Guns_of_Icarus_Online_tags, 20);
+cout << "160 insert" << endl;
+//Inserting Metro 2033 Redux
+string Metro_2033_Redux_tags[20] = {"Post-apocalyptic","Atmospheric","Action","FPS","Story Rich","Singleplayer","Stealth","Horror","First-Person","Shooter","Adventure","Remake","Survival Horror","Based On A Novel","Survival","Mature","Gore","Classic","Multiplayer","Open World"};
+g.insert_game("Metro 2033 Redux", "4A GAMES", "Deep Silver", Metro_2033_Redux_tags, 20);
+cout << "161 insert" << endl;
+//Inserting Stronghold Kingdoms
+string Stronghold_Kingdoms_tags[15] = {"Strategy","Free to Play","Medieval","Massively Multiplayer","Multiplayer","City Builder","Real-Time","Building","RTS","Action","RPG","Singleplayer","Open World","PvP","War"};
+g.insert_game("Stronghold Kingdoms", "FireFly Studios", "FireFly Studios", Stronghold_Kingdoms_tags, 15);
+cout << "162 insert" << endl;
+//Inserting Enclave
+string Enclave_tags[15] = {"RPG","Action","Third Person","Fantasy","Hack and Slash","Adventure","Classic","Singleplayer","Multiplayer","First-Person","Action RPG","Female Protagonist","Open World","Magic","Great Soundtrack"};
+g.insert_game("Enclave", "Starbreeze", "Topware Interactive", Enclave_tags, 15);
+cout << "163 insert" << endl;
+//Inserting Strife
+string Strife_tags[20] = {"Free to Play","MOBA","Multiplayer","Action","Strategy","RPG","RTS","Massively Multiplayer","Co-op","Fantasy","Online Co-Op","Casual","Adventure","MMORPG","PvP","Open World","Survival","Singleplayer","Zombies","Team-Based"};
+g.insert_game("Strife", "S2 Games", "S2 Games", Strife_tags, 20);
+cout << "164 insert" << endl;
+//Inserting Super MNC
+string Super_MNC_tags[20] = {"Free to Play","Action","Multiplayer","MOBA","Shooter","Third-Person Shooter","Strategy","Funny","Indie","Sports","Competitive","Character Customization","Massively Multiplayer","Co-op","Third Person","Comedy","First-Person","Adventure","Class-Based","Singleplayer"};
+g.insert_game("Super MNC", "Uber Entertainment", "Uber Entertainment", Super_MNC_tags, 20);
+cout << "165 insert" << endl;
+//Inserting AirMech
+string AirMech_tags[20] = {"Early Access","Free to Play","Strategy","Multiplayer","Mechs","MOBA","Action","RTS","Indie","Online Co-Op","Robots","Sci-fi","Co-op","Massively Multiplayer","Shooter","PvP","Adventure","Singleplayer","Fast-Paced","RPG"};
+g.insert_game("AirMech", "Carbon Games", "Carbon Games", AirMech_tags, 20);
+cout << "166 insert" << endl;
+//Inserting Rise of the Tomb Raider
+string Rise_of_the_Tomb_Raider_tags[20] = {"Adventure","Lara Croft","Action","Female Protagonist","Third Person","Exploration","Singleplayer","Action-Adventure","Survival","Open World","Story Rich","Puzzle","Atmospheric","Stealth","Third-Person Shooter","Shooter","Parkour","Great Soundtrack","RPG","Quick-Time Events"};
+g.insert_game("Rise of the Tomb Raider", "Crystal Dynamics", "Square Enix", Rise_of_the_Tomb_Raider_tags, 20);
+cout << "167 insert" << endl;
+//Inserting Risk of Rain
+string Risk_of_Rain_tags[20] = {"Rogue-like","Indie","Platformer","Action","Pixel Graphics","Great Soundtrack","Online Co-Op","Difficult","Perma Death","Co-op","2D","Local Co-Op","Rogue-lite","Multiplayer","RPG","Singleplayer","Replay Value","Survival","Sci-fi","Side Scroller"};
+g.insert_game("Risk of Rain", "Hopoo Games, LLC", "Chucklefish", Risk_of_Rain_tags, 20);
+cout << "168 insert" << endl;
+//Inserting Thief
+string Thief_tags[20] = {"Stealth","Action","Adventure","First-Person","Singleplayer","Dark","Steampunk","Atmospheric","Horror","Parkour","Assassin","Open World","Heist","RPG","Medieval","FPS","Nudity","Fantasy","Strategy","3D Vision"};
+g.insert_game("Thief", "Eidos-Montréal, Feral Interactive (Mac)", "Square Enix, Feral Interactive (Mac)", Thief_tags, 20);
+cout << "169 insert" << endl;
+//Inserting FEZ
+string FEZ_tags[20] = {"Platformer","Indie","Puzzle","Exploration","Pixel Graphics","Great Soundtrack","Singleplayer","Adventure","Casual","Mystery","2D","Puzzle-Platformer","Relaxing","Atmospheric","Cute","Retro","2.5D","Controller","Metroidvania","Action"};
+g.insert_game("FEZ", "Polytron Corporation", "Trapdoor", FEZ_tags, 20);
+cout << "170 insert" << endl;
+//Inserting AudioSurf
+string AudioSurf_tags[20] = {"Music","Indie","Rhythm","Casual","Music-Based Procedural Generation","Colorful","Arcade","Singleplayer","Relaxing","Score Attack","Local Co-Op","Procedural Generation","Puzzle","Replay Value","Great Soundtrack","Local Multiplayer","Co-op","Racing","Fast-Paced","Action"};
+g.insert_game("AudioSurf", "Dylan Fitterer", "", AudioSurf_tags, 20);
+cout << "171 insert" << endl;
+//Inserting A.V.A. Alliance of Valiant Arms
+string A.V.A._Alliance_of_Valiant_Arms_tags[20] = {"Free to Play","FPS","Action","Multiplayer","Shooter","Zombies","First-Person","Co-op","Massively Multiplayer","Singleplayer","Online Co-Op","Adventure","Survival","Strategy","Open World","Funny","Gore","Military","Horror","Controller"};
+g.insert_game("A.V.A. Alliance of Valiant Arms", "Red Duck Inc.", "En Masse Entertainment", A.V.A._Alliance_of_Valiant_Arms_tags, 20);
+cout << "172 insert" << endl;
+//Inserting XCOM 2
+string XCOM_2_tags[20] = {"Strategy","Turn-Based","Aliens","Tactical","Turn-Based Strategy","Sci-fi","Turn-Based Tactics","Character Customization","Difficult","Singleplayer","Multiplayer","Action","Atmospheric","Futuristic","Perma Death","Moddable","RPG","Great Soundtrack","Co-op","Open World"};
+g.insert_game("XCOM 2", "Firaxis, Feral Interactive (Mac), Feral Interactive (Linux)", "2K, Feral Interactive (Mac), Feral Interactive (Linux)", XCOM_2_tags, 20);
+cout << "173 insert" << endl;
+//Inserting Subnautica
+string Subnautica_tags[20] = {"Early Access","Survival","Open World","Exploration","Underwater","Crafting","First-Person","Adventure","Base-Building","Singleplayer","Sandbox","Sci-fi","Aliens","Atmospheric","Horror","Action","Indie","FPS","Voxel","Multiplayer"};
+g.insert_game("Subnautica", "Unknown Worlds Entertainment", "Unknown Worlds Entertainment", Subnautica_tags, 20);
+cout << "174 insert" << endl;
+//Inserting Crusader Kings II
+string Crusader_Kings_II_tags[20] = {"Grand Strategy","Strategy","Medieval","Historical","Simulation","Sandbox","RPG","Multiplayer","Replay Value","Singleplayer","Politics","Diplomacy","Real-Time with Pause","Moddable","Political","Character Customization","Great Soundtrack","RTS","Education","Co-op"};
+g.insert_game("Crusader Kings II", "Paradox Development Studio", "Paradox Interactive", Crusader_Kings_II_tags, 20);
+cout << "175 insert" << endl;
+//Inserting SpeedRunners
+string SpeedRunners_tags[20] = {"Multiplayer","Racing","Local Multiplayer","Competitive","Platformer","Indie","Fast-Paced","2D","Action","4 Player Local","Funny","Parkour","Local Co-Op","Sports","Controller","Level Editor","Co-op","Singleplayer","Arcade","Superhero"};
+g.insert_game("SpeedRunners", "DoubleDutch Games", "tinyBuild", SpeedRunners_tags, 20);
+cout << "176 insert" << endl;
+//Inserting How to Survive
+string How_to_Survive_tags[20] = {"Zombies","Survival","Crafting","Action","Co-op","RPG","Multiplayer","Online Co-Op","Local Co-Op","Adventure","Hack and Slash","Survival Horror","Open World","Singleplayer","Third Person","Post-apocalyptic","Gore","Comedy","Indie","Funny"};
+g.insert_game("How to Survive", "Eko Software", "505 Games", How_to_Survive_tags, 20);
+cout << "177 insert" << endl;
+//Inserting STAR WARS Republic Commando
+string STAR_WARS_Republic_Commando_tags[20] = {"Star Wars","Action","FPS","Tactical","Sci-fi","Singleplayer","Shooter","First-Person","Multiplayer","Classic","Great Soundtrack","Atmospheric","Space","Adventure","Team-Based","Co-op","War","Strategy","Dark","Futuristic"};
+g.insert_game("STAR WARS Republic Commando", "LucasArts", "LucasArts, Lucasfilm, Disney Interactive", STAR_WARS_Republic_Commando_tags, 20);
+cout << "178 insert" << endl;
+//Inserting The Sims 3
+string The_Sims_3_tags[20] = {"Simulation","Character Customization","Sandbox","Singleplayer","Casual","Building","Funny","Moddable","RPG","Comedy","Family Friendly","Romance","Adventure","Replay Value","Multiplayer","Great Soundtrack","Nudity","Strategy","Action","Female Protagonist"};
+g.insert_game("The Sims 3", "The Sims Studio", "Electronic Arts", The_Sims_3_tags, 20);
+cout << "179 insert" << endl;
+//Inserting Torchlight
+string Torchlight_tags[18] = {"RPG","Action RPG","Hack and Slash","Dungeon Crawler","Fantasy","Singleplayer","Loot","Indie","Moddable","Action","Adventure","Cartoon","Magic","Female Protagonist","Isometric","Steampunk","Exploration","Co-op"};
+g.insert_game("Torchlight", "Runic Games", "Runic Games", Torchlight_tags, 18);
+cout << "180 insert" << endl;
+//Inserting Mad Max
+string Mad_Max_tags[20] = {"Action","Open World","Post-apocalyptic","Driving","Survival","Adventure","Singleplayer","Third Person","Racing","Exploration","Atmospheric","Story Rich","Third-Person Shooter","RPG","Sandbox","Shooter","War","Multiplayer","Sci-fi","First-Person"};
+g.insert_game("Mad Max", "Avalanche Studios, Feral Interactive (Mac/Linux)", "Warner Bros. Interactive Entertainment, Feral Interactive (Mac/Linux)", Mad_Max_tags, 20);
+cout << "181 insert" << endl;
+//Inserting Game Dev Tycoon
+string Game_Dev_Tycoon_tags[20] = {"Simulation","Management","Indie","Strategy","Casual","Singleplayer","2D","Economy","Moddable","Replay Value","Funny","Sandbox","GameMaker","Point & Click","Difficult","Great Soundtrack","Touch-Friendly","Comedy","Adventure","Isometric"};
+g.insert_game("Game Dev Tycoon", "Greenheart Games", "Greenheart Games", Game_Dev_Tycoon_tags, 20);
+cout << "182 insert" << endl;
+//Inserting Dead Space 2
+string Dead_Space_2_tags[20] = {"Horror","Action","Sci-fi","Space","Third Person","Survival Horror","Gore","Third-Person Shooter","Atmospheric","Multiplayer","Singleplayer","Shooter","Aliens","Adventure","Story Rich","Co-op","Survival","Futuristic","Blood","3D Vision"};
+g.insert_game("Dead Space 2", "Visceral Games", "Electronic Arts", Dead_Space_2_tags, 20);
+cout << "183 insert" << endl;
+//Inserting Assassins Creed IV Black Flag
+string Assassins_Creed_IV_Black_Flag_tags[20] = {"Pirates","Open World","Action","Adventure","Assassin","Third Person","Stealth","Naval","Parkour","Multiplayer","Historical","Story Rich","Singleplayer","Exploration","Action-Adventure","Atmospheric","RPG","Mature","Sandbox","Action RPG"};
+g.insert_game("Assassins Creed IV Black Flag", "Ubisoft Montreal", "Ubisoft", Assassins_Creed_IV_Black_Flag_tags, 20);
+cout << "184 insert" << endl;
+//Inserting RAGE
+string RAGE_tags[20] = {"FPS","Post-apocalyptic","Action","Open World","Shooter","Racing","First-Person","Singleplayer","Atmospheric","Adventure","Co-op","Sci-fi","Multiplayer","RPG","Gore","Horror","Crafting","Linear","Online Co-Op","Survival"};
+g.insert_game("RAGE", "id Software", "Bethesda Softworks", RAGE_tags, 20);
+cout << "185 insert" << endl;
+//Inserting WAKFU
+string WAKFU_tags[20] = {"Free to Play","Massively Multiplayer","Turn-Based Strategy","RPG","MMORPG","Turn-Based","Anime","Strategy","Adventure","Tactical","Open World","Multiplayer","Fantasy","Isometric","Sandbox","2D","Co-op","Cartoon","Indie","Casual"};
+g.insert_game("WAKFU", "Ankama Studio", "Ankama Games", WAKFU_tags, 20);
+cout << "186 insert" << endl;
+//Inserting Moonbase Alpha
+string Moonbase_Alpha_tags[20] = {"Simulation","Space","Free to Play","Multiplayer","Online Co-Op","Strategy","Adventure","Funny","Open World","Walking Simulator","Co-op","Sandbox","Realistic","Memes","Third Person","Massively Multiplayer","Comedy","Puzzle","Singleplayer","First-Person"};
+g.insert_game("Moonbase Alpha", "Virtual Heroes, Army Game Studio", "NASA", Moonbase_Alpha_tags, 20);
+cout << "187 insert" << endl;
+//Inserting Deus Ex  Game of the Year Edition
+string Deus_Ex_Game_of_the_Year_Edition_tags[20] = {"Cyberpunk","RPG","Stealth","Classic","FPS","Sci-fi","Action","Cult Classic","Singleplayer","Dystopian ","Inventory Management","Story Rich","Great Soundtrack","Moddable","First-Person","Atmospheric","Conspiracy","Action RPG","Shooter","Adventure"};
+g.insert_game("Deus Ex  Game of the Year Edition", "Ion Storm", "Square Enix", Deus_Ex_Game_of_the_Year_Edition_tags, 20);
+cout << "188 insert" << endl;
+//Inserting Rogue Legacy
+string Rogue_Legacy_tags[20] = {"Rogue-like","Platformer","Indie","Action","Singleplayer","2D","Metroidvania","RPG","Rogue-lite","Pixel Graphics","Side Scroller","Controller","Fantasy","Exploration","Medieval","Difficult","Adventure","Replay Value","Procedural Generation","Perma Death"};
+g.insert_game("Rogue Legacy", "Cellar Door Games", "Cellar Door Games", Rogue_Legacy_tags, 20);
+cout << "189 insert" << endl;
+//Inserting Sakura Clicker
+string Sakura_Clicker_tags[17] = {"Anime","Free to Play","Nudity","Mature","Clicker","Female Protagonist","Singleplayer","Casual","Sexual Content","Indie","Fantasy","Funny","Memes","2D","Adventure","RPG","Multiplayer"};
+g.insert_game("Sakura Clicker", "Winged Cloud", "Winged Cloud", Sakura_Clicker_tags, 17);
+cout << "190 insert" << endl;
+//Inserting Serious Sam Fusion 2017 (beta)
+string Serious_Sam_Fusion_2017_(beta)_tags[6] = {"Action","Gore","Violent","Indie","FPS","First-Person"};
+g.insert_game("Serious Sam Fusion 2017 (beta)", "Croteam", "Devolver Digital, Croteam", Serious_Sam_Fusion_2017_(beta)_tags, 6);
+cout << "191 insert" << endl;
+//Inserting F.E.A.R.
+string F.E.A.R._tags[18] = {"Horror","FPS","Action","Bullet Time","Classic","Singleplayer","Atmospheric","Shooter","Gore","First-Person","Story Rich","Sci-fi","Dark","Psychological Horror","Great Soundtrack","Survival Horror","Adventure","Multiplayer"};
+g.insert_game("F.E.A.R.", "Monolith Productions, Inc., Timegate", "Warner Bros. Interactive Entertainment", F.E.A.R._tags, 18);
+cout << "192 insert" << endl;
+//Inserting ArcheAge
+string ArcheAge_tags[20] = {"Massively Multiplayer","Free to Play","MMORPG","RPG","Open World","Sandbox","Fantasy","Adventure","PvP","Multiplayer","PvE","Action","Pirates","Exploration","Crafting","Walking Simulator","Nudity","Third Person","Gambling","Co-op"};
+g.insert_game("ArcheAge", "XLGAMES", "Trion Worlds", ArcheAge_tags, 20);
+cout << "193 insert" << endl;
+//Inserting Killing Floor 2
+string Killing_Floor_2_tags[20] = {"Zombies","Co-op","Gore","FPS","Action","Survival","Horror","Online Co-Op","Multiplayer","Shooter","First-Person","Team-Based","Survival Horror","Great Soundtrack","Atmospheric","Difficult","Singleplayer","Indie","Funny","Open World"};
+g.insert_game("Killing Floor 2", "Tripwire Interactive", "Tripwire Interactive", Killing_Floor_2_tags, 20);
+cout << "194 insert" << endl;
+//Inserting Everlasting Summer
+string Everlasting_Summer_tags[20] = {"Visual Novel","Story Rich","Free to Play","Anime","Great Soundtrack","Choices Matter","Singleplayer","Mature","Romance","Multiple Endings","Nudity","Replay Value","Adventure","Dating Sim","2D","Mystery","Indie","Comedy","Classic","Casual"};
+g.insert_game("Everlasting Summer", "Soviet Games", "Soviet Games", Everlasting_Summer_tags, 20);
+cout << "195 insert" << endl;
+//Inserting Brutal Legend
+string Brutal_Legend_tags[20] = {"Action","Comedy","Adventure","Open World","Great Soundtrack","Music","Strategy","Third Person","Hack and Slash","RTS","Funny","Fantasy","Singleplayer","Multiplayer","Atmospheric","Gothic","Action-Adventure","Beat 'em up","Action RPG","RPG"};
+g.insert_game("Brutal Legend", "Double Fine Productions", "Double Fine Productions", Brutal_Legend_tags, 20);
+cout << "196 insert" << endl;
+//Inserting Ragnarok Online 2
+string Ragnarok_Online_2_tags[10] = {"Free to Play","RPG","Anime","Massively Multiplayer","MMORPG","Multiplayer","JRPG","Adventure","Open World","Action"};
+g.insert_game("Ragnarok Online 2", "Gravity, Inc.", "Gravity Interactive", Ragnarok_Online_2_tags, 10);
+cout << "197 insert" << endl;
+//Inserting Source Filmmaker
+string Source_Filmmaker_tags[19] = {"Animation & Modeling","Video Production","Free to Play","Software","Movie","Sandbox","Difficult","Action","Funny","Comedy","Singleplayer","Moddable","Multiplayer","Anime","Horror","First-Person","Crafting","Character Customization","Great Soundtrack"};
+g.insert_game("Source Filmmaker", "Valve", "Valve", Source_Filmmaker_tags, 19);
+cout << "198 insert" << endl;
+//Inserting Darkest Dungeon
+string Darkest_Dungeon_tags[20] = {"Turn-Based Combat","Dark Fantasy","RPG","Dungeon Crawler","Rogue-like","Lovecraftian","Difficult","Turn-Based","Perma Death","Atmospheric","Singleplayer","Indie","Strategy","Dark","2D","Horror","Fantasy","Rogue-lite","Gothic","Kickstarter"};
+g.insert_game("Darkest Dungeon", "Red Hook Studios", "Red Hook Studios", Darkest_Dungeon_tags, 20);
+cout << "199 insert" << endl;
+//Inserting To the Moon
+string To_the_Moon_tags[20] = {"Story Rich","Indie","Great Soundtrack","Adventure","RPGMaker","Interactive Fiction","Singleplayer","Pixel Graphics","RPG","Short","Romance","Funny","2D","Retro","Psychological","Linear","Casual","Female Protagonist","Cute","Walking Simulator"};
+g.insert_game("To the Moon", "Freebird Games", "Freebird Games", To_the_Moon_tags, 20);
+cout << "200 insert" << endl;
+//Inserting Supreme Commander 2
+string Supreme_Commander_2_tags[14] = {"Strategy","RTS","Sci-fi","Multiplayer","Robots","Co-op","Singleplayer","Grand Strategy","Base-Building","Real-Time","Action","Military","Futuristic","Tactical"};
+g.insert_game("Supreme Commander 2", "Gas Powered Games", "Square Enix", Supreme_Commander_2_tags, 14);
+cout << "201 insert" << endl;
+//Inserting Braid
+string Braid_tags[20] = {"Puzzle","Platformer","Indie","Time Manipulation","2D","Singleplayer","Puzzle-Platformer","Great Soundtrack","Difficult","Time Travel","Casual","Strategy","Classic","Atmospheric","Story Rich","Adventure","Side Scroller","Action","Controller","Fantasy"};
+g.insert_game("Braid", "Number None", "Number None", Braid_tags, 20);
+cout << "202 insert" << endl;
+//Inserting Planetary Annihilation
+string Planetary_Annihilation_tags[20] = {"Strategy","RTS","Space","Multiplayer","Sci-fi","Robots","Futuristic","Grand Strategy","Kickstarter","Real-Time","Indie","Tactical","Crowdfunded","Singleplayer","Stylized","Co-op","Action","Sandbox","Great Soundtrack","Adventure"};
+g.insert_game("Planetary Annihilation", "Uber Entertainment", "Uber Entertainment", Planetary_Annihilation_tags, 20);
+cout << "203 insert" << endl;
+//Inserting Dragons and Titans
+string Dragons_and_Titans_tags[20] = {"Free to Play","Dragons","MOBA","Multiplayer","RPG","Action","Adventure","Singleplayer","Indie","Massively Multiplayer","Co-op","Fantasy","PvP","Strategy","Survival","Open World","MMORPG","FPS","Sandbox","Atmospheric"};
+g.insert_game("Dragons and Titans", "Wyrmbyte", "Versus Evil	", Dragons_and_Titans_tags, 20);
+cout << "204 insert" << endl;
+//Inserting Europa Universalis IV
+string Europa_Universalis_IV_tags[20] = {"Grand Strategy","Strategy","Historical","Simulation","Real-Time with Pause","Sandbox","Military","Multiplayer","Replay Value","Singleplayer","Diplomacy","Education","Political","Moddable","Open World","RTS","Great Soundtrack","Medieval","Co-op","4X"};
+g.insert_game("Europa Universalis IV", "Paradox Development Studio", "Paradox Interactive", Europa_Universalis_IV_tags, 20);
+cout << "205 insert" << endl;
+//Inserting The Way of Life Free Edition
+string The_Way_of_Life_Free_Edition_tags[20] = {"Free to Play","Walking Simulator","Indie","First-Person","Singleplayer","Adventure","Short","Simulation","Multiplayer","Atmospheric","Open World","Survival","Great Soundtrack","Story Rich","Action","Family Friendly","Funny","Illuminati","Strategy","VR"};
+g.insert_game("The Way of Life Free Edition", "Fabio Ferrara, Davide Caio, Nicolò Azzolini, Antonio Carcagnì, Luigi Di Guida, Tommaso Vita", "CyberCoconut, Hexagon Hive", The_Way_of_Life_Free_Edition_tags, 20);
+cout << "206 insert" << endl;
+//Inserting Tabletop Simulator
+string Tabletop_Simulator_tags[20] = {"Simulation","Board Game","Multiplayer","Sandbox","Physics","Casual","Indie","Strategy","Card Game","RPG","Chess","Moddable","Singleplayer","Co-op","Comedy","Online Co-Op","VR","Relaxing","Adventure","Local Multiplayer"};
+g.insert_game("Tabletop Simulator", "Berserk Games", "Berserk Games", Tabletop_Simulator_tags, 20);
+cout << "207 insert" << endl;
+//Inserting Transistor
+string Transistor_tags[20] = {"Great Soundtrack","Female Protagonist","Indie","Cyberpunk","Sci-fi","Story Rich","Action RPG","RPG","Singleplayer","Isometric","Atmospheric","Action","Narration","Adventure","Strategy","Tactical","Turn-Based","Hack and Slash","Short","2D"};
+g.insert_game("Transistor", "Supergiant Games", "Supergiant Games", Transistor_tags, 20);
+cout << "208 insert" << endl;
+//Inserting Sanctum
+string Sanctum_tags[18] = {"Tower Defense","Strategy","FPS","Action","Co-op","Indie","Sci-fi","First-Person","Multiplayer","Online Co-Op","Female Protagonist","Shooter","Casual","Singleplayer","Great Soundtrack","Adventure","Futuristic","Tactical"};
+g.insert_game("Sanctum", "Coffee Stain Studios", "Coffee Stain Studios", Sanctum_tags, 18);
+cout << "209 insert" << endl;
+//Inserting School of Dragons
+string School_of_Dragons_tags[20] = {"Free to Play","Dragons","Adventure","Multiplayer","Massively Multiplayer","RPG","Open World","MMORPG","Family Friendly","Fantasy","Action","Online Co-Op","Singleplayer","Simulation","First-Person","Co-op","Survival","PvP","Funny","Atmospheric"};
+g.insert_game("School of Dragons", "JumpStart Games, Inc.", "JumpStart Games, Inc.", School_of_Dragons_tags, 20);
+cout << "210 insert" << endl;
+//Inserting Tom Clancys The Division
+string Tom_Clancys_The_Division_tags[20] = {"Open World","Third-Person Shooter","Multiplayer","Action","Co-op","Shooter","RPG","Post-apocalyptic","Online Co-Op","Survival","Tactical","Massively Multiplayer","Third Person","MMORPG","Adventure","Atmospheric","Singleplayer","Stealth","Sandbox","FPS"};
+g.insert_game("Tom Clancys The Division", "Massive Entertainment", "Ubisoft", Tom_Clancys_The_Division_tags, 20);
+cout << "211 insert" << endl;
+//Inserting Only If
+string Only_If_tags[20] = {"Free to Play","Adventure","First-Person","Horror","Puzzle","Indie","Singleplayer","Walking Simulator","Survival","Multiplayer","Surreal","Atmospheric","Comedy","Action","FPS","Open World","Casual","Simulation","Co-op","Funny"};
+g.insert_game("Only If", "Creability", "Creability", Only_If_tags, 20);
+cout << "212 insert" << endl;
+//Inserting Aliens vs. Predator
+string Aliens_vs._Predator_tags[20] = {"Action","FPS","Aliens","Sci-fi","Multiplayer","Horror","Shooter","Singleplayer","First-Person","Stealth","Gore","Atmospheric","Survival","Co-op","Survival Horror","Hunting","Adventure","Blood","Strategy","Online Co-Op"};
+g.insert_game("Aliens vs. Predator", "Rebellion", "SEGA", Aliens_vs._Predator_tags, 20);
+cout << "213 insert" << endl;
+//Inserting Guns and Robots
+string Guns_and_Robots_tags[20] = {"Free to Play","Action","Robots","Multiplayer","Shooter","Third-Person Shooter","Massively Multiplayer","Sandbox","Indie","FPS","Open World","RPG","Co-op","Building","First-Person","Strategy","Survival","Adventure","Singleplayer","Casual"};
+g.insert_game("Guns and Robots", "Masthead Studios Ltd", "Masthead Studios Ltd, Thegamewallstudios, Gamigo AG", Guns_and_Robots_tags, 20);
+cout << "214 insert" << endl;
+//Inserting Broforce
+string Broforce_tags[20] = {"America","Action","Pixel Graphics","Co-op","2D","Platformer","Indie","Local Co-Op","Multiplayer","Side Scroller","Retro","Shooter","Funny","Gore","Comedy","Local Multiplayer","Adventure","Arcade","Casual","Simulation"};
+g.insert_game("Broforce", "Free Lives", "Devolver Digital", Broforce_tags, 20);
+cout << "215 insert" << endl;
+//Inserting SimCity 4 Deluxe Edition
+string SimCity_4_Deluxe_Edition_tags[13] = {"Simulation","City Builder","Strategy","Management","Sandbox","Moddable","Classic","Singleplayer","Building","Economy","Real-Time with Pause","Multiplayer","Great Soundtrack"};
+g.insert_game("SimCity 4 Deluxe Edition", "EA - Maxis, Aspyr (Mac)", "Electronic Arts, Aspyr (Mac)", SimCity_4_Deluxe_Edition_tags, 13);
+cout << "216 insert" << endl;
+//Inserting Just Cause 3
+string Just_Cause_3_tags[20] = {"Open World","Action","Destruction","Third-Person Shooter","Adventure","Singleplayer","Shooter","Third Person","Sandbox","Exploration","Physics","Multiplayer","Funny","Atmospheric","Comedy","Great Soundtrack","Parkour","Moddable","Co-op","RPG"};
+g.insert_game("Just Cause 3", "Avalanche Studios", "Square Enix", Just_Cause_3_tags, 20);
+cout << "217 insert" << endl;
+//Inserting Elsword
+string Elsword_tags[20] = {"Free to Play","Anime","RPG","Action","Adventure","Massively Multiplayer","MMORPG","Fighting","Multiplayer","Side Scroller","PvP","Online Co-Op","Cute","Hack and Slash","Fantasy","2D","Casual","Co-op","Beat 'em up","Platformer"};
+g.insert_game("Elsword", "KOG", "KOG Games", Elsword_tags, 20);
+cout << "218 insert" << endl;
+//Inserting Panzar
+string Panzar_tags[20] = {"Free to Play","Action","Multiplayer","Massively Multiplayer","PvP","RPG","Fantasy","MOBA","Third Person","Co-op","Gore","PvE","MMORPG","Open World","Survival","Adventure","Crafting","Nudity","Horror","Action RPG"};
+g.insert_game("Panzar", "Panzar Studio", "OVALIS INVESTMENTS LIMITED", Panzar_tags, 20);
+cout << "219 insert" << endl;
+//Inserting Arma 2
+string Arma_2_tags[20] = {"Simulation","Military","Action","Multiplayer","Tactical","Realistic","FPS","Open World","Strategy","Shooter","First-Person","Moddable","Co-op","War","Singleplayer","Third Person","Sandbox","Zombies","Third-Person Shooter","TrackIR"};
+g.insert_game("Arma 2", "Bohemia Interactive", "Bohemia Interactive", Arma_2_tags, 20);
+cout << "220 insert" << endl;
+//Inserting Sniper Elite 3
+string Sniper_Elite_3_tags[20] = {"Sniper","Action","Stealth","World War II","Shooter","Multiplayer","Adventure","Co-op","Third-Person Shooter","Tactical","Third Person","War","Singleplayer","Open World","Online Co-Op","Strategy","Gore","FPS","Atmospheric","Simulation"};
+g.insert_game("Sniper Elite 3", "Rebellion", "Rebellion", Sniper_Elite_3_tags, 20);
+cout << "221 insert" << endl;
+//Inserting The Darkness II
+string The_Darkness_II_tags[20] = {"FPS","Action","Gore","Shooter","Singleplayer","Co-op","Dark","Horror","First-Person","Atmospheric","Multiplayer","Short","Story Rich","Violent","Multiple Endings","Comic Book","Supernatural","Adventure","Nudity","Funny"};
+g.insert_game("The Darkness II", "Digital Extremes", "2K Games", The_Darkness_II_tags, 20);
+cout << "222 insert" << endl;
+//Inserting FINAL FANTASY VII
+string FINAL_FANTASY_VII_tags[20] = {"JRPG","RPG","Classic","Singleplayer","Turn-Based","Story Rich","Great Soundtrack","Fantasy","Retro","Adventure","Sci-fi","Open World","Atmospheric","Cyberpunk","Exploration","Party-Based RPG","Dystopian ","Strategy","1990's","Turn-Based Strategy"};
+g.insert_game("FINAL FANTASY VII", "Square Enix", "Square Enix", FINAL_FANTASY_VII_tags, 20);
+cout << "223 insert" << endl;
+//Inserting World of Goo
+string World_of_Goo_tags[20] = {"Puzzle","Indie","Physics","Singleplayer","Great Soundtrack","Casual","2D","Comedy","Cute","Building","Satire","Atmospheric","Funny","Touch-Friendly","Classic","Strategy","Surreal","Difficult","Story Rich","Family Friendly"};
+g.insert_game("World of Goo", "2D BOY", "2D BOY ", World_of_Goo_tags, 20);
+cout << "224 insert" << endl;
+//Inserting NEOTOKYO
+string NEOTOKYO_tags[20] = {"Free to Play","Multiplayer","FPS","Cyberpunk","Shooter","Action","Anime","Great Soundtrack","Mod","Tactical","Sci-fi","First-Person","Team-Based","Futuristic","Co-op","Singleplayer","Realistic","Indie","Adventure","Zombies"};
+g.insert_game("NEOTOKYO", "STUDIO RADI-8", "NEOTOKYO [MOD]", NEOTOKYO_tags, 20);
+cout << "225 insert" << endl;
+//Inserting Contagion
+string Contagion_tags[20] = {"Zombies","Survival","Action","Co-op","Horror","FPS","Multiplayer","Online Co-Op","Indie","First-Person","Shooter","Adventure","Open World","Survival Horror","PvP","Atmospheric","Gore","Singleplayer","Competitive","Local Co-Op"};
+g.insert_game("Contagion", "Monochrome, Inc", "Monochrome, Inc", Contagion_tags, 20);
+cout << "226 insert" << endl;
+//Inserting Pixel Puzzles Ultimate
+string Pixel_Puzzles_Ultimate_tags[5] = {"Free to Play","Casual","Puzzle","Indie","Simulation"};
+g.insert_game("Pixel Puzzles Ultimate", "Decaying Logic", "KISS ltd", Pixel_Puzzles_Ultimate_tags, 5);
+cout << "227 insert" << endl;
+//Inserting Endless Legend
+string Endless_Legend_tags[20] = {"Strategy","4X","Turn-Based","Fantasy","Turn-Based Strategy","Hex Grid","Multiplayer","Singleplayer","Indie","RPG","Great Soundtrack","Sci-fi","Adventure","Medieval","Tactical","Grand Strategy","Exploration","Open World","Sandbox","Atmospheric"};
+g.insert_game("Endless Legend", "AMPLITUDE Studios", "SEGA", Endless_Legend_tags, 20);
+cout << "228 insert" << endl;
+//Inserting DARK SOULS II
+string DARK_SOULS_II_tags[20] = {"RPG","Dark Fantasy","Difficult","Action RPG","Action","Adventure","Exploration","Atmospheric","Co-op","Multiplayer","Fantasy","PvP","Third Person","Replay Value","Open World","Medieval","Dark","Online Co-Op","Singleplayer","Horror"};
+g.insert_game("DARK SOULS II", "FromSoftware, Inc", "BANDAI NAMCO Entertainment, FromSoftware, Inc", DARK_SOULS_II_tags, 20);
+cout << "229 insert" << endl;
+//Inserting GRID 2
+string GRID_2_tags[18] = {"Racing","Sports","Multiplayer","Arcade","Driving","Simulation","Singleplayer","Local Multiplayer","Split Screen","Action","Controller","Open World","Realistic","Co-op","Local Co-Op","First-Person","Casual","3D Vision"};
+g.insert_game("GRID 2", "Codemasters Racing, Feral Interactive (Mac)", "Codemasters, Feral Interactive (Mac)", GRID_2_tags, 18);
+cout << "230 insert" << endl;
+//Inserting BrainBread 2
+string BrainBread_2_tags[20] = {"Early Access","Free to Play","Zombies","Multiplayer","Action","Survival","FPS","Co-op","Shooter","Gore","Adventure","Horror","Indie","Open World","Great Soundtrack","RPG","Action RPG","Funny","Classic","Arcade"};
+g.insert_game("BrainBread 2", "Reperio Studios", "Reperio Studios", BrainBread_2_tags, 20);
+cout << "231 insert" << endl;
+//Inserting Hero Siege
+string Hero_Siege_tags[20] = {"RPG","Rogue-like","Indie","Action","Hack and Slash","Adventure","Local Co-Op","Pixel Graphics","Multiplayer","Co-op","2D","Top-Down","Controller","Rogue-lite","Twin Stick Shooter","Action RPG","Difficult","Massively Multiplayer","Singleplayer","Bullet Hell"};
+g.insert_game("Hero Siege", "Elias Viglione, Jussi Kukkonen", "Panic Art Studios", Hero_Siege_tags, 20);
+cout << "232 insert" << endl;
+//Inserting Worms Revolution
+string Worms_Revolution_tags[20] = {"Strategy","Multiplayer","Funny","Turn-Based Strategy","Turn-Based","Comedy","Local Co-Op","Local Multiplayer","Physics","Singleplayer","2.5D","Tactical","Action","Co-op","Family Friendly","Team-Based","Classic","Side Scroller","4 Player Local","2D"};
+g.insert_game("Worms Revolution", "Team17 Digital Ltd", "Team17 Digital Ltd", Worms_Revolution_tags, 20);
+cout << "233 insert" << endl;
+//Inserting Resident Evil 6 / Biohazard 6
+string Resident_Evil_6_/_Biohazard_6_tags[20] = {"Action","Zombies","Co-op","Third-Person Shooter","Horror","Adventure","Co-op Campaign","Online Co-Op","Third Person","Quick-Time Events","Shooter","Multiplayer","Local Co-Op","Survival","Singleplayer","Split Screen","Survival Horror","Atmospheric","Female Protagonist","Casual"};
+g.insert_game("Resident Evil 6 / Biohazard 6", "Capcom", "Capcom", Resident_Evil_6_/_Biohazard_6_tags, 20);
+cout << "234 insert" << endl;
+//Inserting MechWarrior Online
+string MechWarrior_Online_tags[20] = {"Free to Play","Mechs","Action","Multiplayer","Shooter","Robots","Simulation","Sci-fi","FPS","Strategy","Massively Multiplayer","Tactical","PvP","First-Person","War","Walking Simulator","Survival","Team-Based","Singleplayer","Open World"};
+g.insert_game("MechWarrior Online", "Piranha Games Inc.", "Piranha Games Inc.", MechWarrior_Online_tags, 20);
+cout << "235 insert" << endl;
+//Inserting Stronghold HD
+string Stronghold_HD_tags[16] = {"Strategy","Medieval","RTS","Classic","Base-Building","Simulation","Economy","City Builder","Multiplayer","Resource Management","Singleplayer","Historical","Great Soundtrack","Atmospheric","2D","Isometric"};
+g.insert_game("Stronghold HD", "FireFly Studios", "FireFly Studios", Stronghold_HD_tags, 16);
+cout << "236 insert" << endl;
+//Inserting Golf With Your Friends
+string Golf_With_Your_Friends_tags[20] = {"Early Access","Mini Golf","Multiplayer","Golf","Sports","Casual","Family Friendly","Indie","Funny","Co-op","Singleplayer","Great Soundtrack","Simulation","Strategy","Physics","Difficult","Action","Memes","Illuminati","Massively Multiplayer"};
+g.insert_game("Golf With Your Friends", "Blacklight Interactive®", "Blacklight Interactive®", Golf_With_Your_Friends_tags, 20);
+cout << "237 insert" << endl;
+//Inserting Red Faction Guerrilla Steam Edition
+string Red_Faction_Guerrilla_Steam_Edition_tags[18] = {"Open World","Action","Destruction","Physics","Sci-fi","Third Person","Mars","Third-Person Shooter","Multiplayer","Singleplayer","Sandbox","Shooter","Adventure","Atmospheric","Co-op","Great Soundtrack","Controller","FPS"};
+g.insert_game("Red Faction Guerrilla Steam Edition", "Volition, Reactor Zero, THQ Nordic", "THQ Nordic", Red_Faction_Guerrilla_Steam_Edition_tags, 18);
+cout << "238 insert" << endl;
+//Inserting Dungeonland
+string Dungeonland_tags[20] = {"Free to Play","Action","Online Co-Op","Casual","Local Co-Op","Co-op","Hack and Slash","Multiplayer","Local Multiplayer","Funny","Fantasy","Adventure","Controller","Singleplayer","Indie","Comedy","Third Person","Action RPG","Strategy","Open World"};
+g.insert_game("Dungeonland", "Critical Studio", "Paradox Interactive", Dungeonland_tags, 20);
+cout << "239 insert" << endl;
+//Inserting Mortal Kombat Komplete Edition
+string Mortal_Kombat_Komplete_Edition_tags[20] = {"Fighting","Gore","Action","Multiplayer","Violent","Classic","Co-op","Arcade","Blood","Singleplayer","Local Co-Op","Competitive","Local Multiplayer","2D Fighter","Replay Value","2.5D","Remake","Beat 'em up","2D","Family Friendly"};
+g.insert_game("Mortal Kombat Komplete Edition", "NetherRealm Studios, High Voltage Software", "Warner Bros. Interactive Entertainment", Mortal_Kombat_Komplete_Edition_tags, 20);
+cout << "240 insert" << endl;
+//Inserting Poker Night at the Inventory
+string Poker_Night_at_the_Inventory_tags[18] = {"Card Game","Casual","Comedy","Singleplayer","Funny","Strategy","Sports","Gambling","Simulation","Conversation","Touch-Friendly","Multiplayer","Indie","First-Person","Point & Click","Memes","Action","Free to Play"};
+g.insert_game("Poker Night at the Inventory", "Telltale Games", "", Poker_Night_at_the_Inventory_tags, 18);
+cout << "241 insert" << endl;
+//Inserting Duke Nukem Forever
+string Duke_Nukem_Forever_tags[20] = {"FPS","Action","Nudity","Shooter","Aliens","Singleplayer","Comedy","Sci-fi","Multiplayer","First-Person","Mature","Funny","Gore","Dark Humor","Classic","Adventure","Linear","Memes","Atmospheric","3D Vision"};
+g.insert_game("Duke Nukem Forever", "Gearbox Software", "2K Games", Duke_Nukem_Forever_tags, 20);
+cout << "242 insert" << endl;
+//Inserting Knights and Merchants
+string Knights_and_Merchants_tags[10] = {"Strategy","Medieval","City Builder","Simulation","RTS","Classic","Multiplayer","Singleplayer","Historical","Great Soundtrack"};
+g.insert_game("Knights and Merchants", "Topware Interactive", "Topware Interactive", Knights_and_Merchants_tags, 10);
+cout << "243 insert" << endl;
+//Inserting Iron Snout
+string Iron_Snout_tags[20] = {"Free to Play","Action","Fighting","Indie","Funny","Multiplayer","Gore","2D","2D Fighter","Survival","Cartoon","Fast-Paced","Beat 'em up","Singleplayer","Arcade","Violent","Cute","Blood","Casual","Difficult"};
+g.insert_game("Iron Snout", "SnoutUp", "SnoutUp", Iron_Snout_tags, 20);
+cout << "244 insert" << endl;
+//Inserting No Time To Explain Remastered
+string No_Time_To_Explain_Remastered_tags[18] = {"Indie","Casual","Action","Adventure","Platformer","Comedy","Funny","2D","Multiplayer","Difficult","Great Soundtrack","Local Co-Op","Singleplayer","Local Multiplayer","Time Travel","Remake","Memes","Gore"};
+g.insert_game("No Time To Explain Remastered", "tinyBuild", "tinyBuild", No_Time_To_Explain_Remastered_tags, 18);
+cout << "245 insert" << endl;
+//Inserting Vindictus
+string Vindictus_tags[18] = {"Free to Play","Action","Massively Multiplayer","Hack and Slash","RPG","MMORPG","Adventure","Third Person","Co-op","Character Customization","Action RPG","PvP","Multiplayer","Fast-Paced","Nudity","Fantasy","Horror","Singleplayer"};
+g.insert_game("Vindictus", "Nexon", "Nexon America Inc.", Vindictus_tags, 18);
+cout << "246 insert" << endl;
+//Inserting Train Simulator
+string Train_Simulator_tags[20] = {"Simulation","Trains","Singleplayer","Driving","Realistic","Casual","Relaxing","Open World","Building","Moddable","Sandbox","TrackIR","Atmospheric","Level Editor","Fishing","Action","City Builder","Strategy","VR","Massively Multiplayer"};
+g.insert_game("Train Simulator", "Dovetail Games", "Dovetail Games - Trains", Train_Simulator_tags, 20);
+cout << "247 insert" << endl;
+//Inserting Super Hexagon
+string Super_Hexagon_tags[19] = {"Difficult","Indie","Great Soundtrack","Fast-Paced","Arcade","Rhythm","Singleplayer","Action","Score Attack","Minimalist","Music","2D","Psychedelic","Casual","Colorful","Replay Value","Controller","Puzzle","Bullet Hell"};
+g.insert_game("Super Hexagon", "Terry Cavanagh", "Terry Cavanagh", Super_Hexagon_tags, 19);
+cout << "248 insert" << endl;
+//Inserting Antichamber
+string Antichamber_tags[20] = {"Puzzle","First-Person","Indie","Surreal","Exploration","Singleplayer","Abstract","Adventure","Nonlinear","Atmospheric","Difficult","Minimalist","Psychedelic","Psychological","Colorful","Great Soundtrack","Metroidvania","Platformer","Sci-fi","Replay Value"};
+g.insert_game("Antichamber", "Alexander Bruce", "Demruth", Antichamber_tags, 20);
+cout << "249 insert" << endl;
+//Inserting Bloons TD Battles
+string Bloons_TD_Battles_tags[14] = {"Free to Play","Tower Defense","Strategy","Multiplayer","Action","Competitive","Co-op","Casual","Funny","PvP","Massively Multiplayer","2D","Singleplayer","Family Friendly"};
+g.insert_game("Bloons TD Battles", "Ninja Kiwi", "Ninja Kiwi", Bloons_TD_Battles_tags, 14);
+cout << "250 insert" << endl;
+//Inserting Assassins Creed III
+string Assassins_Creed_III_tags[20] = {"Adventure","Action","Open World","Assassin","Parkour","Stealth","Third Person","Historical","Multiplayer","America","Singleplayer","Story Rich","Atmospheric","Hunting","Action-Adventure","Sandbox","Alternate History","Conspiracy","Controller","Casual"};
+g.insert_game("Assassins Creed III", "Ubisoft Montreal", "Ubisoft", Assassins_Creed_III_tags, 20);
+cout << "251 insert" << endl;
+//Inserting VVVVVV
+string VVVVVV_tags[20] = {"Platformer","Indie","Great Soundtrack","Difficult","Retro","2D","Singleplayer","Pixel Graphics","Exploration","Action","Sci-fi","Adventure","Metroidvania","Short","Puzzle","Open World","Minimalist","Space","Classic","Casual"};
+g.insert_game("VVVVVV", "Terry Cavanagh", "Terry Cavanagh", VVVVVV_tags, 20);
+cout << "252 insert" << endl;
+//Inserting SpaceChem
+string SpaceChem_tags[16] = {"Puzzle","Difficult","Programming","Indie","Singleplayer","Great Soundtrack","Sci-fi","Science","Casual","Illuminati","2D","Simulation","Space","Strategy","Touch-Friendly","Education"};
+g.insert_game("SpaceChem", "Zachtronics", "Zachtronics", SpaceChem_tags, 16);
+cout << "253 insert" << endl;
+//Inserting The Escapists
+string The_Escapists_tags[20] = {"Pixel Graphics","Strategy","Crafting","Singleplayer","Simulation","2D","Indie","Action","Survival","Difficult","Adventure","Puzzle","RPG","Funny","Top-Down","Sandbox","Comedy","Multiplayer","Rogue-like","Co-op"};
+g.insert_game("The Escapists", "Mouldy Toof Studios", "Team17 Digital Ltd", The_Escapists_tags, 20);
+cout << "254 insert" << endl;
+//Inserting Super Crate Box
+string Super_Crate_Box_tags[20] = {"Free to Play","Indie","Platformer","Action","Pixel Graphics","2D","Shooter","Multiplayer","Arcade","Singleplayer","Difficult","Retro","GameMaker","Fast-Paced","Controller","Co-op","Online Co-Op","Great Soundtrack","Rogue-like","Family Friendly"};
+g.insert_game("Super Crate Box", "Vlambeer", "Vlambeer", Super_Crate_Box_tags, 20);
+cout << "255 insert" << endl;
+//Inserting WildStar
+string WildStar_tags[20] = {"Free to Play","Massively Multiplayer","MMORPG","Open World","RPG","Sci-fi","PvP","PvE","Multiplayer","Character Customization","Action","Funny","Action-Adventure","Adventure","Co-op","Fantasy","Building","Cartoony","FPS","Survival"};
+g.insert_game("WildStar", "Carbine Studios", "NCSOFT", WildStar_tags, 20);
+cout << "256 insert" << endl;
+//Inserting Crysis
+string Crysis_tags[20] = {"FPS","Action","Sci-fi","Stealth","Singleplayer","Shooter","Aliens","Open World","Benchmark","First-Person","Multiplayer","Futuristic","Adventure","Atmospheric","Story Rich","Classic","Sandbox","Destruction","Great Soundtrack","Moddable"};
+g.insert_game("Crysis", "Crytek", "Electronic Arts", Crysis_tags, 20);
+cout << "257 insert" << endl;
+//Inserting Two Worlds Epic Edition
+string Two_Worlds_Epic_Edition_tags[11] = {"RPG","Open World","Fantasy","Third Person","Multiplayer","Adventure","Action","Singleplayer","Medieval","Action RPG","Story Rich"};
+g.insert_game("Two Worlds Epic Edition", "Reality Pump Studios", "Topware Interactive", Two_Worlds_Epic_Edition_tags, 11);
+cout << "258 insert" << endl;
+//Inserting Deadlight
+string Deadlight_tags[20] = {"Zombies","Platformer","Indie","Action","Post-apocalyptic","Adventure","Atmospheric","Singleplayer","Side Scroller","Parkour","2D","Survival","Horror","2.5D","Puzzle","Great Soundtrack","Short","Story Rich","Controller","Noir"};
+g.insert_game("Deadlight", "Tequila Works, S.L.", "Microsoft Studios", Deadlight_tags, 20);
+cout << "259 insert" << endl;
+//Inserting Tropico 5
+string Tropico_5_tags[20] = {"Strategy","Simulation","City Builder","Sandbox","Multiplayer","Economy","Politics","Singleplayer","Resource Management","Co-op","Comedy","Management","RPG","Historical","Great Soundtrack","Atmospheric","RTS","Open World","Adventure","Funny"};
+g.insert_game("Tropico 5", "Haemimont Games", "Kalypso Media Digital", Tropico_5_tags, 20);
+cout << "260 insert" << endl;
+//Inserting State of Decay
+string State_of_Decay_tags[20] = {"Zombies","Survival","Open World","Action","Post-apocalyptic","RPG","Third Person","Singleplayer","Sandbox","Base-Building","Simulation","Exploration","Adventure","Multiplayer","Horror","Third-Person Shooter","Survival Horror","Atmospheric","Indie","Co-op"};
+g.insert_game("State of Decay", "Undead Labs", "Microsoft Studios", State_of_Decay_tags, 20);
+cout << "261 insert" << endl;
+//Inserting Elite Dangerous
+string Elite_Dangerous_tags[20] = {"Space Sim","Space","Open World","Exploration","Sci-fi","Massively Multiplayer","Simulation","Multiplayer","Action","First-Person","Sandbox","Adventure","Online Co-Op","Trading","Singleplayer","RPG","Difficult","Strategy","VR","TrackIR"};
+g.insert_game("Elite Dangerous", "Frontier Developments", "Frontier Developments", Elite_Dangerous_tags, 20);
+cout << "262 insert" << endl;
+//Inserting Lara Croft and the Guardian of Light
+string Lara_Croft_and_the_Guardian_of_Light_tags[20] = {"Action","Adventure","Co-op","Local Co-Op","Puzzle","Lara Croft","Female Protagonist","Platformer","Online Co-Op","Puzzle-Platformer","Singleplayer","Multiplayer","Third Person","Twin Stick Shooter","Local Multiplayer","Arcade","Isometric","Exploration","Difficult","Controller"};
+g.insert_game("Lara Croft and the Guardian of Light", "Crystal Dynamics", "Square Enix", Lara_Croft_and_the_Guardian_of_Light_tags, 20);
+cout << "263 insert" << endl;
+//Inserting The Long Dark
+string The_Long_Dark_tags[20] = {"Early Access","Survival","Open World","Atmospheric","First-Person","Exploration","Adventure","Singleplayer","Sandbox","Crafting","Simulation","Indie","Post-apocalyptic","Walking Simulator","Survival Horror","Strategy","Action","Female Protagonist","Horror","Difficult"};
+g.insert_game("The Long Dark", "Hinterland Studio Inc.", "Hinterland Studio Inc.", The_Long_Dark_tags, 20);
+cout << "264 insert" << endl;
+//Inserting Defy Gravity Extended
+string Defy_Gravity_Extended_tags[20] = {"Indie","Platformer","Puzzle","Space","Action","2D","Casual","Singleplayer","Difficult","Great Soundtrack","Sci-fi","Female Protagonist","Physics","Anime","Multiplayer","Shooter","Retro","Arcade","Open World","Horror"};
+g.insert_game("Defy Gravity Extended", "Paul Fisch", "Fish Factory Games", Defy_Gravity_Extended_tags, 20);
+cout << "265 insert" << endl;
+//Inserting Shadowrun Returns
+string Shadowrun_Returns_tags[20] = {"RPG","Cyberpunk","Turn-Based","Isometric","Sci-fi","Indie","Strategy","Singleplayer","Tactical","Kickstarter","Moddable","Adventure","CRPG","Crowdfunded","Story Rich","Atmospheric","Fantasy","Turn-Based Strategy","Female Protagonist","Dystopian "};
+g.insert_game("Shadowrun Returns", "Harebrained Schemes", "Harebrained Holdings", Shadowrun_Returns_tags, 20);
+cout << "266 insert" << endl;
+//Inserting Blender
+string Blender_tags[12] = {"Animation & Modeling","Game Development","Free to Play","Video Production","Design & Illustration","Software","Singleplayer","GameMaker","Action","Difficult","Anime","Casual"};
+g.insert_game("Blender", "Blender Foundation", "Blender Foundation", Blender_tags, 12);
+cout << "267 insert" << endl;
+//Inserting Two Worlds II
+string Two_Worlds_II_tags[20] = {"RPG","Open World","Fantasy","Third Person","Exploration","Singleplayer","Multiplayer","Co-op","Crafting","Action RPG","Adventure","Story Rich","Action","Hack and Slash","Great Soundtrack","Dark Fantasy","Inventory Management","Magic","Atmospheric","Sandbox"};
+g.insert_game("Two Worlds II", "Reality Pump Studios", "Topware Interactive", Two_Worlds_II_tags, 20);
+cout << "268 insert" << endl;
+//Inserting The Wolf Among Us
+string The_Wolf_Among_Us_tags[20] = {"Adventure","Detective","Episodic","Point & Click","Story Rich","Noir","Mature","Comic Book","Singleplayer","Atmospheric","Mystery","Choose Your Own Adventure","Dark","Cinematic","Fantasy","Quick-Time Events","Great Soundtrack","Nudity","Cartoony","Action"};
+g.insert_game("The Wolf Among Us", "Telltale Games", "Telltale Games", The_Wolf_Among_Us_tags, 20);
+cout << "269 insert" << endl;
+//Inserting Valkyria Chronicles
+string Valkyria_Chronicles_tags[20] = {"Anime","Strategy","Turn-Based","RPG","Story Rich","JRPG","Tactical","Singleplayer","Great Soundtrack","Strategy RPG","Tactical RPG","Third Person","Tanks","Action","War","Turn-Based Strategy","World War II","Romance","Classic","Female Protagonist"};
+g.insert_game("Valkyria Chronicles", "SEGA", "SEGA", Valkyria_Chronicles_tags, 20);
+cout << "270 insert" << endl;
+//Inserting SPINTIRES
+string SPINTIRES_tags[20] = {"Simulation","Offroad","Physics","Multiplayer","Open World","Driving","Adventure","Realistic","Co-op","Atmospheric","Moddable","Exploration","Online Co-Op","Racing","Sandbox","Singleplayer","Difficult","Action","Survival","Indie"};
+g.insert_game("SPINTIRES", "Oovee® Game Studios", "Oovee® Game Studios, IMGN.PRO", SPINTIRES_tags, 20);
+cout << "271 insert" << endl;
+//Inserting Legend of Grimrock
+string Legend_of_Grimrock_tags[20] = {"RPG","Dungeon Crawler","Indie","Fantasy","Grid-Based Movement","Adventure","Singleplayer","Party-Based RPG","Puzzle","Real-Time","First-Person","Moddable","Atmospheric","Retro","Difficult","Character Customization","Action","Tactical","Replay Value","Level Editor"};
+g.insert_game("Legend of Grimrock", "Almost Human Games", "Almost Human Games", Legend_of_Grimrock_tags, 20);
+cout << "272 insert" << endl;
+//Inserting Call of Juarez Gunslinger
+string Call_of_Juarez_Gunslinger_tags[20] = {"Western","FPS","Action","Bullet Time","Comedy","Shooter","Story Rich","Singleplayer","First-Person","Narration","Adventure","Great Soundtrack","Atmospheric","Arcade","Funny","Historical","Alternate History","Dynamic Narration","Gore","Linear"};
+g.insert_game("Call of Juarez Gunslinger", "Techland", "Ubisoft", Call_of_Juarez_Gunslinger_tags, 20);
+cout << "273 insert" << endl;
+//Inserting LEGO Marvel Super Heroes
+string LEGO_Marvel_Super_Heroes_tags[20] = {"LEGO","Open World","Superhero","Adventure","Action","Local Co-Op","Comedy","Family Friendly","Comic Book","Funny","Singleplayer","Co-op","Third Person","Local Multiplayer","Casual","Split Screen","Puzzle","Sandbox","Multiplayer","Platformer"};
+g.insert_game("LEGO Marvel Super Heroes", "Traveller's Tales", "Warner Bros. Interactive Entertainment, Feral Interactive (Mac)", LEGO_Marvel_Super_Heroes_tags, 20);
+cout << "274 insert" << endl;
+//Inserting Darksiders II Deathinitive Edition
+string Darksiders_II_Deathinitive_Edition_tags[16] = {"Action","Adventure","RPG","Hack and Slash","Open World","Singleplayer","Third Person","Fantasy","Puzzle","Great Soundtrack","Story Rich","Parkour","Action RPG","Gore","Spectacle fighter","Controller"};
+g.insert_game("Darksiders II Deathinitive Edition", "Gunfire Games, Vigil Games, THQ Nordic", "THQ Nordic", Darksiders_II_Deathinitive_Edition_tags, 16);
+cout << "275 insert" << endl;
+//Inserting Time Clickers
+string Time_Clickers_tags[20] = {"Free to Play","Clicker","Casual","Action","Indie","FPS","Shooter","Singleplayer","Multiplayer","Strategy","Adventure","Time Travel","Voxel","RPG","Simulation","Tower Defense","Open World","Point & Click","First-Person","Sandbox"};
+g.insert_game("Time Clickers", "Proton Studio Inc", " ", Time_Clickers_tags, 20);
+cout << "276 insert" << endl;
+//Inserting Cubic Castles
+string Cubic_Castles_tags[20] = {"Free to Play","Building","Multiplayer","Sandbox","Open World","Massively Multiplayer","Adventure","Crafting","Cute","Survival","Indie","Casual","Action","Co-op","3D Platformer","RPG","Singleplayer","MMORPG","2D","FPS"};
+g.insert_game("Cubic Castles", "Cosmic Cow LLC", "Cosmic Cow LLC", Cubic_Castles_tags, 20);
+cout << "277 insert" << endl;
+//Inserting Ori and the Blind Forest
+string Ori_and_the_Blind_Forest_tags[20] = {"Great Soundtrack","Atmospheric","Platformer","Adventure","Story Rich","Fantasy","2D","Cute","Metroidvania","Singleplayer","Difficult","Indie","Action","Puzzle","Exploration","Family Friendly","Side Scroller","Open World","RPG","2.5D"};
+g.insert_game("Ori and the Blind Forest", "Moon Studios GmbH", "Microsoft Studios", Ori_and_the_Blind_Forest_tags, 20);
+cout << "278 insert" << endl;
+//Inserting Stronghold Crusader HD
+string Stronghold_Crusader_HD_tags[14] = {"Strategy","Medieval","Classic","RTS","Multiplayer","Simulation","Tactical","Historical","Economy","Singleplayer","City Builder","Adventure","Sandbox","Remake"};
+g.insert_game("Stronghold Crusader HD", "FireFly Studios", "FireFly Studios", Stronghold_Crusader_HD_tags, 14);
+cout << "279 insert" << endl;
+//Inserting Grim Dawn
+string Grim_Dawn_tags[20] = {"Action RPG","RPG","Hack and Slash","Loot","Dark Fantasy","Multiplayer","Co-op","Indie","Singleplayer","Action","Dungeon Crawler","Post-apocalyptic","Adventure","Dark","Isometric","Kickstarter","Fantasy","Atmospheric","Crowdfunded","Zombies"};
+g.insert_game("Grim Dawn", "Crate Entertainment", "Crate Entertainment", Grim_Dawn_tags, 20);
+cout << "280 insert" << endl;
+//Inserting Far Cry 4
+string Far_Cry_4_tags[20] = {"Open World","Action","FPS","Shooter","Adventure","First-Person","Co-op","Singleplayer","Hunting","Multiplayer","Stealth","Atmospheric","Survival","Online Co-Op","Story Rich","Exploration","Crafting","Sandbox","RPG","Action RPG"};
+g.insert_game("Far Cry 4", "Ubisoft Montreal, Red Storm, Shanghai, Toronto, Kiev", "Ubisoft", Far_Cry_4_tags, 20);
+cout << "281 insert" << endl;
+//Inserting Floating Point
+string Floating_Point_tags[11] = {"Free to Play","Casual","Indie","Relaxing","Physics","2D","Singleplayer","Great Soundtrack","Puzzle","Point & Click","Open World"};
+g.insert_game("Floating Point", "Suspicious Developments", "Suspicious Developments", Floating_Point_tags, 11);
+cout << "282 insert" << endl;
+//Inserting Worms Reloaded
+string Worms_Reloaded_tags[19] = {"Strategy","2D","Turn-Based","Turn-Based Strategy","Multiplayer","Local Multiplayer","Funny","Classic","Comedy","Action","Online Co-Op","Local Co-Op","Team-Based","Singleplayer","Side Scroller","Tactical","Competitive","4 Player Local","Co-op"};
+g.insert_game("Worms Reloaded", "Team17 Digital Ltd", "Team17 Digital Ltd", Worms_Reloaded_tags, 19);
+cout << "283 insert" << endl;
+//Inserting Resident Evil 5/ Biohazard 5
+string Resident_Evil_5/_Biohazard_5_tags[20] = {"Action","Zombies","Co-op","Third-Person Shooter","Adventure","Horror","Co-op Campaign","Online Co-Op","Third Person","Survival Horror","Shooter","Singleplayer","Multiplayer","Female Protagonist","Local Co-Op","Survival","Quick-Time Events","Gore","3D Vision","Atmospheric"};
+g.insert_game("Resident Evil 5/ Biohazard 5", "Capcom", "Capcom", Resident_Evil_5/_Biohazard_5_tags, 20);
+cout << "284 insert" << endl;
+//Inserting Relic Hunters Zero
+string Relic_Hunters_Zero_tags[20] = {"Free to Play","Action","Pixel Graphics","Multiplayer","Co-op","Indie","Top-Down Shooter","Local Co-Op","Colorful","Shooter","Rogue-like","2D","Cute","Twin Stick Shooter","Female Protagonist","RPG","Controller","Singleplayer","Funny","Retro"};
+g.insert_game("Relic Hunters Zero", "Rogue Snail", "Zueira Digital", Relic_Hunters_Zero_tags, 20);
+cout << "285 insert" << endl;
+//Inserting Stellaris
+string Stellaris_tags[20] = {"Space","Strategy","Grand Strategy","Sci-fi","4X","Exploration","Real-Time with Pause","Multiplayer","Singleplayer","RTS","Simulation","Sandbox","Replay Value","Great Soundtrack","Moddable","Atmospheric","Open World","Story Rich","Building","Adventure"};
+g.insert_game("Stellaris", "Paradox Development Studio", "Paradox Interactive", Stellaris_tags, 20);
+cout << "286 insert" << endl;
+//Inserting EVGA Precision XOC
+string EVGA_Precision_XOC_tags[3] = {"Utilities","Software","Free to Play"};
+g.insert_game("EVGA Precision XOC", "EVGA", "EVGA", EVGA_Precision_XOC_tags, 3);
+cout << "287 insert" << endl;
+//Inserting The SKIES
+string The_SKIES_tags[20] = {"Early Access","Free to Play","Survival","Open World","Multiplayer","Massively Multiplayer","Post-apocalyptic","Shooter","Zombies","FPS","Action","RPG","Crafting","First-Person","Co-op","PvP","Adventure","Third Person","Third-Person Shooter","Horror"};
+g.insert_game("The SKIES", "Eforb", "Eforb", The_SKIES_tags, 20);
+cout << "288 insert" << endl;
+//Inserting Skullgirls
+string Skullgirls_tags[20] = {"Fighting","2D Fighter","Indie","Multiplayer","Anime","2D","Great Soundtrack","Action","Competitive","Female Protagonist","Crowdfunded","Local Multiplayer","Cute","Arcade","Hand-drawn","Cartoon","Controller","Singleplayer","Beat 'em up","Nudity"};
+g.insert_game("Skullgirls", "Lab Zero Games", "Marvelous, Autumn Games", Skullgirls_tags, 20);
+cout << "289 insert" << endl;
+//Inserting Shadow Warrior
+string Shadow_Warrior_tags[20] = {"Action","FPS","Swordplay","Gore","Comedy","First-Person","Hack and Slash","Adventure","Shooter","Singleplayer","Great Soundtrack","Dark Humor","Ninja","Demons","Funny","Remake","3D Vision","Atmospheric","Classic","Multiplayer"};
+g.insert_game("Shadow Warrior", "Flying Wild Hog", "Devolver Digital", Shadow_Warrior_tags, 20);
+cout << "290 insert" << endl;
+//Inserting Hammerwatch
+string Hammerwatch_tags[20] = {"Indie","Dungeon Crawler","RPG","Co-op","Action","Local Co-Op","Pixel Graphics","Online Co-Op","Adventure","Retro","Fantasy","Multiplayer","Hack and Slash","2D","4 Player Local","Singleplayer","Top-Down","Rogue-like","Local Multiplayer","Level Editor"};
+g.insert_game("Hammerwatch", "Crackshell", "Crackshell", Hammerwatch_tags, 20);
+cout << "291 insert" << endl;
+//Inserting The Last Remnant
+string The_Last_Remnant_tags[16] = {"JRPG","RPG","Singleplayer","Fantasy","Turn-Based","Great Soundtrack","Turn-Based Strategy","Story Rich","Strategy","Turn-Based Tactics","Adventure","Difficult","Open World","Controller","Action","Tactical"};
+g.insert_game("The Last Remnant", "SQUARE ENIX", "Square Enix", The_Last_Remnant_tags, 16);
+cout << "292 insert" << endl;
+//Inserting Assassins Creed Brotherhood
+string Assassins_Creed_Brotherhood_tags[20] = {"Action","Adventure","Open World","Parkour","Stealth","Third Person","Assassin","Historical","Multiplayer","Singleplayer","Rome","Great Soundtrack","Story Rich","Atmospheric","Conspiracy","Sandbox","Action-Adventure","Medieval","Controller","Casual"};
+g.insert_game("Assassins Creed Brotherhood", "Ubisoft Montreal", "Ubisoft", Assassins_Creed_Brotherhood_tags, 20);
+cout << "293 insert" << endl;
+//Inserting Deus Ex  Invisible War
+string Deus_Ex_Invisible_War_tags[18] = {"Cyberpunk","Action","FPS","Sci-fi","RPG","Stealth","Singleplayer","Transhumanism","Female Protagonist","First-Person","Dystopian ","Shooter","Story Rich","Atmospheric","Illuminati","Classic","Action RPG","Conspiracy"};
+g.insert_game("Deus Ex  Invisible War", "Ion Storm", "Square Enix", Deus_Ex_Invisible_War_tags, 18);
+cout << "294 insert" << endl;
+//Inserting Serious Sam 2
+string Serious_Sam_2_tags[20] = {"Action","FPS","Co-op","Comedy","Multiplayer","First-Person","Shooter","Indie","Funny","Gore","Adventure","Singleplayer","Classic","Sci-fi","Open World","Online Co-Op","Colorful","Great Soundtrack","Difficult","Atmospheric"};
+g.insert_game("Serious Sam 2", "Croteam", "Devolver Digital", Serious_Sam_2_tags, 20);
+cout << "295 insert" << endl;
+//Inserting Tom Clancys Splinter Cell Blacklist
+string Tom_Clancys_Splinter_Cell_Blacklist_tags[20] = {"Stealth","Action","Co-op","Third Person","Multiplayer","Adventure","Singleplayer","Shooter","Online Co-Op","Tactical","Third-Person Shooter","Parkour","FPS","Story Rich","Strategy","Atmospheric","First-Person","Controller","RPG","Mature"};
+g.insert_game("Tom Clancys Splinter Cell Blacklist", "Ubisoft Toronto", "Ubisoft", Tom_Clancys_Splinter_Cell_Blacklist_tags, 20);
+cout << "296 insert" << endl;
+//Inserting Anno 2070
+string Anno_2070_tags[20] = {"Strategy","City Builder","Simulation","Futuristic","RTS","Multiplayer","Economy","Resource Management","Singleplayer","Sci-fi","Real-Time","Building","Management","Sandbox","Trading","4X","Co-op","Great Soundtrack","Online Co-Op","Story Rich"};
+g.insert_game("Anno 2070", "Blue Byte, Related Designs", "Ubisoft", Anno_2070_tags, 20);
+cout << "297 insert" << endl;
+//Inserting Supreme Commander
+string Supreme_Commander_tags[13] = {"Strategy","RTS","Sci-fi","Multiplayer","Real-Time","Co-op","Real-Time with Pause","Singleplayer","Action","Base-Building","Robots","Classic","Space"};
+g.insert_game("Supreme Commander", "Gas Powered Games", "THQ Nordic", Supreme_Commander_tags, 13);
+cout << "298 insert" << endl;
+//Inserting Crysis Warhead
+string Crysis_Warhead_tags[14] = {"Action","FPS","Sci-fi","Shooter","Singleplayer","Aliens","Military","First-Person","Benchmark","Multiplayer","Open World","Adventure","Stealth","Futuristic"};
+g.insert_game("Crysis Warhead", "Crytek", "Electronic Arts", Crysis_Warhead_tags, 14);
+cout << "299 insert" << endl;
+//Inserting Risen
+string Risen_tags[20] = {"RPG","Open World","Gothic","Fantasy","Adventure","Third Person","Atmospheric","Singleplayer","Exploration","Action","Magic","Dark Fantasy","Great Soundtrack","Action RPG","Sandbox","Difficult","Story Rich","Medieval","Character Customization","Classic"};
+g.insert_game("Risen", "Piranha Bytes", "Deep Silver", Risen_tags, 20);
+cout << "300 insert" << endl;
+//Inserting Far Cry
+string Far_Cry_tags[17] = {"FPS","Action","Classic","Shooter","Open World","Stealth","First-Person","Difficult","Singleplayer","Multiplayer","Adventure","Atmospheric","Story Rich","Sandbox","Sci-fi","Horror","Great Soundtrack"};
+g.insert_game("Far Cry", "Crytek Studios", "Ubisoft", Far_Cry_tags, 17);
+cout << "301 insert" << endl;
+//Inserting Pillars of Eternity
+string Pillars_of_Eternity_tags[20] = {"RPG","Fantasy","Isometric","Singleplayer","Story Rich","CRPG","Party-Based RPG","Real-Time with Pause","Kickstarter","Adventure","Atmospheric","Dark Fantasy","Open World","Exploration","Classic","Great Soundtrack","Strategy","Indie","Character Customization","Crowdfunded"};
+g.insert_game("Pillars of Eternity", "Obsidian Entertainment", "Paradox Interactive", Pillars_of_Eternity_tags, 20);
+cout << "302 insert" << endl;
+//Inserting STAR WARS Starfighter
+string STAR_WARS_Starfighter_tags[7] = {"Action","Simulation","Star Wars","Space","Sci-fi","Singleplayer","Flight"};
+g.insert_game("STAR WARS Starfighter", "LucasArts", "LucasArts, Lucasfilm, Disney Interactive", STAR_WARS_Starfighter_tags, 7);
+cout << "303 insert" << endl;
+//Inserting Reus
+string Reus_tags[13] = {"God Game","Strategy","Indie","Simulation","Singleplayer","Sandbox","Casual","2D","Puzzle","Replay Value","Resource Management","Fantasy","Relaxing"};
+g.insert_game("Reus", "Abbey Games", "Abbey Games", Reus_tags, 13);
+cout << "304 insert" << endl;
+//Inserting Resident Evil Revelations 2 / Biohazard Revelations 2
+string Resident_Evil_Revelations_2_/_Biohazard_Revelations_2_tags[20] = {"Zombies","Horror","Survival Horror","Action","Adventure","Survival","Third-Person Shooter","Multiplayer","Female Protagonist","Episodic","Singleplayer","Third Person","Atmospheric","Gore","Co-op","Local Co-Op","Shooter","Online Co-Op","Story Rich","Action RPG"};
+g.insert_game("Resident Evil Revelations 2 / Biohazard Revelations 2", "CAPCOM Co., Ltd.", "CAPCOM Co., Ltd.", Resident_Evil_Revelations_2_/_Biohazard_Revelations_2_tags, 20);
+cout << "305 insert" << endl;
+//Inserting 8BitMMO
+string 8BitMMO_tags[20] = {"Free to Play","Massively Multiplayer","Pixel Graphics","Sandbox","RPG","Indie","Adventure","Building","Action","Multiplayer","2D","Open World","Retro","MMORPG","PvP","Survival","Online Co-Op","Funny","Co-op","Zombies"};
+g.insert_game("8BitMMO", "Archive Entertainment", "Archive Entertainment", 8BitMMO_tags, 20);
+cout << "306 insert" << endl;
+//Inserting Steel Ocean
+string Steel_Ocean_tags[20] = {"Free to Play","Naval","World War II","Massively Multiplayer","Simulation","Military","War","Multiplayer","Action","MOBA","Strategy","Shooter","Adventure","Co-op","Survival","Tactical","First-Person","Sandbox","Singleplayer","Open World"};
+g.insert_game("Steel Ocean", "ICE Entertainment", "Changyou.com Limited", Steel_Ocean_tags, 20);
+cout << "307 insert" << endl;
+//Inserting Brilliant Bob
+string Brilliant_Bob_tags[20] = {"Action","Casual","Adventure","3D Platformer","Indie","Platformer","Puzzle-Platformer","Puzzle","Third Person","Singleplayer","Cartoony","Physics","Family Friendly","Action-Adventure","Fantasy","Atmospheric","Colorful","Controller","Aliens","Difficult"};
+g.insert_game("Brilliant Bob", "Zonitron Productions", "GrabTheGames", Brilliant_Bob_tags, 20);
+cout << "308 insert" << endl;
+//Inserting Thomas Was Alone
+string Thomas_Was_Alone_tags[20] = {"Platformer","Indie","Narration","Minimalist","Puzzle","Great Soundtrack","Puzzle-Platformer","Story Rich","2D","Atmospheric","Singleplayer","Funny","Family Friendly","Comedy","Short","Casual","Adventure","Colorful","Sci-fi","Relaxing"};
+g.insert_game("Thomas Was Alone", "Bithell Games", "Bithell Games", Thomas_Was_Alone_tags, 20);
+cout << "309 insert" << endl;
+//Inserting Mortal Kombat X
+string Mortal_Kombat_X_tags[20] = {"Fighting","Gore","Action","Violent","Multiplayer","Blood","Mature","Competitive","Atmospheric","Local Multiplayer","2D Fighter","Singleplayer","Arcade","Great Soundtrack","2.5D","Online Co-Op","Fantasy","Third Person","Horror","Female Protagonist"};
+g.insert_game("Mortal Kombat X", "NetherRealm Studios, High Voltage Software", "Warner Bros. Interactive Entertainment", Mortal_Kombat_X_tags, 20);
+cout << "310 insert" << endl;
+//Inserting Why So Evil
+string Why_So_Evil_tags[20] = {"Action","Casual","Adventure","Difficult","Indie","Physics","Puzzle","Third Person","Platformer","Top-Down","3D Platformer","Co-op","Great Soundtrack","Singleplayer","Family Friendly","Puzzle-Platformer","Controller","Fantasy","Atmospheric","Colorful"};
+g.insert_game("Why So Evil", "Zonitron Productions", "GrabTheGames", Why_So_Evil_tags, 20);
+cout << "311 insert" << endl;
+//Inserting Deponia
+string Deponia_tags[18] = {"Adventure","Point & Click","Comedy","Singleplayer","Indie","Puzzle","Dark Humor","Hand-drawn","Funny","Story Rich","Steampunk","2D","Sci-fi","Dystopian ","Atmospheric","Great Soundtrack","Hidden Object","Difficult"};
+g.insert_game("Deponia", "Daedalic Entertainment", "Daedalic Entertainment", Deponia_tags, 18);
+cout << "312 insert" << endl;
+//Inserting System Shock 2
+string System_Shock_2_tags[20] = {"RPG","Cyberpunk","Horror","Sci-fi","Classic","FPS","Survival Horror","Action","Cult Classic","Space","First-Person","Story Rich","Atmospheric","Great Soundtrack","Singleplayer","Co-op","Inventory Management","Shooter","Survival","Adventure"};
+g.insert_game("System Shock 2", "Irrational Games, Looking Glass Studios", "Nightdive Studios", System_Shock_2_tags, 20);
+cout << "313 insert" << endl;
+//Inserting MapleStory
+string MapleStory_tags[19] = {"Free to Play","Massively Multiplayer","RPG","Anime","MMORPG","2D","Casual","Adventure","Platformer","Side Scroller","Action RPG","Fantasy","Multiplayer","Cute","Action","Open World","Pixel Graphics","Great Soundtrack","Co-op"};
+g.insert_game("MapleStory", "Nexon", "Nexon America Inc.", MapleStory_tags, 19);
+cout << "314 insert" << endl;
+//Inserting Dear Esther
+string Dear_Esther_tags[20] = {"Walking Simulator","Indie","Exploration","First-Person","Short","Atmospheric","Story Rich","Casual","Adventure","Great Soundtrack","Singleplayer","Narration","Mystery","Experimental","Relaxing","Interactive Fiction","Linear","Open World","Experience","3D Vision"};
+g.insert_game("Dear Esther", "The Chinese Room, Robert Briscoe", "The Chinese Room", Dear_Esther_tags, 20);
+cout << "315 insert" << endl;
+//Inserting Project CARS
+string Project_CARS_tags[20] = {"Racing","Simulation","Driving","Realistic","Multiplayer","Sports","Singleplayer","Physics","Atmospheric","First-Person","VR","Action","Controller","Third Person","Open World","Co-op","Arcade","TrackIR","Indie","Casual"};
+g.insert_game("Project CARS", "Slightly Mad Studios", "Slightly Mad Studios, BANDAI NAMCO Entertainment", Project_CARS_tags, 20);
+cout << "316 insert" << endl;
+//Inserting The Incredible Adventures of Van Helsing
+string The_Incredible_Adventures_of_Van_Helsing_tags[20] = {"RPG","Hack and Slash","Action RPG","Action","Adventure","Indie","Fantasy","Co-op","Steampunk","Loot","Dungeon Crawler","Multiplayer","Singleplayer","Funny","Gothic","Vampire","Dark Fantasy","Magic","Isometric","Based On A Novel"};
+g.insert_game("The Incredible Adventures of Van Helsing", "NeocoreGames", "NeocoreGames", The_Incredible_Adventures_of_Van_Helsing_tags, 20);
+cout << "317 insert" << endl;
+//Inserting Race The Sun
+string Race_The_Sun_tags[17] = {"Racing","Indie","Singleplayer","Fast-Paced","Action","Sci-fi","Casual","Arcade","Minimalist","Kickstarter","Difficult","Controller","Great Soundtrack","Perma Death","Runner","Flight","VR"};
+g.insert_game("Race The Sun", "Flippfly LLC", "Flippfly LLC", Race_The_Sun_tags, 17);
+cout << "318 insert" << endl;
+//Inserting Champions Online
+string Champions_Online_tags[15] = {"Free to Play","Superhero","Massively Multiplayer","RPG","MMORPG","Character Customization","Action","Open World","Multiplayer","Third Person","Co-op","Adventure","Singleplayer","FPS","Comic Book"};
+g.insert_game("Champions Online", "Cryptic Studios", "Perfect World Entertainment", Champions_Online_tags, 15);
+cout << "319 insert" << endl;
+//Inserting Digimon Masters Online
+string Digimon_Masters_Online_tags[16] = {"Free to Play","Anime","Adventure","Massively Multiplayer","MMORPG","RPG","Action","Casual","Open World","Multiplayer","Action-Adventure","Co-op","Action RPG","Fantasy","Arcade","FPS"};
+g.insert_game("Digimon Masters Online", "Move Games Co., Ltd.", "Move Games Co., Ltd.", Digimon_Masters_Online_tags, 16);
+cout << "320 insert" << endl;
+//Inserting Homefront
+string Homefront_tags[8] = {"Action","FPS","Shooter","Multiplayer","Singleplayer","Short","First-Person","Atmospheric"};
+g.insert_game("Homefront", "Kaos Studios, Digital Extremes", "Deep Silver", Homefront_tags, 8);
+cout << "321 insert" << endl;
+//Inserting The Swapper
+string The_Swapper_tags[20] = {"Puzzle","Sci-fi","Atmospheric","Indie","Space","Platformer","Puzzle-Platformer","Singleplayer","Adventure","Great Soundtrack","Psychological Horror","2D","Metroidvania","Action","Exploration","Story Rich","Mystery","Difficult","Side Scroller","Horror"};
+g.insert_game("The Swapper", "Olli Harjola, Otto Hantula, Tom Jubert, Carlo Castellano", "Facepalm Games", The_Swapper_tags, 20);
+cout << "322 insert" << endl;
+//Inserting KnightShift
+string KnightShift_tags[6] = {"RPG","Strategy","Fantasy","RTS","Multiplayer","Singleplayer"};
+g.insert_game("KnightShift", "", "Topware Interactive", KnightShift_tags, 6);
+cout << "323 insert" << endl;
+//Inserting GooCubelets
+string GooCubelets_tags[20] = {"Casual","Puzzle","Difficult","Indie","Atmospheric","Colorful","Singleplayer","Physics","Family Friendly","Great Soundtrack","Minimalist","Cute","Stylized","Replay Value","Story Rich","Relaxing","Top-Down","Simulation","Cartoony","Platformer"};
+g.insert_game("GooCubelets", "Zonitron Productions", "GrabTheGames", GooCubelets_tags, 20);
+cout << "324 insert" << endl;
+//Inserting Faeria
+string Faeria_tags[16] = {"Free to Play","Card Game","Strategy","Multiplayer","Massively Multiplayer","Indie","Turn-Based","Singleplayer","Fantasy","Board Game","Hex Grid","Turn-Based Strategy","Survival","Action","Casual","Trading Card Game"};
+g.insert_game("Faeria", "Abrakam SA", "Abrakam SA", Faeria_tags, 16);
+cout << "325 insert" << endl;
+//Inserting Gunpoint
+string Gunpoint_tags[20] = {"Stealth","Puzzle","Indie","Comedy","2D","Singleplayer","Action","Pixel Graphics","Strategy","Platformer","Noir","Great Soundtrack","Funny","Short","Hacking","GameMaker","Level Editor","Adventure","Story Rich","Sci-fi"};
+g.insert_game("Gunpoint", "Suspicious Developments", "Suspicious Developments", Gunpoint_tags, 20);
+cout << "326 insert" << endl;
+//Inserting MOBIUS FINAL FANTASY
+string MOBIUS_FINAL_FANTASY_tags[20] = {"Free to Play","RPG","Fantasy","Multiplayer","MMORPG","Anime","Action","Open World","Turn-Based","Card Game","Singleplayer","Adventure","JRPG","Casual","Story Rich","Action RPG","Survival","Character Customization","FPS","Psychological Horror"};
+g.insert_game("MOBIUS FINAL FANTASY", "SQUARE ENIX CO., LTD.", "SQUARE ENIX CO., LTD.", MOBIUS_FINAL_FANTASY_tags, 20);
+cout << "327 insert" << endl;
+//Inserting ShellShock Live
+string ShellShock_Live_tags[20] = {"Early Access","Tanks","Multiplayer","Strategy","Action","2D","Turn-Based","Massively Multiplayer","Casual","Indie","Shooter","Singleplayer","Colorful","Co-op","Online Co-Op","Funny","Turn-Based Strategy","Great Soundtrack","Physics","Family Friendly"};
+g.insert_game("ShellShock Live", "kChamp Games", "kChamp Games", ShellShock_Live_tags, 20);
+cout << "328 insert" << endl;
+//Inserting Factorio
+string Factorio_tags[20] = {"Early Access","Base-Building","Resource Management","Sandbox","Strategy","Crafting","Survival","Multiplayer","Open World","Management","Simulation","Singleplayer","Moddable","Indie","Trains","Co-op","Sci-fi","Aliens","Tower Defense","Casual"};
+g.insert_game("Factorio", "Wube Software LTD.", "Wube Software LTD.", Factorio_tags, 20);
+cout << "329 insert" << endl;
+//Inserting Receiver
+string Receiver_tags[19] = {"Simulation","FPS","Indie","Rogue-like","Action","Procedural Generation","First-Person","Difficult","Singleplayer","Shooter","Realistic","Abstract","Perma Death","Tactical","Cyberpunk","Horror","Atmospheric","Sci-fi","Walking Simulator"};
+g.insert_game("Receiver", "Wolfire Games", "Wolfire Games", Receiver_tags, 19);
+cout << "330 insert" << endl;
+//Inserting Little Inferno
+string Little_Inferno_tags[20] = {"Indie","Casual","Singleplayer","Puzzle","Satire","Funny","Short","Comedy","Adventure","Story Rich","Great Soundtrack","Sandbox","Atmospheric","Dark Humor","Dark","Parody ","2D","Surreal","Point & Click","Touch-Friendly"};
+g.insert_game("Little Inferno", "Tomorrow Corporation", "Tomorrow Corporation", Little_Inferno_tags, 20);
+cout << "331 insert" << endl;
+//Inserting Card Hunter
+string Card_Hunter_tags[18] = {"Free to Play","Card Game","Board Game","Strategy","RPG","Turn-Based","Multiplayer","Co-op","Fantasy","Singleplayer","Tactical RPG","Turn-Based Strategy","Dungeon Crawler","Comedy","Funny","Tactical","Indie","Trading Card Game"};
+g.insert_game("Card Hunter", "Blue Manchu", "Blue Manchu", Card_Hunter_tags, 18);
+cout << "332 insert" << endl;
+//Inserting Thief Gold
+string Thief_Gold_tags[20] = {"Stealth","Classic","First-Person","Atmospheric","Steampunk","Action","Horror","Fantasy","Singleplayer","Adventure","Medieval","Cult Classic","Dark Fantasy","Story Rich","Dark","Exploration","1990's","Moddable","FPS","Zombies"};
+g.insert_game("Thief Gold", "Looking Glass Studios", "Square Enix", Thief_Gold_tags, 20);
+cout << "333 insert" << endl;
+//Inserting Gang Beasts
+string Gang_Beasts_tags[20] = {"Early Access","Funny","Multiplayer","Fighting","Local Multiplayer","Physics","Comedy","Beat 'em up","Action","Co-op","4 Player Local","Colorful","Third Person","Indie","Casual","Adventure","Singleplayer","Great Soundtrack","Sandbox","Simulation"};
+g.insert_game("Gang Beasts", "Boneloaf", "Double Fine Presents", Gang_Beasts_tags, 20);
+cout << "334 insert" << endl;
+//Inserting They Came From The Moon
+string They_Came_From_The_Moon_tags[19] = {"Casual","Puzzle","Singleplayer","Difficult","Atmospheric","Indie","2D","Family Friendly","Platformer","Aliens","Cartoony","Puzzle-Platformer","Physics","Surreal","Replay Value","Simulation","Strategy","Colorful","3D Platformer"};
+g.insert_game("They Came From The Moon", "Zonitron Productions", "GrabTheGames", They_Came_From_The_Moon_tags, 19);
+cout << "335 insert" << endl;
+//Inserting Football Manager Touch 2017
+string Football_Manager_Touch_2017_tags[3] = {"Sports","Simulation","Football"};
+g.insert_game("Football Manager Touch 2017", "Sports Interactive", "SEGA", Football_Manager_Touch_2017_tags, 3);
+cout << "336 insert" << endl;
+//Inserting Shadowverse CCG
+string Shadowverse_CCG_tags[8] = {"Free to Play","Card Game","Anime","Strategy","Trading Card Game","Fantasy","Multiplayer","Nudity"};
+g.insert_game("Shadowverse CCG", "Cygames, Inc.", "Cygames, Inc.", Shadowverse_CCG_tags, 8);
+cout << "337 insert" << endl;
+//Inserting Hunger Dungeon
+string Hunger_Dungeon_tags[16] = {"Free to Play","Multiplayer","Pixel Graphics","Action","Indie","RPG","MOBA","PvP","Fighting","Adventure","2D","Dungeon Crawler","Survival","Co-op","MMORPG","Rogue-like"};
+g.insert_game("Hunger Dungeon", "Buka Game Studio", "PQube Limited", Hunger_Dungeon_tags, 16);
+cout << "338 insert" << endl;
+//Inserting Gun Monkeys
+string Gun_Monkeys_tags[7] = {"Action","Indie","Casual","Platformer","Multiplayer","Local Multiplayer","Shooter"};
+g.insert_game("Gun Monkeys", "Size Five Games", "Size Five Games", Gun_Monkeys_tags, 7);
+cout << "339 insert" << endl;
+//Inserting Watch_Dogs
+string Watch_Dogs_tags[20] = {"Open World","Hacking","Action","Multiplayer","Third Person","Adventure","Stealth","Third-Person Shooter","Singleplayer","Atmospheric","Shooter","Parkour","Sandbox","Driving","Co-op","Strategy","Futuristic","RPG","Simulation","FPS"};
+g.insert_game("Watch_Dogs", "Ubisoft", "Ubisoft", Watch_Dogs_tags, 20);
+cout << "340 insert" << endl;
+//Inserting Football Manager 2017
+string Football_Manager_2017_tags[11] = {"Sports","Simulation","Soccer","Management","Football","Strategy","Tactical","Multiplayer","Casual","Free to Play","Action"};
+g.insert_game("Football Manager 2017", "Sports Interactive", "SEGA", Football_Manager_2017_tags, 11);
+cout << "341 insert" << endl;
+//Inserting La Tale
+string La_Tale_tags[19] = {"Anime","Free to Play","RPG","Massively Multiplayer","2D","Adventure","MMORPG","Action","Side Scroller","Casual","Multiplayer","Open World","Cute","Platformer","Fantasy","Fighting","Indie","JRPG","Singleplayer"};
+g.insert_game("La Tale", "Actoz Soft", "OGPlanet", La_Tale_tags, 19);
+cout << "342 insert" << endl;
+//Inserting Stronghold 3 Gold
+string Stronghold_3_Gold_tags[15] = {"Strategy","Medieval","City Builder","Simulation","RTS","Resource Management","Multiplayer","Historical","Singleplayer","Open World","Sandbox","Co-op","Classic","Atmospheric","Base-Building"};
+g.insert_game("Stronghold 3 Gold", "FireFly Studios", "FireFly Studios", Stronghold_3_Gold_tags, 15);
+cout << "343 insert" << endl;
+//Inserting SPORE Galactic Adventures
+string SPORE_Galactic_Adventures_tags[17] = {"Simulation","Action","Space","Adventure","Exploration","Open World","Singleplayer","Strategy","Sandbox","Sci-fi","God Game","Multiplayer","Funny","RPG","Comedy","Crafting","Shooter"};
+g.insert_game("SPORE Galactic Adventures", "EA - Maxis", "Electronic Arts", SPORE_Galactic_Adventures_tags, 17);
+cout << "344 insert" << endl;
+//Inserting Zombies Monsters Robots (ZMR)
+string Zombies_Monsters_Robots_(ZMR)_tags[20] = {"Free to Play","Zombies","Action","Multiplayer","Co-op","Third-Person Shooter","Robots","Shooter","PvP","Massively Multiplayer","Survival","FPS","Open World","Dinosaurs","Adventure","PvE","Third Person","Online Co-Op","Singleplayer","Horror"};
+g.insert_game("Zombies Monsters Robots (ZMR)", "Yingpei Games, En Masse Entertainment", "En Masse Entertainment", Zombies_Monsters_Robots_(ZMR)_tags, 20);
+cout << "345 insert" << endl;
+//Inserting Project Zomboid
+string Project_Zomboid_tags[20] = {"Early Access","Survival","Zombies","Open World","Sandbox","Indie","Simulation","Multiplayer","RPG","Post-apocalyptic","Crafting","Co-op","Building","Survival Horror","Isometric","Singleplayer","2D","Realistic","Adventure","Real-Time with Pause"};
+g.insert_game("Project Zomboid", "The Indie Stone", "The Indie Stone", Project_Zomboid_tags, 20);
+cout << "346 insert" << endl;
+//Inserting The Talos Principle
+string The_Talos_Principle_tags[20] = {"Puzzle","First-Person","Sci-fi","Atmospheric","Story Rich","Singleplayer","Philisophical","Great Soundtrack","Adventure","Robots","Exploration","Open World","Indie","Third Person","Action","Simulation","Post-apocalyptic","Difficult","Multiple Endings","Multiplayer"};
+g.insert_game("The Talos Principle", "Croteam", "Devolver Digital, Croteam", The_Talos_Principle_tags, 20);
+cout << "347 insert" << endl;
+//Inserting Royal Quest
+string Royal_Quest_tags[12] = {"Free to Play","Massively Multiplayer","RPG","Adventure","MMORPG","Open World","Fantasy","Multiplayer","Action","Hack and Slash","Third Person","Singleplayer"};
+g.insert_game("Royal Quest", "Katauri", "1C Online Games", Royal_Quest_tags, 12);
+cout << "348 insert" << endl;
+//Inserting Ultra Street Fighter IV
+string Ultra_Street_Fighter_IV_tags[20] = {"Fighting","Arcade","Competitive","2D Fighter","Action","Local Multiplayer","Multiplayer","Controller","e-sports","Difficult","Classic","Anime","Singleplayer","Great Soundtrack","2D","Beat 'em up","2.5D","Local Co-Op","Adventure","3D Vision"};
+g.insert_game("Ultra Street Fighter IV", "Capcom", "Capcom", Ultra_Street_Fighter_IV_tags, 20);
+cout << "349 insert" << endl;
+//Inserting Atlas Reactor
+string Atlas_Reactor_tags[20] = {"Free to Play","Multiplayer","Strategy","Turn-Based Tactics","Turn-Based","PvP","Tactical","Online Co-Op","MOBA","Action","Sci-fi","Competitive","Turn-Based Combat","Funny","Shooter","Co-op","Turn-Based Strategy","Survival","Singleplayer","FPS"};
+g.insert_game("Atlas Reactor", "Trion Worlds", "Trion Worlds", Atlas_Reactor_tags, 20);
+cout << "350 insert" << endl;
+//Inserting Stranded Deep
+string Stranded_Deep_tags[20] = {"Early Access","Survival","Open World","Crafting","First-Person","Adventure","Realistic","Multiplayer","Exploration","Singleplayer","Building","Sandbox","Simulation","Underwater","Action","Atmospheric","Indie","Co-op","Strategy","Procedural Generation"};
+g.insert_game("Stranded Deep", "Beam Team Games", "Beam Team Pty Ltd", Stranded_Deep_tags, 20);
+cout << "351 insert" << endl;
+//Inserting Spelunky
+string Spelunky_tags[20] = {"Rogue-like","Platformer","Indie","Difficult","2D","Local Co-Op","Replay Value","Procedural Generation","Action","Perma Death","Adventure","Rogue-lite","Singleplayer","Controller","Co-op","Local Multiplayer","Great Soundtrack","Side Scroller","Multiplayer","Retro"};
+g.insert_game("Spelunky", "", "Mossmouth", Spelunky_tags, 20);
+cout << "352 insert" << endl;
+//Inserting Fallout 3
+string Fallout_3_tags[20] = {"Open World","Post-apocalyptic","RPG","Singleplayer","Exploration","First-Person","Sci-fi","Moddable","Action","Adventure","Atmospheric","FPS","Shooter","Third Person","Character Customization","Sandbox","Story Rich","Action RPG","Horror","Female Protagonist"};
+g.insert_game("Fallout 3", "Bethesda Game Studios", "Bethesda Softworks", Fallout_3_tags, 20);
+cout << "353 insert" << endl;
+//Inserting Dungeon Siege III
+string Dungeon_Siege_III_tags[9] = {"RPG","Action","Fantasy","Action RPG","Co-op","Local Co-Op","Singleplayer","Dungeon Crawler","Female Protagonist"};
+g.insert_game("Dungeon Siege III", "Obsidian Entertainment", "Square Enix", Dungeon_Siege_III_tags, 9);
+cout << "354 insert" << endl;
+//Inserting Universe Sandbox
+string Universe_Sandbox_tags[13] = {"Simulation","Sandbox","Space","Physics","Indie","Science","Education","Casual","Singleplayer","God Game","Sci-fi","Free to Play","Atmospheric"};
+g.insert_game("Universe Sandbox", "Giant Army", "Giant Army", Universe_Sandbox_tags, 13);
+cout << "355 insert" << endl;
+//Inserting BIT.TRIP RUNNER
+string BIT.TRIP_RUNNER_tags[17] = {"Indie","Rhythm","Platformer","Difficult","Music","Runner","Retro","Action","Great Soundtrack","Singleplayer","2D","Pixel Graphics","Arcade","Minimalist","Side Scroller","Casual","Controller"};
+g.insert_game("BIT.TRIP RUNNER", "Gaijin Games", "Gaijin Games", BIT.TRIP_RUNNER_tags, 17);
+cout << "356 insert" << endl;
+//Inserting Copa Petrobras de Marcas
+string Copa_Petrobras_de_Marcas_tags[14] = {"Racing","Free to Play","Multiplayer","Simulation","Sports","Action","Co-op","Singleplayer","Controller","First-Person","Massively Multiplayer","FPS","Online Co-Op","Open World"};
+g.insert_game("Copa Petrobras de Marcas", "Reiza Studios", "Reiza Studios", Copa_Petrobras_de_Marcas_tags, 14);
+cout << "357 insert" << endl;
+//Inserting Pinball Arcade
+string Pinball_Arcade_tags[9] = {"Pinball","Simulation","Free to Play","Arcade","Classic","Singleplayer","Casual","Multiplayer","Retro"};
+g.insert_game("Pinball Arcade", "FarSight Studios", "FarSight Studios", Pinball_Arcade_tags, 9);
+cout << "358 insert" << endl;
+//Inserting Tomb Raider I
+string Tomb_Raider_I_tags[16] = {"Adventure","Action","Classic","Female Protagonist","Singleplayer","Lara Croft","Platformer","Puzzle","Third Person","Third-Person Shooter","Action-Adventure","Retro","3D Platformer","Shooter","1990's","Dinosaurs"};
+g.insert_game("Tomb Raider I", "Core Design", "Square Enix", Tomb_Raider_I_tags, 16);
+cout << "359 insert" << endl;
+//Inserting Cave Story+
+string Cave_Story+_tags[20] = {"Platformer","Metroidvania","Indie","Great Soundtrack","Action","Pixel Graphics","Adventure","2D","Retro","Singleplayer","Classic","Exploration","Replay Value","Difficult","Story Rich","Shooter","Remake","Cute","Sci-fi","Anime"};
+g.insert_game("Cave Story+", "Nicalis, Inc., Studio Pixel", "Nicalis, Inc.", Cave_Story+_tags, 20);
+cout << "360 insert" << endl;
+//Inserting Out There Somewhere
+string Out_There_Somewhere_tags[20] = {"Platformer","Indie","Pixel Graphics","Adventure","Puzzle","Action","2D","Great Soundtrack","Retro","Sci-fi","Anime","Singleplayer","Puzzle-Platformer","Short","Difficult","Shoot 'Em Up","Metroidvania","Space","Shooter","Arcade"};
+g.insert_game("Out There Somewhere", "MiniBoss", "MiniBoss, EQGAMES", Out_There_Somewhere_tags, 20);
+cout << "361 insert" << endl;
+//Inserting Renegade Ops
+string Renegade_Ops_tags[12] = {"Action","Twin Stick Shooter","Top-Down","Local Co-Op","Arcade","Co-op","Online Co-Op","Shoot 'Em Up","Local Multiplayer","Split Screen","Racing","Controller"};
+g.insert_game("Renegade Ops", "Avalanche Studios", "SEGA", Renegade_Ops_tags, 12);
+cout << "362 insert" << endl;
+//Inserting Tomb Raider II
+string Tomb_Raider_II_tags[14] = {"Adventure","Action","Female Protagonist","Lara Croft","Classic","Singleplayer","Action-Adventure","Third Person","Puzzle","Platformer","Shooter","Third-Person Shooter","Atmospheric","3D Platformer"};
+g.insert_game("Tomb Raider II", "Core Design", "Square Enix", Tomb_Raider_II_tags, 14);
+cout << "363 insert" << endl;
+//Inserting Fiends of Imprisonment
+string Fiends_of_Imprisonment_tags[20] = {"Casual","Difficult","Indie","Top-Down","Atmospheric","Puzzle","Stealth","2D","Singleplayer","Cartoony","Side Scroller","Arcade","Perma Death","Great Soundtrack","Abstract","Third Person","Family Friendly","Puzzle-Platformer","Colorful","Cute"};
+g.insert_game("Fiends of Imprisonment", "Zonitron Productions", "GrabTheGames", Fiends_of_Imprisonment_tags, 20);
+cout << "364 insert" << endl;
+//Inserting Shakes and Fidget
+string Shakes_and_Fidget_tags[20] = {"Free to Play","RPG","Casual","Massively Multiplayer","Strategy","Adventure","Multiplayer","Indie","Fantasy","MMORPG","Character Customization","Comedy","Medieval","Classic","Story Rich","Funny","Cult Classic","Dark Humor","Clicker","Singleplayer"};
+g.insert_game("Shakes and Fidget", "Playa Games GmbH", "Playa Games GmbH", Shakes_and_Fidget_tags, 20);
+cout << "365 insert" << endl;
+//Inserting Sonic Generations Collection
+string Sonic_Generations_Collection_tags[20] = {"Platformer","Great Soundtrack","Action","Fast-Paced","3D Platformer","Singleplayer","Moddable","2D","Adventure","Retro","Colorful","Family Friendly","Time Travel","Classic","Third Person","Controller","3D Vision","Replay Value","Funny","Racing"};
+g.insert_game("Sonic Generations Collection", "Devil's Details", "SEGA", Sonic_Generations_Collection_tags, 20);
+cout << "366 insert" << endl;
+//Inserting Machinarium
+string Machinarium_tags[20] = {"Point & Click","Adventure","Puzzle","Indie","Great Soundtrack","Singleplayer","Steampunk","Atmospheric","Robots","2D","Hand-drawn","Casual","Stylized","Cute","Story Rich","Classic","Touch-Friendly","Hidden Object","Sci-fi","Difficult"};
+g.insert_game("Machinarium", "Amanita Design", "Amanita Design", Machinarium_tags, 20);
+cout << "367 insert" << endl;
+//Inserting Worms Armageddon
+string Worms_Armageddon_tags[17] = {"Strategy","Classic","Multiplayer","Turn-Based","Turn-Based Strategy","2D","Funny","Comedy","Physics","Local Multiplayer","Co-op","Action","Singleplayer","Platformer","Local Co-Op","Adventure","1990's"};
+g.insert_game("Worms Armageddon", "Team17 Digital Ltd", "Team17 Digital Ltd", Worms_Armageddon_tags, 17);
+cout << "368 insert" << endl;
+//Inserting Woodle Tree Adventures
+string Woodle_Tree_Adventures_tags[12] = {"Indie","Adventure","Platformer","Action","Family Friendly","Cute","3D Platformer","Casual","Local Co-Op","Short","Multiplayer","Singleplayer"};
+g.insert_game("Woodle Tree Adventures", "Fabio Ferrara", "Chubby Pixel", Woodle_Tree_Adventures_tags, 12);
+cout << "369 insert" << endl;
+//Inserting Tomb Raider III
+string Tomb_Raider_III_tags[12] = {"Adventure","Action","Female Protagonist","Classic","Lara Croft","Action-Adventure","Third Person","Singleplayer","Puzzle","Third-Person Shooter","Difficult","Shooter"};
+g.insert_game("Tomb Raider III", "Core Design", "Square Enix", Tomb_Raider_III_tags, 12);
+cout << "370 insert" << endl;
+//Inserting Sacred 2 Gold
+string Sacred_2_Gold_tags[15] = {"RPG","Open World","Hack and Slash","Action RPG","Co-op","Multiplayer","Fantasy","Singleplayer","Action","Adventure","Loot","Isometric","Female Protagonist","Sandbox","Character Customization"};
+g.insert_game("Sacred 2 Gold", "Ascaron", "Deep Silver", Sacred_2_Gold_tags, 15);
+cout << "371 insert" << endl;
+//Inserting Minion Masters
+string Minion_Masters_tags[20] = {"Early Access","Strategy","Multiplayer","Indie","Card Game","PvP","Real-Time","Action","Real Time Tactics","Competitive","Blood","Fantasy","Top-Down","Controller","Trading Card Game","Gore","Violent","Singleplayer","Adventure","RPG"};
+g.insert_game("Minion Masters", "BetaDwarf", "BetaDwarf", Minion_Masters_tags, 20);
+cout << "372 insert" << endl;
+//Inserting The Banner Saga
+string The_Banner_Saga_tags[20] = {"RPG","Turn-Based","Strategy","Indie","Tactical","Turn-Based Strategy","Story Rich","Fantasy","Great Soundtrack","Kickstarter","Tactical RPG","Hand-drawn","Choices Matter","Atmospheric","Crowdfunded","2D","Singleplayer","Strategy RPG","Adventure","Touch-Friendly"};
+g.insert_game("The Banner Saga", "Stoic", "Versus Evil", The_Banner_Saga_tags, 20);
+cout << "373 insert" << endl;
+//Inserting Teeworlds
+string Teeworlds_tags[15] = {"Free to Play","Multiplayer","Action","2D","Platformer","Side Scroller","Shooter","Indie","Co-op","Arena Shooter","Funny","Massively Multiplayer","Level Editor","Adventure","Strategy"};
+g.insert_game("Teeworlds", "Teeworlds Team", "Teeworlds Team", Teeworlds_tags, 15);
+cout << "374 insert" << endl;
+//Inserting Dungeon of the Endless
+string Dungeon_of_the_Endless_tags[20] = {"Rogue-like","Strategy","Tower Defense","Indie","Pixel Graphics","RPG","Sci-fi","Perma Death","Dungeon Crawler","Adventure","Procedural Generation","Survival","Resource Management","Difficult","Replay Value","Co-op","Great Soundtrack","Singleplayer","Rogue-lite","2D"};
+g.insert_game("Dungeon of the Endless", "AMPLITUDE Studios", "AMPLITUDE Studios", Dungeon_of_the_Endless_tags, 20);
+cout << "375 insert" << endl;
+//Inserting Bloodline Champions
+string Bloodline_Champions_tags[9] = {"Free to Play","Action","MOBA","Multiplayer","Massively Multiplayer","PvP","RPG","Fast-Paced","Competitive"};
+g.insert_game("Bloodline Champions", "Stunlock Studios", "Stunlock Studios", Bloodline_Champions_tags, 9);
+cout << "376 insert" << endl;
+//Inserting Dead Bits
+string Dead_Bits_tags[14] = {"Indie","Action","Casual","FPS","Shooter","First-Person","Great Soundtrack","Zombies","Voxel","Singleplayer","Multiplayer","Horror","Pixel Graphics","Difficult"};
+g.insert_game("Dead Bits", "Microblast Games", "Microblast Games", Dead_Bits_tags, 14);
+cout << "377 insert" << endl;
+//Inserting Gauntlet Slayer Edition
+string Gauntlet_Slayer_Edition_tags[20] = {"Co-op","Dungeon Crawler","Action","RPG","Hack and Slash","Local Co-Op","Adventure","Multiplayer","Arcade","Remake","Classic","Fantasy","Top-Down","Online Co-Op","4 Player Local","Local Multiplayer","Action RPG","Isometric","Casual","Rogue-like"};
+g.insert_game("Gauntlet Slayer Edition", "Arrowhead Game Studios", "WB Games", Gauntlet_Slayer_Edition_tags, 20);
+cout << "378 insert" << endl;
+//Inserting Remember Me
+string Remember_Me_tags[20] = {"Cyberpunk","Action","Female Protagonist","Sci-fi","Third Person","Adventure","Story Rich","Singleplayer","Great Soundtrack","Atmospheric","Dystopian ","Linear","Beat 'em up","Parkour","Futuristic","Hack and Slash","Action-Adventure","Fighting","Platformer","3D Vision"};
+g.insert_game("Remember Me", "DONTNOD Entertainment", "Capcom", Remember_Me_tags, 20);
+cout << "379 insert" << endl;
+//Inserting Break Into Zatwor
+string Break_Into_Zatwor_tags[18] = {"Casual","Indie","Singleplayer","Crime","Atmospheric","Difficult","Adventure","Puzzle","Top-Down","2D","Stealth","Colorful","Cartoony","Great Soundtrack","Sandbox","Third Person","Family Friendly","Puzzle-Platformer"};
+g.insert_game("Break Into Zatwor", "Zonitron Productions", "GrabTheGames", Break_Into_Zatwor_tags, 18);
+cout << "380 insert" << endl;
+//Inserting Absconding Zatwor
+string Absconding_Zatwor_tags[20] = {"Casual","Action","Singleplayer","Indie","Difficult","Puzzle","Top-Down","Stealth","2D","Atmospheric","Cartoony","Third Person","Minimalist","Colorful","Replay Value","Family Friendly","Comedy","Relaxing","Simulation","Puzzle-Platformer"};
+g.insert_game("Absconding Zatwor", "Zonitron Productions", "GrabTheGames", Absconding_Zatwor_tags, 20);
+cout << "381 insert" << endl;
+//Inserting Enter the Gungeon
+string Enter_the_Gungeon_tags[20] = {"Bullet Hell","Pixel Graphics","Rogue-like","Difficult","Dungeon Crawler","Indie","Rogue-lite","Action","Local Co-Op","Loot","Shoot 'Em Up","Co-op","Great Soundtrack","Adventure","Top-Down Shooter","Multiplayer","Shooter","Funny","Twin Stick Shooter","Action-Adventure"};
+g.insert_game("Enter the Gungeon", "Dodge Roll", "Devolver Digital", Enter_the_Gungeon_tags, 20);
+cout << "382 insert" << endl;
+//Inserting Frozen Synapse
+string Frozen_Synapse_tags[18] = {"Strategy","Turn-Based","Tactical","Indie","Asynchronous Multiplayer","Great Soundtrack","Cyberpunk","Multiplayer","Turn-Based Strategy","Sci-fi","Top-Down","Competitive","Singleplayer","Chess","Difficult","Replay Value","2D","Action"};
+g.insert_game("Frozen Synapse", "Mode 7", "Mode 7", Frozen_Synapse_tags, 18);
+cout << "383 insert" << endl;
+//Inserting Pixel Piracy
+string Pixel_Piracy_tags[20] = {"Pirates","Indie","Pixel Graphics","RPG","Sandbox","2D","Rogue-like","Open World","Simulation","Adventure","Singleplayer","Action","Side Scroller","Building","Strategy","Rogue-lite","Survival","Crafting","Multiplayer","Free to Play"};
+g.insert_game("Pixel Piracy", "Quadro Delta, Vitali Kirpu", "Re-Logic", Pixel_Piracy_tags, 20);
+cout << "384 insert" << endl;
+//Inserting Stronghold Crusader 2
+string Stronghold_Crusader_2_tags[18] = {"Strategy","Medieval","RTS","City Builder","Simulation","Multiplayer","Classic","Historical","Singleplayer","Co-op","Atmospheric","Resource Management","Building","Action","Sandbox","Adventure","Open World","Tactical"};
+g.insert_game("Stronghold Crusader 2", "FireFly Studios", "FireFly Studios", Stronghold_Crusader_2_tags, 18);
+cout << "385 insert" << endl;
+//Inserting Crypt of the NecroDancer
+string Crypt_of_the_NecroDancer_tags[20] = {"Rhythm","Rogue-like","Great Soundtrack","Pixel Graphics","Female Protagonist","Indie","Dungeon Crawler","Music","Difficult","RPG","Local Co-Op","Action","Rogue-lite","2D","Procedural Generation","Adventure","Singleplayer","Co-op","Fantasy","Retro"};
+g.insert_game("Crypt of the NecroDancer", "Brace Yourself Games", "Brace Yourself Games, Klei Entertainment", Crypt_of_the_NecroDancer_tags, 20);
+cout << "386 insert" << endl;
+//Inserting Binary Domain
+string Binary_Domain_tags[18] = {"Action","Third-Person Shooter","Sci-fi","Cyberpunk","Robots","Third Person","Shooter","Transhumanism","Story Rich","Singleplayer","Adventure","Futuristic","Co-op","Multiplayer","Controller","Dystopian ","Atmospheric","RPG"};
+g.insert_game("Binary Domain", "Devil's Details", "SEGA", Binary_Domain_tags, 18);
+cout << "387 insert" << endl;
+//Inserting Planet Coaster
+string Planet_Coaster_tags[20] = {"Simulation","Building","Management","Sandbox","Singleplayer","Strategy","Family Friendly","Great Soundtrack","Funny","Realistic","Atmospheric","Casual","Open World","Colorful","Base-Building","Multiplayer","Adventure","Economy","Action","First-Person"};
+g.insert_game("Planet Coaster", "Frontier Developments", "Frontier Developments", Planet_Coaster_tags, 20);
+cout << "388 insert" << endl;
+//Inserting FINAL FANTASY XIII
+string FINAL_FANTASY_XIII_tags[20] = {"JRPG","Linear","RPG","Female Protagonist","Great Soundtrack","Singleplayer","Fantasy","Story Rich","Adventure","Cinematic","Sci-fi","Action","Third Person","Atmospheric","Turn-Based Combat","Action RPG","Futuristic","Turn-Based","Strategy","Difficult"};
+g.insert_game("FINAL FANTASY XIII", "SQUARE ENIX", "SQUARE ENIX", FINAL_FANTASY_XIII_tags, 20);
+cout << "389 insert" << endl;
+//Inserting BEEP
+string BEEP_tags[20] = {"Indie","Platformer","Adventure","Puzzle","Singleplayer","Physics","2D","Action","Strategy","Shoot 'Em Up","Anime","Great Soundtrack","Shooter","Difficult","Multiplayer","Survival","First-Person","Horror","Casual","Gore"};
+g.insert_game("BEEP", "Big Fat Alien", "Big Fat Alien, Sunken Treasure Games", BEEP_tags, 20);
+cout << "390 insert" << endl;
+//Inserting resident evil 4 / biohazard 4
+string resident_evil_4_/_biohazard_4_tags[20] = {"Inventory Management","Survival Horror","Action","Zombies","Horror","Third-Person Shooter","Adventure","Singleplayer","Third Person","Classic","Quick-Time Events","Remake","Atmospheric","Survival","Shooter","Gore","Great Soundtrack","Replay Value","Difficult","Sci-fi"};
+g.insert_game("resident evil 4 / biohazard 4", "Capcom", "Capcom", resident_evil_4_/_biohazard_4_tags, 20);
+cout << "391 insert" << endl;
+//Inserting DRAGON BALL XENOVERSE
+string DRAGON_BALL_XENOVERSE_tags[20] = {"Anime","Fighting","Action","Multiplayer","Character Customization","Co-op","Adventure","Singleplayer","Online Co-Op","RPG","Third Person","Fantasy","Dragons","Beat 'em up","Controller","Open World","Action RPG","Funny","Fast-Paced","Local Co-Op"};
+g.insert_game("DRAGON BALL XENOVERSE", "DIMPS", "BANDAI NAMCO Entertainment", DRAGON_BALL_XENOVERSE_tags, 20);
+cout << "392 insert" << endl;
+//Inserting Run and Fire
+string Run_and_Fire_tags[20] = {"Free to Play","Multiplayer","FPS","Action","Zombies","Shooter","First-Person","Survival","Open World","Massively Multiplayer","Horror","Singleplayer","Co-op","Adventure","Crafting","Sandbox","War","Nudity","Futuristic","Controller"};
+g.insert_game("Run and Fire", "Galaxy Gate", "NIKITA ONLINE", Run_and_Fire_tags, 20);
+cout << "393 insert" << endl;
+//Inserting Unreal Tournament 3 Black
+string Unreal_Tournament_3_Black_tags[19] = {"FPS","Action","Multiplayer","Arena Shooter","Shooter","Sci-fi","Fast-Paced","First-Person","Competitive","Gore","Great Soundtrack","Co-op","Classic","Singleplayer","Team-Based","Adventure","Atmospheric","Moddable","Split Screen"};
+g.insert_game("Unreal Tournament 3 Black", "Epic Games, Inc.", "Epic Games, Inc.", Unreal_Tournament_3_Black_tags, 19);
+cout << "394 insert" << endl;
+//Inserting Cities in Motion 2
+string Cities_in_Motion_2_tags[11] = {"Simulation","Strategy","Management","City Builder","Sandbox","Economy","Building","Singleplayer","Multiplayer","Trains","Co-op"};
+g.insert_game("Cities in Motion 2", "Colossal Order Ltd.", "Paradox Interactive", Cities_in_Motion_2_tags, 11);
+cout << "395 insert" << endl;
+//Inserting Gone Home
+string Gone_Home_tags[20] = {"Walking Simulator","Short","Indie","Exploration","Atmospheric","First-Person","Story Rich","Female Protagonist","Adventure","Singleplayer","Great Soundtrack","Interactive Fiction","1990's","Mystery","Romance","Narration","Point & Click","Realistic","Relaxing","Psychological Horror"};
+g.insert_game("Gone Home", "The Fullbright Company", "The Fullbright Company", Gone_Home_tags, 20);
+cout << "396 insert" << endl;
+//Inserting Villagers and Heroes
+string Villagers_and_Heroes_tags[20] = {"Free to Play","Massively Multiplayer","RPG","Multiplayer","Indie","Open World","Adventure","Crafting","Sandbox","MMORPG","Fantasy","Medieval","Action","Survival","Co-op","Magic","Funny","Casual","FPS","Shooter"};
+g.insert_game("Villagers and Heroes", "Mad Otter Games", "Mad Otter Games", Villagers_and_Heroes_tags, 20);
+cout << "397 insert" << endl;
+//Inserting Velvet Sundown
+string Velvet_Sundown_tags[19] = {"Free to Play","Multiplayer","RPG","Adventure","Indie","Nudity","Casual","Co-op","Open World","Funny","Massively Multiplayer","Walking Simulator","Simulation","Realistic","Mystery","Survival","Action","FPS","Singleplayer"};
+g.insert_game("Velvet Sundown", "Tribe Studios", "Tribe Studios", Velvet_Sundown_tags, 19);
+cout << "398 insert" << endl;
+//Inserting Worms Ultimate Mayhem
+string Worms_Ultimate_Mayhem_tags[14] = {"Strategy","Multiplayer","Funny","Turn-Based","Third Person","Comedy","Action","Turn-Based Strategy","Destruction","Local Co-Op","3D Vision","Singleplayer","Local Multiplayer","FPS"};
+g.insert_game("Worms Ultimate Mayhem", "Team17 Digital Ltd", "Team17 Digital Ltd", Worms_Ultimate_Mayhem_tags, 14);
+cout << "399 insert" << endl;
+//Inserting Poker Night 2
+string Poker_Night_2_tags[14] = {"Casual","Card Game","Comedy","Singleplayer","Gambling","Funny","Sports","Strategy","Point & Click","Atmospheric","Board Game","Simulation","Controller","Multiplayer"};
+g.insert_game("Poker Night 2", "Telltale Games", "Telltale Games", Poker_Night_2_tags, 14);
+cout << "400 insert" << endl;
+//Inserting Cthulhu Saves the World
+string Cthulhu_Saves_the_World_tags[18] = {"RPG","Indie","Comedy","Lovecraftian","Retro","JRPG","Turn-Based","Fantasy","Funny","Singleplayer","Adventure","Pixel Graphics","Parody ","2D","Great Soundtrack","RPGMaker","Action","Memes"};
+g.insert_game("Cthulhu Saves the World", "Zeboyd Games", "Zeboyd Games", Cthulhu_Saves_the_World_tags, 18);
+cout << "401 insert" << endl;
+//Inserting Depth
+string Depth_tags[20] = {"Action","Multiplayer","Gore","Team-Based","Underwater","Survival","Horror","PvP","Co-op","FPS","Shooter","Hunting","First-Person","Survival Horror","Atmospheric","Simulation","Indie","Exploration","Adventure","Singleplayer"};
+g.insert_game("Depth", "Digital Confectioners", "Digital Confectioners", Depth_tags, 20);
+cout << "402 insert" << endl;
+//Inserting ASTRONEER
+string ASTRONEER_tags[20] = {"Early Access","Space","Open World","Exploration","Multiplayer","Survival","Sandbox","Adventure","Base-Building","Co-op","Building","Crafting","Sci-fi","Third Person","Atmospheric","Singleplayer","Colorful","Great Soundtrack","Indie","Voxel"};
+g.insert_game("ASTRONEER", "System Era Softworks", "System Era Softworks", ASTRONEER_tags, 20);
+cout << "403 insert" << endl;
+//Inserting Nidhogg
+string Nidhogg_tags[20] = {"Local Multiplayer","Indie","Action","Fighting","Swordplay","Multiplayer","2D Fighter","Pixel Graphics","PvP","2D","Sports","Fast-Paced","Competitive","Controller","Funny","Local Co-Op","Co-op","GameMaker","Platformer","Great Soundtrack"};
+g.insert_game("Nidhogg", "Messhof", "Messhof", Nidhogg_tags, 20);
+cout << "404 insert" << endl;
+//Inserting Mount Your Friends
+string Mount_Your_Friends_tags[20] = {"Comedy","Funny","Physics","Multiplayer","Sports","Indie","Local Multiplayer","Competitive","Simulation","Co-op","Casual","2D","Local Co-Op","4 Player Local","Mature","Online Co-Op","Singleplayer","Action","Psychological Horror","NSFW"};
+g.insert_game("Mount Your Friends", "Stegersaurus Software Inc.", "Stegersaurus Software Inc.", Mount_Your_Friends_tags, 20);
+cout << "405 insert" << endl;
+//Inserting Batla
+string Batla_tags[20] = {"Free to Play","FPS","Multiplayer","Robots","Shooter","Action","Psychological Horror","Mature","Violent","Gore","Horror","First-Person","Funny","Fast-Paced","Story Rich","Crime","Survival","Atmospheric","Adventure","Open World"};
+g.insert_game("Batla", "[geim].pro", "Abyss Lights Studio LLP", Batla_tags, 20);
+cout << "406 insert" << endl;
+//Inserting Child of Light
+string Child_of_Light_tags[20] = {"RPG","Fantasy","Great Soundtrack","Female Protagonist","Turn-Based","Platformer","Adventure","2D","Atmospheric","Story Rich","Hand-drawn","Singleplayer","Local Co-Op","Side Scroller","Cute","Turn-Based Strategy","Indie","Casual","Action","Metroidvania"};
+g.insert_game("Child of Light", "Ubisoft Montréal", "Ubisoft", Child_of_Light_tags, 20);
+cout << "407 insert" << endl;
+//Inserting Deus Ex  Mankind Divided
+string Deus_Ex_Mankind_Divided_tags[20] = {"Cyberpunk","Stealth","Action","Sci-fi","Story Rich","RPG","Atmospheric","Illuminati","Futuristic","Great Soundtrack","Singleplayer","First-Person","FPS","Shooter","Conspiracy","Open World","Dystopian ","Transhumanism","Adventure","Third Person"};
+g.insert_game("Deus Ex  Mankind Divided", "Eidos Montreal, Feral Interactive (Linux)", "Square Enix, Feral Interactive (Linux)", Deus_Ex_Mankind_Divided_tags, 20);
+cout << "408 insert" << endl;
+//Inserting Dragon Nest
+string Dragon_Nest_tags[11] = {"Free to Play","Action","RPG","Anime","Massively Multiplayer","MMORPG","Fantasy","Hack and Slash","Dragons","Multiplayer","Adventure"};
+g.insert_game("Dragon Nest", "Eyedentity Games Inc.", "Eyedentity Games Inc.", Dragon_Nest_tags, 11);
+cout << "409 insert" << endl;
+//Inserting Pressure
+string Pressure_tags[19] = {"Racing","Action","Indie","Casual","Arcade","Steampunk","Local Co-Op","Co-op","Multiplayer","Controller","Fantasy","Shooter","Funny","Singleplayer","Comedy","Great Soundtrack","Atmospheric","Crafting","Shoot 'Em Up"};
+g.insert_game("Pressure", "Chasing Carrots", "Chasing Carrots", Pressure_tags, 19);
+cout << "410 insert" << endl;
+//Inserting Homeworld Remastered Collection
+string Homeworld_Remastered_Collection_tags[20] = {"Space","Strategy","RTS","Sci-fi","Classic","Great Soundtrack","Story Rich","Remake","Atmospheric","Multiplayer","Simulation","Tactical","Singleplayer","Moddable","Action","4X","Female Protagonist","Adventure","Futuristic","Survival"};
+g.insert_game("Homeworld Remastered Collection", "Gearbox Software, Aspyr (Mac)", "Gearbox Software, Aspyr (Mac)", Homeworld_Remastered_Collection_tags, 20);
+cout << "411 insert" << endl;
 }
