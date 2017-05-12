@@ -1,5 +1,7 @@
 #include "tags.h"
 
+#include <iostream>
+
 using namespace std;
 
 vector<string> Tags::tags;
