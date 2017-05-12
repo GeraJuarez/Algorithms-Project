@@ -1651,4 +1651,17 @@ cout << "410 insert" << endl;
 string Pid_tags[13] = {"Indie","Platformer","Adventure","Puzzle","Difficult","Singleplayer","Local Co-Op","Co-op","Great Soundtrack","Atmospheric","2D","Side Scroller","Local Multiplayer"};
 g.insert_game("Pid", "Might and Delight", "Might and Delight", Pid_tags, 13);
 cout << "411 insert" << endl;
+
+g.clean_games();
+
+g.get_game("PAYDAY 2")->dijkstra( g.get_game("Age of Empires II HD"), g.get_size() );
+cout << "===== Dijkstra =====" << endl;
+Game *ggg = g.get_game("Age of Empires II HD");
+while(ggg != NULL){
+    cout << ggg->name << endl;
+    ggg = ggg->pi;
+}
+
+g.get_game("PAYDAY 2")->print_adj();
+
 }

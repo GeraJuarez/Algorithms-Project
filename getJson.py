@@ -20,6 +20,7 @@ at = 0
 for i in games:
 	if( "Deus" in games_json[i]['name']):
 		games_json[i]['name'] = " ".join(games_json[i]['name'].split(":"))
+
 	if("Arma 2" in games_json[i]['name'] or "Medal of Honor" in games_json[i]['name']):
 		continue
 	if( "+" in games_json[i]['name'] or ";" in games_json[i]['name'] or "%" in games_json[i]['name'] or "$" in games_json[i]['name'] or "," in games_json[i]['name'] or "." in games_json[i]['name'] or ")" in games_json[i]['name'] or  "(" in games_json[i]['name'] or "'" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name'] or "!" in games_json[i]['name'] or "?" in games_json[i]['name'] or ":" in games_json[i]['name'] or "/" in games_json[i]['name']):
