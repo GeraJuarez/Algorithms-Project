@@ -6,6 +6,7 @@
 #include "tags.h"
 using namespace std;
 int main() {
+
 Graph g;
 //Inserting Dota 2
 string Dota_2_tags[20] = {"Free to Play","MOBA","Strategy","Multiplayer","Team-Based","Action","e-sports","Online Co-Op","Competitive","PvP","RTS","Difficult","RPG","Fantasy","Tower Defense","Co-op","Character Customization","Replay Value","Action RPG","Simulation"};
@@ -28,7 +29,6 @@ cout << "4 insert" << endl;
 string Left_4_Dead_2_tags[20] = {"Zombies","Co-op","FPS","Multiplayer","Action","Online Co-Op","Shooter","Survival","First-Person","Horror","Team-Based","Moddable","Gore","Post-apocalyptic","Survival Horror","Singleplayer","Adventure","Local Co-Op","Tactical","Replay Value"};
 g.insert_game("Left 4 Dead 2", "Valve", "Valve", Left_4_Dead_2_tags, 20);
 cout << "5 insert" << endl;
-/*
 //Inserting Robocraft
 string Robocraft_tags[20] = {"Early Access","Free to Play","Robots","Building","Multiplayer","Action","Shooter","PvP","Massively Multiplayer","Sandbox","Crafting","Third-Person Shooter","Sci-fi","Strategy","Simulation","Indie","Open World","Funny","RPG","Adventure"};
 g.insert_game("Robocraft", "Freejam", "Freejam", Robocraft_tags, 20);
@@ -133,6 +133,4 @@ cout << "30 insert" << endl;
 string Clicker_Heroes_tags[20] = {"Clicker","Free to Play","Casual","Singleplayer","Indie","2D","RPG","Adventure","Funny","Fantasy","Simulation","Strategy","Multiplayer","Family Friendly","Action","Illuminati","Touch-Friendly","Management","Zombies","Open World"};
 g.insert_game("Clicker Heroes", "Playsaurus", "Playsaurus", Clicker_Heroes_tags, 20);
 cout << "31 insert" << endl;
-
-*/
 }

@@ -9,6 +9,7 @@ class Game {
 private:
   void add_adj(rbnode<Game> *it, Queue<Game> *Q, rbnode<Game> *nil, int d, int t);
   void add_adj_min(rbnode<Game> *it, MinPQueue<Game> *Q, rbnode<Game> *nil, Game *g);
+  void print_adj(rbnode<Game> *it, rbnode<Game> *nil);
 public:
   RedBlackTree<Game> *adj;
   string name;
