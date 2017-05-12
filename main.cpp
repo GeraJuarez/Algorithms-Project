@@ -37,11 +37,11 @@ int main() {
     g.clean_games();
     cout << g.get_game("Waifu Souls")->d << endl;
 
-	g.queryDeveloper(false, "Triangle Enix", "");
+	g.query_developer(false, "Triangle Enix", "");
 
-	g.queryName(true, "Waifu Souls", "Light Souls");
+	g.query_name(true, "Waifu Souls", "Light Souls");
 
-    g.queryPublisher(true, "2020", "2018");
+    g.query_publisher(true, "2020", "2018");
 
     g1->add_edge(g2);
     g1->print_adj();
