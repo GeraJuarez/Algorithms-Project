@@ -18,7 +18,7 @@ print("Graph g;")
 limit = 100
 at = 0
 for i in games:
-	if( "'" in games_json[i]['name'] or ":" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name']):
+	if( "'" in games_json[i]['name'] or ":" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name'] or "!" in games_json[i]['name'] or "?" in games_json[i]['name']):
 		continue
 	if(at > limit):
 		break

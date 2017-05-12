@@ -395,20 +395,20 @@ cout << "96 insert" << endl;
 string Mafia_II_tags[20] = {"Action","Open World","Crime","Story Rich","Atmospheric","Singleplayer","Third Person","Third-Person Shooter","Shooter","Adventure","Great Soundtrack","America","Driving","Music","Classic","Nudity","Multiplayer","Sandbox","3D Vision","RPG"};
 g.insert_game("Mafia II", "2K Czech, Feral Interactive (Mac)", "2K Games, Feral Interactive (Mac)", Mafia_II_tags, 20);
 cout << "97 insert" << endl;
-//Inserting Orcs Must Die! 2
-string Orcs_Must_Die!_2_tags[20] = {"Tower Defense","Co-op","Action","Strategy","Online Co-Op","Indie","Third Person","Fantasy","Funny","Multiplayer","Comedy","Third-Person Shooter","Singleplayer","Cartoony","RPG","Shooter","Adventure","Great Soundtrack","Female Protagonist","Controller"};
-g.insert_game("Orcs Must Die! 2", "Robot Entertainment", "Robot Entertainment", Orcs_Must_Die!_2_tags, 20);
-cout << "98 insert" << endl;
 //Inserting DC Universe Online
 string DC_Universe_Online_tags[20] = {"Free to Play","Superhero","Massively Multiplayer","Action","RPG","Open World","MMORPG","Adventure","Multiplayer","Character Customization","Batman","Comic Book","Third Person","Fighting","Co-op","Online Co-Op","PvP","Fantasy","Beat 'em up","Indie"};
 g.insert_game("DC Universe Online", "Daybreak Game Company", "Daybreak Game Company", DC_Universe_Online_tags, 20);
-cout << "99 insert" << endl;
+cout << "98 insert" << endl;
 //Inserting Bastion
 string Bastion_tags[20] = {"Great Soundtrack","Indie","Action","Narration","Singleplayer","RPG","Hack and Slash","Story Rich","Dynamic Narration","Isometric","Adventure","Action RPG","Fantasy","Atmospheric","Colorful","Post-apocalyptic","Twin Stick Shooter","2D","Controller","Music"};
 g.insert_game("Bastion", "Supergiant Games", "Warner Bros. Interactive Entertainment", Bastion_tags, 20);
-cout << "100 insert" << endl;
+cout << "99 insert" << endl;
 //Inserting BattleBlock Theater
 string BattleBlock_Theater_tags[20] = {"Comedy","Co-op","Platformer","Funny","Multiplayer","Indie","Adventure","Local Co-Op","2D","Action","Great Soundtrack","Casual","Puzzle","Online Co-Op","Level Editor","Local Multiplayer","Singleplayer","Team-Based","Difficult","Sandbox"};
 g.insert_game("BattleBlock Theater", "The Behemoth", "The Behemoth", BattleBlock_Theater_tags, 20);
+cout << "100 insert" << endl;
+//Inserting Aura Kingdom
+string Aura_Kingdom_tags[20] = {"Anime","Free to Play","MMORPG","RPG","Massively Multiplayer","Adventure","Multiplayer","Fantasy","Open World","Casual","Action","JRPG","Cute","Nudity","PvE","Magic","Third Person","Online Co-Op","Co-op","Female Protagonist"};
+g.insert_game("Aura Kingdom", "X-Legend", "Aeria Games", Aura_Kingdom_tags, 20);
 cout << "101 insert" << endl;
 }
