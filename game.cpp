@@ -8,12 +8,21 @@
 using namespace std;
 
 void Game::add_adj(rbnode<Game> *it, Queue<Game> Q, rbnode<Game> *nil, int d, int t){
-  if(it == nil) return;
+  if(it == nil) {
+	  cout << "found nil" << endl;
+	   return;
+  }
+  cout << "1" << endl;
   add_adj(it->left, Q, nil, d, t);
+  cout << "2" << endl;
+  cout << "Value: " << it->value->name << endl;
   if(it->value->d != -1 && d + it->key < t){
+	cout << "if" << endl;
     Q.enqueue(it->value);
+	cout << "Queue Passed" << endl;
     it->value->d = d + it->key;
   }
+  cout << "passed if" << endl;
   add_adj(it->right, Q, nil, d, t);
 }
 Game::Game(string name, string developer, string publisher) {
@@ -21,23 +30,26 @@ Game::Game(string name, string developer, string publisher) {
   this->developer = developer;
   this->publisher = publisher;
   this->adj = new RedBlackTree<Game>();
-  this->d = 0;
+  this->d = -1;
   this->pi = NULL;
 }
 
 void Game::add_edge(Game *end){
+  cout << "Similarity: " << this->calculate_similarity(end->tags, end->tags_size) << endl;
   this->adj->insert(this->calculate_similarity(end->tags, end->tags_size), end);
+
 }
 
 Queue<Game> * Game::recommend(int threshold){
   Queue<Game> *R = new Queue<Game>();
   Queue<Game> Q;
-  // Clean nodes
   this->d = 0;
   this->pi = NULL;
   Q.enqueue(this);
   while(!Q.is_empty()){
+	cout << "I'm back" << endl;
     Game *g = Q.dequeue();
+	cout << "At: " << g->name << endl;
     R->enqueue(g);
     rbnode<Game> *it, *nil;
     it = g->adj->get_it(&nil);
@@ -51,7 +63,7 @@ void Game::set_tags( int *t, int s ) {
 }
 
 void Game::print_tags() {
-	for ( unsigned i = 0; i < this->tags_size - 1; i++ ) {
+	for ( int i = 0; i < this->tags_size - 1; i++ ) {
     cout << Tags::get_tag( this->tags[i] ) << ", ";
   }
   cout << Tags::get_tag( this->tags[this->tags_size - 1] ) << endl;

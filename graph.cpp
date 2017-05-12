@@ -48,6 +48,7 @@ void Graph::connect_games( string game_u, string game_v ) {
     v = this->games->at(game_v);
     u->add_edge(v);
     v->add_edge(u);
+	cout << "Connected" << endl;
 }
 
 void print_selection(vector< Game * > &selection) {

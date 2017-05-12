@@ -11,7 +11,7 @@ int Tags::get_size() {
   return tags.size();
 }
 int Tags::add_tag(string tf) {
-  
+
   for ( unsigned i = 0; i < tags.size(); i++ ) {
     if ( tags.at(i) == tf ) {
       cout << "Tag already exists" << endl;
