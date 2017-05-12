@@ -56,8 +56,8 @@ Game::Game(string name, string developer, string publisher) {
 }
 
 void Game::add_edge(Game *end){
-  cout << this->name << " <--> " << end->name << endl;
-  cout << "Similarity: " << this->calculate_similarity(end->tags, end->tags_size) << endl;
+  //cout << this->name << " <--> " << end->name << endl;
+  //cout << "Similarity: " << this->calculate_similarity(end->tags, end->tags_size) << endl;
   this->adj->insert(this->calculate_similarity(end->tags, end->tags_size), end);
   // rbnode<Game> *g;
   // cout << "On tree: " << this->adj->get_it(&g)->value->name << endl;
@@ -71,12 +71,12 @@ Queue<Game> * Game::recommend(int threshold){
   Q.enqueue(this);
   while(!Q.is_empty()){
     Game *g = Q.dequeue();
-    cout << "At: " << g->name << endl;
+    //cout << "At: " << g->name << endl;
     R->enqueue(g);
     rbnode<Game> *it, *nil;
     it = g->adj->get_it(&nil);
     g->add_adj(it, &Q, nil, g->d, threshold);
-    cout << Q.get_size() << endl;
+    //cout << Q.get_size() << endl;
   }
   return R;
 }
