@@ -87,7 +87,6 @@ int old_main() {
 }
 
 int main() {
-
     Graph g;
     
     string waif_tag[2] = {"Nudity", "Anime"};
@@ -96,17 +95,28 @@ int main() {
     string sekura_tag[3] = {"Nudity", "Anime", "Clicker"};
     Game *sekura = g.insert_game( "Sekura Kliker", "Lilteldo", "Hakty Vishon", sekura_tag, 3 );
 
-    //g.insert_game( "Sekura Kliker", "Lilteldo", "Hakty Vishon", {"Nudity", "Anime", "Clicker"}, 3 );
+    string laijt_tag[4] = {"Hard", "Like", "Adventure", "Non-Darks"};
+    Game *laijt = g.insert_game( "Light Souls", "Bamco Namdai", "Back Hardware", laijt_tag, 4 );
+
+    string waifu_tag[3] = {"Nudity", "Anime", "Action"};
+    Game *guaifu = g.insert_game( "Waifu Souls", "Polygon Enix", "Back HArdware", waifu_tag, 3 );
 
     g.clean_games();
 
-    waifu->dijkstra(sekura, 2);
-    cout << "===== Dijkstra =====" << endl;
-    Game *ggg = sekura;
-    while(ggg != NULL){
-        cout << ggg->name << endl;
-        ggg = ggg->pi;
+    Queue<Game> *Q = laijt->recommend(100);
+
+    while(!Q->is_empty()){
+        Game *gg = Q->dequeue();
+        cout << gg->name << endl;
     }
+
+    // waifu->dijkstra(guaifu, g.get_size());
+    // cout << "===== Dijkstra =====" << endl;
+    // Game *ggg = guaifu;
+    // while(ggg != NULL){
+    //     cout << ggg->name << endl;
+    //     ggg = ggg->pi;
+    // }
 
     return 0;
 }

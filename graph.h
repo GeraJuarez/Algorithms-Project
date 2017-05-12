@@ -28,6 +28,7 @@ public:
 	void query_tags( bool AND, bool OR, string tag_a, string tag_b);
     void insert_game( Game *game );
     Game * insert_game( string name, string developer, string publisher, string *tags, int tags_size );
+    int get_size();
 };
 
 #endif
