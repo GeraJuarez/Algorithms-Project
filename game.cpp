@@ -46,6 +46,17 @@ void Game::add_adj_min(rbnode<Game> *it, MinPQueue<Game> *Q, rbnode<Game> *nil, 
   add_adj_min(it->right, Q, nil, g);
 }
 
+void Game::print_adj(rbnode<Game> *it, rbnode<Game> *nil){
+  if(it == nil || it == NULL) {
+    return;
+  }
+  print_adj(it->left, nil);
+  if(it->value->d == -1){
+    cout << it->value << endl;
+  }
+  print_adj(it->right, nil);
+}
+
 Game::Game(string name, string developer, string publisher) {
   this->name = name;
   this->developer = developer;
@@ -112,7 +123,10 @@ void Game::print_tags() {
 }
 
 void Game::print_adj() {
-	this->adj->print_inorder_inverse();
+  this->adj->print_inorder_inverse();
+  rbnode<Game> *it, *nil;
+  it = this->adj->get_it(&nil);
+  print_adj(it, nil);
 }
 
 int Game::calculate_similarity( int *b, int size_b ) {

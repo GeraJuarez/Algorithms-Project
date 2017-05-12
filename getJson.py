@@ -11,14 +11,14 @@ games_json = json.loads(data)
 games = games_json.keys()
 print('#include <iostream>\n#include <string>\n#include "graph.h"\n#include "game.h"\n#include "queue.h"\n#include "tags.h"')
 
-print('using namespace std;')
+print("using namespace std;")
 print("int main() {")
 
 print("Graph g;")
 limit = 100
 at = 0
 for i in games:
-	if( "'" in games_json[i]['name'] or ":" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name']):
+	if( "'" in games_json[i]['name'] or ":" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name'] or "!" in games_json[i]['name'] or "?" in games_json[i]['name']):
 		continue
 	if(at > limit):
 		break
