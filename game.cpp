@@ -16,7 +16,7 @@ void Game::add_adj(rbnode<Game> *it, Queue<Game> *Q, rbnode<Game> *nil, int d, i
   add_adj(it->left, Q, nil, d, t);
   // cout << "2" << endl;
   cout << "Value: " << it->value->name << endl;
-  if(it->value->d == -1 && d + it->key < t){
+  if(it->value->d == -1 && d + it->key <= t){
     cout << "if" << endl;
     Q->enqueue(it->value);
     // cout << "Queue Passed" << endl;
@@ -35,8 +35,8 @@ Game::Game(string name, string developer, string publisher) {
 }
 
 void Game::add_edge(Game *end){
-  // cout << "Similarity: " << this->calculate_similarity(end->tags, end->tags_size) << endl;
-  // cout << this->name << " <--> " << end->name << endl;
+  cout << this->name << " <--> " << end->name << endl;
+  cout << "Similarity: " << this->calculate_similarity(end->tags, end->tags_size) << endl;
   this->adj->insert(this->calculate_similarity(end->tags, end->tags_size), end);
   // rbnode<Game> *g;
   // cout << "On tree: " << this->adj->get_it(&g)->value->name << endl;
@@ -106,7 +106,7 @@ int Game::calculate_similarity( int *b, int size_b ) {
 
   int similarity = ( (double)hits / (double)size_a ) * 100; //Calculate porcentual similarity
 
-  return similarity;
+  return 100 - similarity;
 }
 
 /*

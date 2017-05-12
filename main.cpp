@@ -19,8 +19,8 @@ int main() {
     Graph g;
 
     Game *light = new Game ( "Light Souls", "Bamco Namdai", "2020" );
-    int LS_tags[3] = {1, 5, 7};
-    light->set_tags(LS_tags, 3);
+    int LS_tags[4] = {1, 4, 5, 7};
+    light->set_tags(LS_tags, 4);
 
 
 
@@ -50,7 +50,7 @@ int main() {
 
     // light->add_edge(waifu);
 
-    cout << light->adj->get_value(100)->name << endl;
+    // cout << light->adj->get_value(0)->name << endl;
 
     light->print_adj();
     waifu->print_adj();
@@ -65,7 +65,7 @@ int main() {
     //     cout << gg->name << endl;
     // }
 
-    Queue<Game> *Q = waifu->recommend(1000);
+    Queue<Game> *Q = waifu->recommend(40);
 
     while(!Q->is_empty()){
         Game *gg = Q->dequeue();

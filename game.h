@@ -3,7 +3,6 @@
 
 #include "queue.h"
 #include "rbtree.h"
-// #include "edge.h"
 
 class Game {
 private:
@@ -20,8 +19,9 @@ public:
   Game(string name, string developer, string publisher);
   void add_edge(Game *end);
   Queue<Game> * recommend(int threshold);
-  void set_tags( int *t, int s );
-  int calculate_similarity( int *b, int size_b );
+  void dijkstra(Game *end);
+  void set_tags(int *t, int s);
+  int calculate_similarity(int *b, int size_b);
   void print_tags();
   void print_adj();
 };
