@@ -86,11 +86,8 @@ int old_main() {
     return 0;
 }
 
-<<<<<<< HEAD
-int older_main() {
-=======
+
 int old2_main() {
->>>>>>> cf57148cd777c8e4bf5bfa065331e93e57c32ec2
     Graph g;
     
     string waif_tag[2] = {"Nudity", "Anime"};

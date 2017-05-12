@@ -251,7 +251,8 @@ void Graph::insert_game( Game * g ) {
 	//cout << sorted_games[0]->name << endl;
 
 	//take a constant from those 
-	k = 2 * log2( g->tags_size );//log2(log10(pow (sqrt(tag_size), 2 / 3 )));
+	k = log10( g->tags_size ) / 2;
+	k = ( k == 0 ) ? 1 : k;
 	for ( int i = 0; i < k && i < miguelito_size; i++ ) {
 		//cout << g->name << " - " << sorted_games[i]->name << endl;
 		this->connect_games( g, sorted_games[i] );
@@ -270,7 +271,7 @@ Game * Graph::insert_game( string name, string developer, string publisher, stri
 
 	//cout << "size: " << this->games->size() << endl;
 
-	if ( this->games->size() >= 1 )
+	if ( this->games->size() >= 1 && tags_size > 0)
 		this->insert_game( g );
 
 	this->add_game( g );

@@ -51,9 +51,7 @@ void Game::print_adj(rbnode<Game> *it, rbnode<Game> *nil){
     return;
   }
   print_adj(it->left, nil);
-  if(it->value->d == -1){
-    cout << it->value << endl;
-  }
+  cout << it->value->name << endl;
   print_adj(it->right, nil);
 }
 

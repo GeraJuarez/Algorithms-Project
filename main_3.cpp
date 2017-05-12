@@ -414,13 +414,15 @@ cout << "101 insert" << endl;
 
 g.clean_games();
 
-g.get_game("Clicker Heroes")->dijkstra( g.get_game("Dota 2"), g.get_size() );
+g.get_game("PAYDAY 2")->dijkstra( g.get_game("Age of Empires II HD"), g.get_size() );
 cout << "===== Dijkstra =====" << endl;
-Game *ggg = g.get_game("Dota 2");
+Game *ggg = g.get_game("Age of Empires II HD");
 while(ggg != NULL){
     cout << ggg->name << endl;
     ggg = ggg->pi;
 }
+
+g.get_game("PAYDAY 2")->print_adj();
 
 }
 

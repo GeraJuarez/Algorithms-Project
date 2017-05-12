@@ -15,10 +15,12 @@ print("using namespace std;")
 print("int main() {")
 
 print("Graph g;")
-limit = 100
+limit = 410
 at = 0
 for i in games:
-	if( "'" in games_json[i]['name'] or ":" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name'] or "!" in games_json[i]['name'] or "?" in games_json[i]['name']):
+	if( "Deus" in games_json[i]['name']):
+		games_json[i]['name'] = " ".join(games_json[i]['name'].split(":"))
+	if( "'" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name'] or "!" in games_json[i]['name'] or "?" in games_json[i]['name'] or ":" in games_json[i]['name']):
 		continue
 	if(at > limit):
 		break
