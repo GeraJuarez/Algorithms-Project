@@ -15,7 +15,7 @@ print('using namespace std;')
 print("int main() {")
 
 print("Graph g;")
-limit = 30
+limit = 100
 at = 0
 for i in games:
 	if( "'" in games_json[i]['name'] or ":" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name']):
