@@ -14,7 +14,6 @@ print('#include <iostream>\n#include <string>\n#include "graph.h"\n#include "gam
 print('using namespace std;')
 print("int main() {")
 
-using namespace std;)
 print("Graph g;")
 limit = 30
 at = 0
