@@ -91,6 +91,10 @@ Queue<Game> * Game::recommend(int threshold){
 }
 
 void Game::dijkstra(Game *end, int n){
+	if(end == NULL){
+		cout << "Dijkstra failed. End is NULL" << endl;
+		return;
+	}
   MinPQueue<Game> Q(n);
   this->d = 0;
   this->pi = NULL;

@@ -42,6 +42,10 @@ void Graph::add_game(Game *game) {
 }
 
 Game * Graph::get_game( string name ) {
+	if(this->games->find(name) == this->games->end()){
+		cout << "No such game in the DataBase" << endl;
+		return NULL;
+	}
     return this->games->at(name);
 }
 
@@ -50,7 +54,7 @@ void Graph::connect_games( string game_u, string game_v ) {
     u = this->games->at(game_u);
 
     v = this->games->at(game_v);
-    
+
 	this->connect_games( u, v );
 }
 
@@ -179,24 +183,24 @@ void Graph::query_tags(bool AND, bool OR, string tag_a_string, string tag_b_stri
 }
 
 void Graph::insert_game( Game * g ) {
-	
+
 	//get lg graph size number
 	int lgn = log2( this->games->size() );
 	lgn = (lgn < 1) ? 1 : lgn;
-	
+
 	//Generate random numbers
 	random_device rd;
 	mt19937 gen( rd() );
 	uniform_int_distribution<> dis( 0, this->games->size() - 1 );
-	
+
 	//Generate lg n random numbers
 	unordered_map<string, Game * >::iterator it = this->games->begin();
-	Game *max, 
+	Game *max,
 		 *current;
-	
+
 	int max_similarity = 100,
 		current_simlarity;
-	
+
 	//get the highest similarity from those games
 	for ( int i = 0; i < lgn; i++ ) {
 		it = this->games->begin();
@@ -215,7 +219,7 @@ void Graph::insert_game( Game * g ) {
 	//pass through its adjacent games and take them
 	this->clean_games();
 	Queue< Game > *miguelito_queue = max->recommend( 50 );
-	//cout << "Dequeueing " << miguelito_queue->dequeue()->name << endl;	
+	//cout << "Dequeueing " << miguelito_queue->dequeue()->name << endl;
 	//miguelito_queue->dequeue();
 	int miguelito_size = miguelito_queue->get_size();
 
@@ -226,21 +230,21 @@ void Graph::insert_game( Game * g ) {
 		selected_games[i] = miguelito_queue->dequeue();
 		similarities[i] = g->calculate_similarity( selected_games[i]->tags, selected_games[i]->tags_size );
 	}
-	
+
 	delete miguelito_queue;
 	//counto sorto them by similarities
 	Game *sorted_games[ miguelito_size ];
 
 	int C [100];
-	for ( int i = 0; i < 100; i++ ) 
+	for ( int i = 0; i < 100; i++ )
 		C[i] = 0;
-	
-	for ( int i = 0; i < miguelito_size; i++ ) 
+
+	for ( int i = 0; i < miguelito_size; i++ )
 		C[ similarities[i] ]++;
 
 	for ( int i = 1; i < 100; i++ )
 		C[i] = C[i] + C[i - 1];
-	
+
 	int k = miguelito_size;
 	while ( k --> 0) {
 	//for ( int k = miguelito_size - 1; k >= 0; k-- ) {
@@ -250,7 +254,7 @@ void Graph::insert_game( Game * g ) {
 
 	//cout << sorted_games[0]->name << endl;
 
-	//take a constant from those 
+	//take a constant from those
 	k = log10( g->tags_size ) / 2;
 	k = ( k == 0 ) ? 1 : k;
 	for ( int i = 0; i < k && i < miguelito_size; i++ ) {
