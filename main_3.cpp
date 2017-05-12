@@ -411,4 +411,16 @@ cout << "100 insert" << endl;
 string BattleBlock_Theater_tags[20] = {"Comedy","Co-op","Platformer","Funny","Multiplayer","Indie","Adventure","Local Co-Op","2D","Action","Great Soundtrack","Casual","Puzzle","Online Co-Op","Level Editor","Local Multiplayer","Singleplayer","Team-Based","Difficult","Sandbox"};
 g.insert_game("BattleBlock Theater", "The Behemoth", "The Behemoth", BattleBlock_Theater_tags, 20);
 cout << "101 insert" << endl;
+
+g.clean_games();
+
+g.get_game("Clicker Heroes")->dijkstra( g.get_game("Dota 2"), g.get_size() );
+cout << "===== Dijkstra =====" << endl;
+Game *ggg = g.get_game("Dota 2");
+while(ggg != NULL){
+    cout << ggg->name << endl;
+    ggg = ggg->pi;
 }
+
+}
+

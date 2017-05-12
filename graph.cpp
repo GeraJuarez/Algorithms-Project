@@ -199,9 +199,11 @@ void Graph::insert_game( Game * g ) {
 	
 	//get the highest similarity from those games
 	for ( int i = 0; i < lgn; i++ ) {
+		it = this->games->begin();
+		for ( int j = 0, k = dis(gen); j < k; j++, it++ ) {
+			//cout << "k: " << k << endl;
+		}
 
-		for ( int j = 0, k = dis(gen); j < k; j++, it++ );
-	
 		current = it->second;
 		current_simlarity = g->calculate_similarity( current->tags, current->tags_size );
 		if ( current_simlarity < max_similarity ) {
@@ -265,6 +267,8 @@ Game * Graph::insert_game( string name, string developer, string publisher, stri
 	}
 
 	g->set_tags( t, tags_size );
+
+	//cout << "size: " << this->games->size() << endl;
 
 	if ( this->games->size() >= 1 )
 		this->insert_game( g );

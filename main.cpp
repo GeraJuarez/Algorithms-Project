@@ -86,7 +86,7 @@ int old_main() {
     return 0;
 }
 
-int main() {
+int older_main() {
     Graph g;
     
     string waif_tag[2] = {"Nudity", "Anime"};
