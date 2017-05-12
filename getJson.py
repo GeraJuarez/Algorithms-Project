@@ -41,6 +41,5 @@ for i in games:
 		array_name = "_".join(game['name'].split())
 		print("string {}_tags[{}] = {};".format( array_name, tags_size, tags_string) )
 		print( 'g.insert_game("{}", "{}", "{}", {}_tags, {});'.format(game['name'], game['developer'], game['publisher'], array_name, tags_size) )
-		print( 'cout << "{} insert" << endl;'.format(at) )
 
 print("}")
