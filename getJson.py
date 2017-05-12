@@ -22,7 +22,10 @@ for i in games:
 		games_json[i]['name'] = " ".join(games_json[i]['name'].split(":"))
 	if("Arma 2" in games_json[i]['name'] or "Medal of Honor" in games_json[i]['name']):
 		continue
-	if( "+" in games_json[i]['name'] or "0" in games_json[i]['name'] or "1" in games_json[i]['name'] or "2" in games_json[i]['name'] or "3" in games_json[i]['name'] or "4" in games_json[i]['name'] or "5" in games_json[i]['name'] or "6" in games_json[i]['name'] or "9" in games_json[i]['name'] or "8" in games_json[i]['name'] or ";" in games_json[i]['name'] or "%" in games_json[i]['name'] or "$" in games_json[i]['name'] or "," in games_json[i]['name'] or "7" in games_json[i]['name'] or "." in games_json[i]['name'] or ")" in games_json[i]['name'] or  "(" in games_json[i]['name'] or "'" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name'] or "!" in games_json[i]['name'] or "?" in games_json[i]['name'] or ":" in games_json[i]['name'] or "/" in games_json[i]['name']):
+	if( "+" in games_json[i]['name'] or ";" in games_json[i]['name'] or "%" in games_json[i]['name'] or "$" in games_json[i]['name'] or "," in games_json[i]['name'] or "." in games_json[i]['name'] or ")" in games_json[i]['name'] or  "(" in games_json[i]['name'] or "'" in games_json[i]['name'] or "&" in games_json[i]['name'] or "-" in games_json[i]['name'] or "*" in games_json[i]['name'] or "!" in games_json[i]['name'] or "?" in games_json[i]['name'] or ":" in games_json[i]['name'] or "/" in games_json[i]['name']):
+		continue
+	first_char = games_json[i]['name'][0]
+	if(first_char == "1" or first_char == "2" or first_char == "3" or first_char == "4" or first_char == "5" or first_char == "6" or first_char == "7" or first_char == "8" or first_char == "9" or first_char == "0" ):
 		continue
 	if(at > limit):
 		break
