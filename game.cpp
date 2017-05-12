@@ -51,7 +51,10 @@ void Game::set_tags( int *t, int s ) {
 }
 
 void Game::print_tags() {
-	cout << " " << endl;
+	for ( unsigned i = 0; i < this->tags_size - 1; i++ ) {
+    cout << Tags::get_tag( this->tags[i] ) << ", ";
+  }
+  cout << Tags::get_tag( this->tags[this->tags_size] ) << endl;
 }
 
 int Game::calculate_similarity( int *b, int size_b ) {

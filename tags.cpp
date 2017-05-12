@@ -1,4 +1,5 @@
 #include "tags.h"
+#include <iostream>
 
 // #include <string>
 // #include <vector>
@@ -33,4 +34,3 @@ int Tags::search(string s) {
   }
   return -1;
 }
-//print tags from games
