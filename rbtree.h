@@ -9,7 +9,7 @@ const bool BLACK = 1;
 //char RED = 'r';
 //char BLACK = 'b';
 
-template <class T>
+template <typename T>
 struct rbnode{
   int key;
   T *value;
@@ -24,9 +24,9 @@ struct rbnode{
     left = right = p = NULL;
     color = RED;
   }
-  rbnode(int k, T *value) {
+  rbnode(int k, T *v) {
     key = k;
-    value = value;
+    value = v;
     left = right = p = NULL;
     color = RED;
   }
@@ -37,7 +37,7 @@ struct rbnode{
   }
 };
 
-template <class T>
+template <typename T>
 class RedBlackTree{
 private:
   int size;
@@ -50,6 +50,7 @@ public:
     this->nil->color = BLACK;
     this->root = this->nil;
     this->nil->p = this->nil;
+    this->nil->left = this->nil->right = NULL;
   }
   int get_size(){
     return this->size;
@@ -332,6 +333,9 @@ public:
   rbnode<T> * get_it(rbnode<T> **nil){
     *nil = this->nil;
     return this->root;
+  }
+  rbnode<T> * get_nil(){
+    return this->nil;
   }
 };
 

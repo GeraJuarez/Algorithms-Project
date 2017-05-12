@@ -7,22 +7,22 @@
 
 using namespace std;
 
-void Game::add_adj(rbnode<Game> *it, Queue<Game> Q, rbnode<Game> *nil, int d, int t){
-  if(it == nil) {
-	  cout << "found nil" << endl;
-	   return;
+void Game::add_adj(rbnode<Game> *it, Queue<Game> *Q, rbnode<Game> *nil, int d, int t){
+  if(it == nil || it == NULL) {
+    cout << "found nil" << endl;
+    return;
   }
-  cout << "1" << endl;
+  // cout << "1" << endl;
   add_adj(it->left, Q, nil, d, t);
-  cout << "2" << endl;
+  // cout << "2" << endl;
   cout << "Value: " << it->value->name << endl;
-  if(it->value->d != -1 && d + it->key < t){
-	cout << "if" << endl;
-    Q.enqueue(it->value);
-	cout << "Queue Passed" << endl;
+  if(it->value->d == -1 && d + it->key < t){
+    cout << "if" << endl;
+    Q->enqueue(it->value);
+    // cout << "Queue Passed" << endl;
     it->value->d = d + it->key;
   }
-  cout << "passed if" << endl;
+  // cout << "passed if" << endl;
   add_adj(it->right, Q, nil, d, t);
 }
 Game::Game(string name, string developer, string publisher) {
@@ -35,9 +35,11 @@ Game::Game(string name, string developer, string publisher) {
 }
 
 void Game::add_edge(Game *end){
-  cout << "Similarity: " << this->calculate_similarity(end->tags, end->tags_size) << endl;
+  // cout << "Similarity: " << this->calculate_similarity(end->tags, end->tags_size) << endl;
+  // cout << this->name << " <--> " << end->name << endl;
   this->adj->insert(this->calculate_similarity(end->tags, end->tags_size), end);
-
+  // rbnode<Game> *g;
+  // cout << "On tree: " << this->adj->get_it(&g)->value->name << endl;
 }
 
 Queue<Game> * Game::recommend(int threshold){
@@ -47,13 +49,14 @@ Queue<Game> * Game::recommend(int threshold){
   this->pi = NULL;
   Q.enqueue(this);
   while(!Q.is_empty()){
-	cout << "I'm back" << endl;
     Game *g = Q.dequeue();
-	cout << "At: " << g->name << endl;
+    cout << "At: " << g->name << endl;
     R->enqueue(g);
     rbnode<Game> *it, *nil;
     it = g->adj->get_it(&nil);
-    g->add_adj(it, Q, nil, g->d, threshold);
+    nil = g->adj->get_nil();
+    g->add_adj(it, &Q, nil, g->d, threshold);
+    cout << Q.get_size() << endl;
   }
   return R;
 }

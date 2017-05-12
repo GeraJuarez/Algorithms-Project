@@ -7,9 +7,9 @@
 
 class Game {
 private:
-  RedBlackTree<Game> *adj;
-  void add_adj(rbnode<Game> *it, Queue<Game> Q, rbnode<Game> *nil, int d, int t);
+  void add_adj(rbnode<Game> *it, Queue<Game> *Q, rbnode<Game> *nil, int d, int t);
 public:
+  RedBlackTree<Game> *adj;
   string name;
   string developer;
   string publisher;

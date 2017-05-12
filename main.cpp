@@ -18,20 +18,20 @@ int main() {
 
     Graph g;
 
-    Game *g1 = new Game ( "Light Souls", "Bamco Namdai", "2020" );
+    Game *light = new Game ( "Light Souls", "Bamco Namdai", "2020" );
     int LS_tags[3] = {1, 5, 7};
-    g1->set_tags(LS_tags, 3);
+    light->set_tags(LS_tags, 3);
 
 
 
-    Game *g2 = new Game ( "Waifu Souls", "Triangle Enix", "2018" );
+    Game *waifu = new Game ( "Waifu Souls", "Triangle Enix", "2018" );
     int WS_tags[5] = {1, 5, 7, 8, 9};
-    g2->set_tags(WS_tags, 5);
+    waifu->set_tags(WS_tags, 5);
 
 
 
-    g.add_game(g2);
-    g.add_game(g1);
+    g.add_game(waifu);
+    g.add_game(light);
 
     g.connect_games("Light Souls", "Waifu Souls");
 
@@ -48,12 +48,24 @@ int main() {
     //g.query_publisher(true, "2020", "2018");
 
 
-    //g1->add_edge(g2);
-    g1->print_adj();
+    // light->add_edge(waifu);
+
+    cout << light->adj->get_value(100)->name << endl;
+
+    light->print_adj();
+    waifu->print_adj();
 
 	g.clean_games();
 
-    Queue<Game> *Q = g1->recommend(1000);
+    // Queue<Game> R;
+    // R.enqueue(light);
+    // R.enqueue(waifu);
+    // while(!R.is_empty()){
+    //     Game *gg = R.dequeue();
+    //     cout << gg->name << endl;
+    // }
+
+    Queue<Game> *Q = waifu->recommend(1000);
 
     while(!Q->is_empty()){
         Game *gg = Q->dequeue();
