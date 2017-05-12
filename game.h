@@ -3,12 +3,12 @@
 
 #include "queue.h"
 #include "rbtree.h"
-#include "edge.h"
+// #include "edge.h"
 
 class Game {
 private:
-  RedBlackTree<Edge> *adj;
-  void add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d, int t);
+  RedBlackTree<Game> *adj;
+  void add_adj(rbnode<Game> *it, Queue<Game> Q, rbnode<Game> *nil, int d, int t);
 public:
   string name;
   string developer;

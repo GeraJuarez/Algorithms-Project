@@ -7,12 +7,12 @@
 
 using namespace std;
 
-void Game::add_adj(rbnode<Edge> *it, Queue<Game> Q, rbnode<Edge> *nil, int d, int t){
-   if(it == nil) return;
+void Game::add_adj(rbnode<Game> *it, Queue<Game> Q, rbnode<Game> *nil, int d, int t){
+  if(it == nil) return;
   add_adj(it->left, Q, nil, d, t);
-  if(d + it->key < t){
-    // Q.enqueue(it->to);
-    // it->to->d = d + it->key;
+  if(it->value->d != -1 && d + it->key < t){
+    Q.enqueue(it->value);
+    it->value->d = d + it->key;
   }
   add_adj(it->right, Q, nil, d, t);
 }
@@ -20,14 +20,13 @@ Game::Game(string name, string developer, string publisher) {
   this->name = name;
   this->developer = developer;
   this->publisher = publisher;
-  this->adj = new RedBlackTree<Edge>();
+  this->adj = new RedBlackTree<Game>();
   this->d = 0;
   this->pi = NULL;
 }
 
 void Game::add_edge(Game *end){
-  Edge *e = new Edge(end, this->calculate_similarity(end->tags, end->tags_size));
-  this->adj->insert(/*e0, */e->weight);
+  this->adj->insert(this->calculate_similarity(end->tags, end->tags_size), end);
 }
 
 Queue<Game> * Game::recommend(int threshold){
@@ -39,9 +38,10 @@ Queue<Game> * Game::recommend(int threshold){
   Q.enqueue(this);
   while(!Q.is_empty()){
     Game *g = Q.dequeue();
-    rbnode<Edge> *it, *nil;
+    R->enqueue(g);
+    rbnode<Game> *it, *nil;
     it = g->adj->get_it(&nil);
-    //g->add_adj(it, Q, nil, g->d, 0);
+    g->add_adj(it, Q, nil, g->d, threshold);
   }
   return R;
 }

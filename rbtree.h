@@ -101,8 +101,8 @@ public:
     return temp->value;
   }
 
-  void insert(int key){
-    rbnode<T> *z = new rbnode<T>(key);
+  void insert(int key, T *value){
+    rbnode<T> *z = new rbnode<T>(key, value);
     rbnode<T> *y = this->nil;
     rbnode<T> *x = this->root;
 
