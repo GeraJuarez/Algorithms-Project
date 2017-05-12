@@ -21,9 +21,10 @@ public:
     void add_game( Game *game );
     Game * get_game( string name );
     void connect_games( string game_u, string game_v );
-	void queryPublisher( bool OR, string publisher, string publisher_2 );
-	void queryDeveloper( bool OR, string developer, string developer_2 );
-	void queryName( bool OR, string name_a, string name_b );
+	void query_publisher( bool OR, string publisher, string publisher_2 );
+	void query_developer( bool OR, string developer, string developer_2 );
+	void query_name( bool OR, string name_a, string name_b );
+	void query_tags( bool AND, bool OR, string tag_a, string tag_b);
 };
 
 #endif
