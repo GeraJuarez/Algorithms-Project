@@ -43,5 +43,15 @@ int main() {
 
     g.queryPublisher(true, "2020", "2018");
 
+    g1->add_edge(g2);
+    g1->print_adj();
+
+    Queue<Game> *Q = g1->recommend  (100);
+
+    while(!Q->is_empty()){
+        Game *gg = Q->dequeue();
+        cout << gg->name << endl;
+    }
+
     return 0;
 }

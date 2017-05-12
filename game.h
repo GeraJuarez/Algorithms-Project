@@ -23,6 +23,7 @@ public:
   void set_tags( int *t, int s );
   int calculate_similarity( int *b, int size_b );
   void print_tags();
+  void print_adj();
 };
 
 #endif

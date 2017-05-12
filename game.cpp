@@ -54,6 +54,10 @@ void Game::print_tags() {
 	cout << " " << endl;
 }
 
+void Game::print_adj() {
+	this->adj->print_inorder_inverse();
+}
+
 int Game::calculate_similarity( int *b, int size_b ) {
 
   int *a;
