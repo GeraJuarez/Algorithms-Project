@@ -13,6 +13,7 @@ class Game;
 class Graph {
 private:
     unordered_map<string, Game * > *games;
+    void connect_games( Game *game_u, Game *game_v );
 
 public:
     Graph();
@@ -25,6 +26,8 @@ public:
 	void query_developer( bool OR, string developer, string developer_2 );
 	void query_name( bool OR, string name_a, string name_b );
 	void query_tags( bool AND, bool OR, string tag_a, string tag_b);
+    void insert_game( Game *game );
+    Game * insert_game( string name, string developer, string publisher, string *tags, int tags_size );
 };
 
 #endif

@@ -91,7 +91,7 @@ void Game::dijkstra(Game *end, int n){
     if(g == end){
       return;
     }
-    cout << "At: " << g->name << endl;
+    //cout << "At: " << g->name << endl;
     rbnode<Game> *it, *nil;
     it = g->adj->get_it(&nil);
     g->add_adj_min(it, &Q, nil, g);

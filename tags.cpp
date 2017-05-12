@@ -35,5 +35,6 @@ int Tags::search(string s) {
       return i;
     }
   }
-  return -1;
+  tags.push_back( s );
+  return tags.size() - 1;
 }

@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 template <typename E> class Queue{
     private:
         struct node{
@@ -29,6 +31,7 @@ Queue<E>::Queue(){
 template <typename E>
 Queue<E>::~Queue(){
     for(node *tmp = bot, *next = NULL; tmp != NULL; tmp = next){
+        cout << "Node deleted" << endl;
         next = tmp->next;
         delete tmp;
     }
@@ -58,6 +61,7 @@ E * Queue<E>::dequeue(){
     if(this->is_empty()) return NULL;
     E *e = this->bot->e;
     node *to_del = this->bot;
+    to_del->e = NULL;
     this->bot = this->bot->next;
     if(this->bot == NULL)
         this->top = NULL;

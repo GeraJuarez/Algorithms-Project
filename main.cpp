@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include "graph.h"
 #include "game.h"
@@ -7,7 +8,7 @@
 
 using namespace std;
 
-int main() {
+int old_main() {
 
 	Tags::add_tag("Action");
 	Tags::add_tag("Adventure");
@@ -77,6 +78,31 @@ int main() {
     waifu->dijkstra(light, 2);
     cout << "===== Dijkstra =====" << endl;
     Game *ggg = light;
+    while(ggg != NULL){
+        cout << ggg->name << endl;
+        ggg = ggg->pi;
+    }
+
+    return 0;
+}
+
+int main() {
+
+    Graph g;
+    
+    string waif_tag[2] = {"Nudity", "Anime"};
+    Game *waifu = g.insert_game( "Waifu Souls II", "Polygon Enix", "Balbe", waif_tag, 2 );
+
+    string sekura_tag[3] = {"Nudity", "Anime", "Clicker"};
+    Game *sekura = g.insert_game( "Sekura Kliker", "Lilteldo", "Hakty Vishon", sekura_tag, 3 );
+
+    //g.insert_game( "Sekura Kliker", "Lilteldo", "Hakty Vishon", {"Nudity", "Anime", "Clicker"}, 3 );
+
+    g.clean_games();
+
+    waifu->dijkstra(sekura, 2);
+    cout << "===== Dijkstra =====" << endl;
+    Game *ggg = sekura;
     while(ggg != NULL){
         cout << ggg->name << endl;
         ggg = ggg->pi;
