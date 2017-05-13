@@ -1,4 +1,4 @@
-# Game Recommendation Service
+# Game Recommendation Service (GIT GUD)
 
 This project aims to create a service to recommend games based on a given game and the tags that describe it.
 
