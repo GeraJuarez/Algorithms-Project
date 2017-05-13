@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 #include "graph.h"
 #include "game.h"
 #include "queue.h"
@@ -24,7 +25,7 @@ void interface(Graph &graph){
         cout << "\t4.- Exit" << endl;
         cout << endl;
         cout << "Select an option: ";
-        cin >> in;
+        getline(cin, in);
         cout << endl;
 
         switch(in[0]){
@@ -42,13 +43,13 @@ void interface(Graph &graph){
                 cout << "\t6.- Cancel";
                 cout << endl;
                 cout << "Select an option: ";
-                cin >> in;
+                getline(cin, in);
                 cout << endl;
                 switch(in[0]){
                     case '1':
                     {
                         cout << "Game 1: ";
-                        cin >> in;
+                        getline(cin, in);
                         cout << endl;
                         Game *g = graph.get_game(in);
                         if(g == NULL){
@@ -57,14 +58,14 @@ void interface(Graph &graph){
                         }
 
                         cout << "Use OR [y/n]: ";
-                        cin >> in;
+                        getline(cin, in);
                         cout << endl;
 
                         Game *h = NULL;
                         bool OR = in[0] == 'y' || in[0] == 'Y';
                         if(OR){
                             cout << "Game 2: ";
-                            cin >> in;
+                            getline(cin, in);
                             cout << endl;
                             h = graph.get_game(in);
                             if(h == NULL){
@@ -79,29 +80,29 @@ void interface(Graph &graph){
                     {
                         string t1, t2 = "";
                         cout << "Tag 1: ";
-                        cin >> t1;
+                        getline(cin, t1);
                         cout << endl;
 
                         cout << "Use OR [y/n]: ";
-                        cin >> in;
+                        getline(cin, in);
                         cout << endl;
 
                         bool OR = in[0] == 'y' || in[0] == 'Y', AND;
                         if(OR){
                             cout << "Tag 2: ";
-                            cin >> t2;
+                            getline(cin, t2);
                             cout << endl;
                         }
                         else{
                             cout << "Use AND [y/n]: ";
-                            cin >> in;
+                            getline(cin, in);
                             cout << endl;
 
                             AND = in[0] == 'y' || in[0] == 'Y';
 
                             if(AND){
                                 cout << "Tag 2: ";
-                                cin >> t2;
+                                getline(cin, t2);
                                 cout << endl;
                             }
                         }
@@ -112,17 +113,17 @@ void interface(Graph &graph){
                     {
                         string t1, t2 = "";
                         cout << "Developer 1: ";
-                        cin >> t1;
+                        getline(cin, t1);
                         cout << endl;
 
                         cout << "Use OR [y/n]: ";
-                        cin >> in;
+                        getline(cin, in);
                         cout << endl;
 
                         bool OR = in[0] == 'y' || in[0] == 'Y', AND;
                         if(OR){
                             cout << "Developer 2: ";
-                            cin >> t2;
+                            getline(cin, t2);
                             cout << endl;
                         }
                         graph.query_developer(OR, t1, t2);
@@ -132,17 +133,17 @@ void interface(Graph &graph){
                     {
                         string t1, t2 = "";
                         cout << "Publisher 1: ";
-                        cin >> t1;
+                        getline(cin, t1);
                         cout << endl;
 
                         cout << "Use OR [y/n]: ";
-                        cin >> in;
+                        getline(cin, in);
                         cout << endl;
 
                         bool OR = in[0] == 'y' || in[0] == 'Y', AND;
                         if(OR){
                             cout << "Publisher 2: ";
-                            cin >> t2;
+                            getline(cin, t2);
                             cout << endl;
                         }
                         graph.query_publisher(OR, t1, t2);
@@ -151,7 +152,7 @@ void interface(Graph &graph){
                     case '5':
                     {
                         cout << "Game: ";
-                        cin >> in;
+                        getline(cin, in);
                         cout << endl;
                         Game *g = graph.get_game(in);
                         if(g == NULL){
@@ -179,7 +180,7 @@ void interface(Graph &graph){
         case '2':
         {
             cout << "Where do you want to start? ";
-            cin >> in;
+            getline(cin, in);
             cout << endl;
             Game *g = graph.get_game(in);
             if(g == NULL){
@@ -187,7 +188,7 @@ void interface(Graph &graph){
                 break;
             }
             cout << "Where do you want to end? ";
-            cin >> in;
+            getline(cin, in);
             cout << endl;
             Game *h = graph.get_game(in);
             if(h == NULL){
@@ -209,7 +210,7 @@ void interface(Graph &graph){
         case '3':
         {
             cout << "Where do you want to start? ";
-            cin >> in;
+            getline(cin, in);
             cout << endl;
             Game *g = graph.get_game(in);
             if(g == NULL){
