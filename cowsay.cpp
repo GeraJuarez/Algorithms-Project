@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(){
+int wiuehbjuwihjbdsmain(){
 cout << "______________________" << endl;
 cout << " Welcome to GIT GUD " << endl;
 cout << "----------------------" << endl;
