@@ -21,9 +21,9 @@ void interface(Graph &graph){
     cout << "	  ||     ||" << endl;
 
     cout << "Andres Barro\tA00226225" << endl;
-    cout << "Arturo Fornez\tA01227071" << endl;
+    cout << "Arturo Fornes\tA01227071" << endl;
     cout << "Gerardo Juarez\tA00226860" << endl;
-    string in;
+    string in = "";
     bool running = true;
     while(running){
         cout << endl;
@@ -87,7 +87,7 @@ void interface(Graph &graph){
                                 break;
                             }
                         }
-                        graph.query_name(OR, g->name, h == NULL ? NULL : h->name);
+                        graph.query_name(OR, g->name, h == NULL ? "" : h->name);
                     }
                     break;
                     case '2':
