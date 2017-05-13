@@ -12,6 +12,7 @@ games = games_json.keys()
 print('#include <iostream>\n#include <string>\n#include "graph.h"\n#include "game.h"\n#include "queue.h"\n#include "tags.h"')
 
 print("using namespace std;")
+print("void interface(Graph &g);")
 print("int main() {")
 
 print("Graph g;")
@@ -42,4 +43,5 @@ for i in games:
 		print("string {}_tags[{}] = {};".format( array_name, tags_size, tags_string) )
 		print( 'g.insert_game("{}", "{}", "{}", {}_tags, {});'.format(game['name'], game['developer'], game['publisher'], array_name, tags_size) )
 
+print('interface(g);')
 print("}")
