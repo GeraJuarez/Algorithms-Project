@@ -51,7 +51,7 @@ void Game::print_adj(rbnode<Game> *it, rbnode<Game> *nil){
     return;
   }
   print_adj(it->left, nil);
-  cout << it->value->name << endl;
+  cout << it->value->name << " - " << it->key << endl;
   print_adj(it->right, nil);
 }
 
@@ -125,7 +125,8 @@ void Game::print_tags() {
 }
 
 void Game::print_adj() {
-  this->adj->print_inorder_inverse();
+  // this->adj->print_inorder_inverse();
+  cout << "Top Connections" << endl;
   rbnode<Game> *it, *nil;
   it = this->adj->get_it(&nil);
   print_adj(it, nil);

@@ -111,13 +111,13 @@ int old2_main() {
         cout << gg->name << endl;
     }
 
-    // waifu->dijkstra(guaifu, g.get_size());
-    // cout << "===== Dijkstra =====" << endl;
-    // Game *ggg = guaifu;
-    // while(ggg != NULL){
-    //     cout << ggg->name << endl;
-    //     ggg = ggg->pi;
-    // }
+    waifu->dijkstra(guaifu, g.get_size());
+    cout << "===== Dijkstra =====" << endl;
+    Game *ggg = guaifu;
+    while(ggg != NULL){
+        cout << ggg->name << endl;
+        ggg = ggg->pi;
+    }
 
     return 0;
 }
